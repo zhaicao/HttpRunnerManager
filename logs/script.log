@@ -500,3 +500,19 @@ ValueError: invalid literal for int() with base 10: '����_quant_login_out(�����
 2019-03-08 14:32:53,718 [HttpRunnerManager:192] [operation:add_config_data] [INFO]- 运维平台31配置添加成功: {'config': {'request': {}, 'name': '运维平台31', 'variables': [{'username': 'admin'}, {'pwd': '888888'}]}}
 2019-03-08 14:34:15,935 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 10}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': '$', 'expected': '${getvalue_jp()}'}]}}
 2019-03-08 14:35:30,994 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 10}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': 'json.size', 'expected': '${getvalue_jp()}'}]}}
+2019-03-11 16:41:12,106 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2019-03-11 16:41:26,248 [django.request:93] [base:get_response] [WARNING]- Not Found: /index
+2019-03-11 16:41:28,483 [django.request:93] [base:get_response] [WARNING]- Not Found: /index
+2019-03-11 16:41:44,599 [django.request:93] [base:get_response] [WARNING]- Not Found: /login.html
+2019-03-11 16:41:48,210 [django.request:93] [base:get_response] [WARNING]- Not Found: /login
+2019-03-11 16:42:06,656 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2019-03-11 16:42:24,920 [django.request:93] [base:get_response] [WARNING]- Not Found: /in
+2019-03-11 16:43:20,205 [django.request:93] [base:get_response] [WARNING]- Not Found: /api
+2019-03-11 16:43:31,748 [HttpRunnerManager:62] [views:login] [INFO]- zhaorong468@163.com 登录失败, 请检查用户名或者密码
+2019-03-11 16:43:41,194 [HttpRunnerManager:62] [views:login] [INFO]- zhaorong468@163.com 登录失败, 请检查用户名或者密码
+2019-03-11 16:44:09,593 [HttpRunnerManager:62] [views:login] [INFO]- zhaorong468@163.com 登录失败, 请检查用户名或者密码
+2019-03-11 16:44:17,731 [HttpRunnerManager:62] [views:login] [INFO]- zhaorong468@163.com 登录失败, 请检查用户名或者密码
+2019-03-11 16:44:24,955 [HttpRunnerManager:62] [views:login] [INFO]- zhaorong468@163.com 登录失败, 请检查用户名或者密码
+2019-03-11 16:45:27,572 [HttpRunnerManager:35] [operation:add_register_data] [INFO]- 新增用户：ApiManager.UserInfo.objects
+2019-03-11 16:45:35,078 [HttpRunnerManager:57] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-11 17:47:38,694 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
