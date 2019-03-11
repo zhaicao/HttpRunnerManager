@@ -1,0 +1,502 @@
+2018-06-29 11:14:13,438 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-06-29 11:14:32,678 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-06-29 11:14:33,058 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/commons.js
+2018-06-29 11:14:33,499 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/commons.js
+2018-06-29 11:14:58,797 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-06-29 11:48:11,403 [HttpRunnerManager:151] [operation:add_case_data] [INFO]- ���������ӳɹ�: {'test': {'request': {'method': 'POST', 'url': ''}, 'name': '��'}}
+2018-06-29 11:48:48,076 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 13:34:18,047 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/css-index.css
+2018-07-02 13:34:18,057 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/logo.png
+2018-07-02 13:34:18,268 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-07-02 13:34:18,270 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-07-02 13:34:18,276 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-07-02 13:34:18,278 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-07-02 13:34:18,296 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/bg.jpg
+2018-07-02 13:34:18,299 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/loading.GIF
+2018-07-02 13:34:18,352 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-07-02 13:34:18,364 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-07-02 13:34:18,370 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-07-02 13:34:18,383 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-07-02 13:34:18,578 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/favicon.ico
+2018-07-02 13:34:21,442 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/css-index.css
+2018-07-02 13:34:21,445 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-07-02 13:34:21,449 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/logo.png
+2018-07-02 13:34:21,484 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-07-02 13:34:21,487 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-07-02 13:34:21,492 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-07-02 13:34:21,508 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-07-02 13:34:21,516 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/bg.jpg
+2018-07-02 13:34:21,519 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/loading.GIF
+2018-07-02 13:34:21,531 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-07-02 13:34:21,540 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-07-02 13:34:21,545 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-07-02 13:34:22,424 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/css-index.css
+2018-07-02 13:34:22,426 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/logo.png
+2018-07-02 13:34:22,429 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-07-02 13:34:22,465 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-07-02 13:34:22,466 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-07-02 13:34:22,468 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-07-02 13:34:22,480 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-07-02 13:34:22,483 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/bg.jpg
+2018-07-02 13:34:22,490 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/loading.GIF
+2018-07-02 13:34:22,498 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-07-02 13:34:22,506 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-07-02 13:34:22,509 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-07-02 13:35:30,488 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 13:48:28,352 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 13:53:41,984 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:/HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:/HttpRunnerManager\ApiManager\views.py", line 379, in test_list
+    filter_query = set_filter_session(request)
+  File "D:/HttpRunnerManager\ApiManager\utils\common.py", line 439, in set_filter_session
+    'belong_project': request.session['project'],
+  File "E:\Python35\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'project'
+2018-07-02 13:53:49,147 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:/HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:/HttpRunnerManager\ApiManager\views.py", line 379, in test_list
+    filter_query = set_filter_session(request)
+  File "D:/HttpRunnerManager\ApiManager\utils\common.py", line 439, in set_filter_session
+    'belong_project': request.session['project'],
+  File "E:\Python35\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'project'
+2018-07-02 13:54:04,117 [HttpRunnerManager:78] [views:log_out] [INFO]- yinquanwang�˳�
+2018-07-02 13:54:07,459 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 13:57:09,661 [HttpRunnerManager:78] [views:log_out] [INFO]- yinquanwang�˳�
+2018-07-02 13:57:11,824 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 14:04:39,039 [HttpRunnerManager:78] [views:log_out] [INFO]- yinquanwang�˳�
+2018-07-02 14:04:44,830 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 14:04:54,650 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\HttpRunnerManager\ApiManager\views.py", line 379, in test_list
+    filter_query = set_filter_session(request)
+  File "D:\HttpRunnerManager\ApiManager\utils\common.py", line 432, in set_filter_session
+    request.session['module'] = ModuleInfo.objects.get(id=request.POST.get('module')).module_name
+  File "E:\Python35\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\Python35\lib\site-packages\django\db\models\query.py", line 394, in get
+    clone = self.filter(*args, **kwargs)
+  File "E:\Python35\lib\site-packages\django\db\models\query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "E:\Python35\lib\site-packages\django\db\models\query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "E:\Python35\lib\site-packages\django\db\models\sql\query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "E:\Python35\lib\site-packages\django\db\models\sql\query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "E:\Python35\lib\site-packages\django\db\models\sql\query.py", line 1215, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "E:\Python35\lib\site-packages\django\db\models\sql\query.py", line 1085, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "E:\Python35\lib\site-packages\django\db\models\lookups.py", line 18, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "E:\Python35\lib\site-packages\django\db\models\lookups.py", line 68, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "E:\Python35\lib\site-packages\django\db\models\fields\__init__.py", line 947, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2018-07-02 14:06:02,565 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/config_list/1/
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\HttpRunnerManager\ApiManager\views.py", line 413, in config_list
+    filter_query = set_filter_session(request)
+  File "D:\HttpRunnerManager\ApiManager\utils\common.py", line 432, in set_filter_session
+    request.session['module'] = ModuleInfo.objects.get(id=request.POST.get('module')).module_name
+  File "E:\Python35\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\Python35\lib\site-packages\django\db\models\query.py", line 394, in get
+    clone = self.filter(*args, **kwargs)
+  File "E:\Python35\lib\site-packages\django\db\models\query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "E:\Python35\lib\site-packages\django\db\models\query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "E:\Python35\lib\site-packages\django\db\models\sql\query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "E:\Python35\lib\site-packages\django\db\models\sql\query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "E:\Python35\lib\site-packages\django\db\models\sql\query.py", line 1215, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "E:\Python35\lib\site-packages\django\db\models\sql\query.py", line 1085, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "E:\Python35\lib\site-packages\django\db\models\lookups.py", line 18, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "E:\Python35\lib\site-packages\django\db\models\lookups.py", line 68, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "E:\Python35\lib\site-packages\django\db\models\fields\__init__.py", line 947, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2018-07-02 14:24:14,328 [HttpRunnerManager:78] [views:log_out] [INFO]- yinquanwang�˳�
+2018-07-02 14:24:16,921 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 14:27:17,963 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\HttpRunnerManager\ApiManager\views.py", line 323, in project_list
+    return render_to_response('project_list.html', manage_info)
+  File "E:\Python35\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\Python35\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python35\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python35\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python35\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python35\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\Python35\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Python35\lib\site-packages\django\template\loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Python35\lib\site-packages\django\template\loader_tags.py", line 233, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 533, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 176: 'endif', expected 'endblock'. Did you forget to register or load this tag?
+2018-07-02 14:27:44,949 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\HttpRunnerManager\ApiManager\views.py", line 323, in project_list
+    return render_to_response('project_list.html', manage_info)
+  File "E:\Python35\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\Python35\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python35\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python35\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python35\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python35\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\Python35\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Python35\lib\site-packages\django\template\loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Python35\lib\site-packages\django\template\loader_tags.py", line 233, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 533, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 176: 'endif', expected 'endblock'. Did you forget to register or load this tag?
+2018-07-02 14:27:47,983 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\HttpRunnerManager\ApiManager\views.py", line 323, in project_list
+    return render_to_response('project_list.html', manage_info)
+  File "E:\Python35\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\Python35\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python35\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python35\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python35\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python35\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\Python35\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Python35\lib\site-packages\django\template\loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\Python35\lib\site-packages\django\template\loader_tags.py", line 233, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "E:\Python35\lib\site-packages\django\template\base.py", line 533, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 176: 'endif', expected 'endblock'. Did you forget to register or load this tag?
+2018-07-02 14:28:16,257 [HttpRunnerManager:78] [views:log_out] [INFO]- yinquanwang�˳�
+2018-07-02 14:28:18,192 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 14:37:16,138 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\HttpRunnerManager\ApiManager\views.py", line 311, in project_list
+    filter_query = set_filter_session(request)
+  File "D:\HttpRunnerManager\ApiManager\utils\common.py", line 442, in set_filter_session
+    'belong_project': request.session['project'],
+  File "E:\Python35\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'project'
+2018-07-02 14:37:20,563 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\HttpRunnerManager\ApiManager\views.py", line 311, in project_list
+    filter_query = set_filter_session(request)
+  File "D:\HttpRunnerManager\ApiManager\utils\common.py", line 442, in set_filter_session
+    'belong_project': request.session['project'],
+  File "E:\Python35\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'project'
+2018-07-02 14:37:24,899 [HttpRunnerManager:78] [views:log_out] [INFO]- yinquanwang�˳�
+2018-07-02 14:37:26,773 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 14:37:30,837 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/add_case/
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\HttpRunnerManager\ApiManager\views.py", line 170, in add_case
+    msg = case_info_logic(**testcase_info)
+  File "D:\HttpRunnerManager\ApiManager\utils\common.py", line 210, in case_info_logic
+    test = kwargs.pop('test')
+KeyError: 'test'
+2018-07-02 14:37:33,775 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/add_case/
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\HttpRunnerManager\ApiManager\views.py", line 170, in add_case
+    msg = case_info_logic(**testcase_info)
+  File "D:\HttpRunnerManager\ApiManager\utils\common.py", line 210, in case_info_logic
+    test = kwargs.pop('test')
+KeyError: 'test'
+2018-07-02 14:39:25,603 [HttpRunnerManager:78] [views:log_out] [INFO]- yinquanwang�˳�
+2018-07-02 14:39:27,918 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 14:43:42,829 [HttpRunnerManager:78] [views:log_out] [INFO]- yinquanwang�˳�
+2018-07-02 14:43:44,932 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 14:47:52,728 [HttpRunnerManager:78] [views:log_out] [INFO]- yinquanwang�˳�
+2018-07-02 14:47:54,981 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 14:55:50,890 [HttpRunnerManager:78] [views:log_out] [INFO]- yinquanwang�˳�
+2018-07-02 14:55:53,036 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2018-07-02 14:57:17,859 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/module_list/1/
+Traceback (most recent call last):
+  File "E:\Python35\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python35\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\HttpRunnerManager\ApiManager\views.py", line 345, in module_list
+    filter_query = set_filter_session(request)
+  File "D:\HttpRunnerManager\ApiManager\utils\common.py", line 433, in set_filter_session
+    request.session['module'] = ModuleInfo.objects.get(id=request.POST.get('module')).module_name
+  File "E:\Python35\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\Python35\lib\site-packages\django\db\models\query.py", line 394, in get
+    clone = self.filter(*args, **kwargs)
+  File "E:\Python35\lib\site-packages\django\db\models\query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "E:\Python35\lib\site-packages\django\db\models\query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "E:\Python35\lib\site-packages\django\db\models\sql\query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "E:\Python35\lib\site-packages\django\db\models\sql\query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "E:\Python35\lib\site-packages\django\db\models\sql\query.py", line 1215, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "E:\Python35\lib\site-packages\django\db\models\sql\query.py", line 1085, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "E:\Python35\lib\site-packages\django\db\models\lookups.py", line 18, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "E:\Python35\lib\site-packages\django\db\models\lookups.py", line 68, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "E:\Python35\lib\site-packages\django\db\models\fields\__init__.py", line 947, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '����_quant_login_out(����ǳ�)'
+2018-07-02 14:59:50,449 [HttpRunnerManager:78] [views:log_out] [INFO]- yinquanwang�˳�
+2018-07-02 14:59:52,333 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2019-03-06 16:13:37,523 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2019-03-06 16:17:46,185 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2019-03-06 16:18:45,810 [HttpRunnerManager:60] [views:login] [INFO]- zhaicao 登录失败, 请检查用户名或者密码
+2019-03-06 16:18:51,942 [HttpRunnerManager:60] [views:login] [INFO]- zhaicao 登录失败, 请检查用户名或者密码
+2019-03-06 16:18:58,693 [HttpRunnerManager:60] [views:login] [INFO]- zhaicao 登录失败, 请检查用户名或者密码
+2019-03-06 16:19:07,405 [HttpRunnerManager:60] [views:login] [INFO]- zhaicao 登录失败, 请检查用户名或者密码
+2019-03-06 16:19:39,099 [HttpRunnerManager:60] [views:login] [INFO]- zhaicao 登录失败, 请检查用户名或者密码
+2019-03-06 16:20:16,883 [HttpRunnerManager:60] [views:login] [INFO]- zhaicao 登录失败, 请检查用户名或者密码
+2019-03-06 16:20:29,602 [HttpRunnerManager:60] [views:login] [INFO]- admin 登录失败, 请检查用户名或者密码
+2019-03-06 16:20:35,696 [HttpRunnerManager:60] [views:login] [INFO]- admin 登录失败, 请检查用户名或者密码
+2019-03-06 16:21:37,063 [HttpRunnerManager:60] [views:login] [INFO]- zhaicao 登录失败, 请检查用户名或者密码
+2019-03-06 16:22:11,221 [HttpRunnerManager:60] [views:login] [INFO]- zhaicao 登录失败, 请检查用户名或者密码
+2019-03-06 16:24:39,402 [HttpRunnerManager:62] [views:login] [INFO]- zhaicao 登录失败, 请检查用户名或者密码
+2019-03-06 16:32:16,693 [HttpRunnerManager:35] [operation:add_register_data] [INFO]- 新增用户：ApiManager.UserInfo.objects
+2019-03-06 16:32:24,328 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-06 16:34:50,628 [HttpRunnerManager:91] [views:log_out] [INFO]- zhaicao退出
+2019-03-06 16:39:46,084 [HttpRunnerManager:62] [views:login] [INFO]- zhaicao 登录失败, 请检查用户名或者密码
+2019-03-06 16:39:54,277 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-06 16:40:04,706 [HttpRunnerManager:91] [views:log_out] [INFO]- zhaicao退出
+2019-03-06 16:40:49,592 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-07 09:11:23,243 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-07 09:24:22,128 [HttpRunnerManager:62] [operation:add_project_data] [INFO]- 项目添加成功：{'project_name': '智能运维平台', 'responsible_name': '翟操', 'test_user': '赵荣', 'dev_user': '刘颖', 'publish_app': 'spring cloud', 'simple_desc': '', 'other_desc': ''}
+2019-03-07 09:25:10,047 [HttpRunnerManager:110] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': 'CMDB', 'test_user': '赵荣', 'simple_desc': '', 'other_desc': '', 'belong_project': <ProjectInfo: ProjectInfo object (1)>}
+2019-03-07 09:25:29,426 [HttpRunnerManager:110] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': '告警通知', 'test_user': '翟操', 'simple_desc': '', 'other_desc': '', 'belong_project': <ProjectInfo: ProjectInfo object (1)>}
+2019-03-07 09:32:29,378 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 登录用例添加成功: {'test': {'request': {'url': 'http://10.202.228.31:8088/auth/auth/login', 'method': 'POST', 'data': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录'}}
+2019-03-07 09:35:13,815 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://10.202.228.31:8088/auth/auth/login', 'method': 'GET', 'data': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录'}}
+2019-03-07 09:40:08,857 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://10.202.228.31:8088/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录'}}
+2019-03-07 10:00:25,125 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://10.202.228.31:8088/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': '200'}], 'extract': [{}]}}
+2019-03-07 10:01:21,773 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://10.202.228.31:8088/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': '200'}]}}
+2019-03-07 10:04:38,139 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://10.202.228.31:8088/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'(.*)': ''}]}}
+2019-03-07 10:07:17,366 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://10.202.228.31:8088/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': '200'}], 'extract': [{'(.*)': ''}]}}
+2019-03-07 10:07:20,636 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2019-03-07 10:09:35,668 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://10.202.228.31:8088/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': '200'}]}}
+2019-03-07 10:11:46,769 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://10.202.228.31:8088/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}]}}
+2019-03-07 10:15:12,038 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://10.202.228.31:8088/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-07 10:18:00,231 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': '/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-07 10:31:56,153 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': '/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-07 10:42:08,576 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 我的告警用例添加成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'data': {'json': '{ "asc": false, "current": 1, "orderByField": "", "page": 1, "params": { \t"alarmContent": "", \t"alarmIp": "", \t"alarmLevel": "", \t"endTime": "", \t"sourceCiName": "", \t"sourceType": "", \t"startTime": "", \t"systemId": "" \t}, "size": 20 }'}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警'}}
+2019-03-07 10:47:03,774 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'data': {'json': '{ "asc": false, "current": 1, "orderByField": "", "page": 1, "params": { \t"alarmContent": "", \t"alarmIp": "", \t"alarmLevel": "", \t"endTime": "", \t"sourceCiName": "", \t"sourceType": "", \t"startTime": "", \t"systemId": "" \t}, "size": 20 }'}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警'}}
+2019-03-07 11:00:11,443 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 20}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警'}}
+2019-03-07 11:07:05,120 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 20}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': 'total', 'expected': 316640}]}}
+2019-03-07 11:08:58,827 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 20}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': 'json.size', 'expected': 20}]}}
+2019-03-07 11:32:29,301 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 20}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': "$getvalue_jp(json, '$.size')", 'expected': 20}]}}
+2019-03-07 11:34:40,774 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 20}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': "${getvalue_jp(json, '$.size')}", 'expected': 20}]}}
+2019-03-07 11:58:27,287 [HttpRunnerManager:91] [views:log_out] [INFO]- zhaicao退出
+2019-03-07 11:58:38,151 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-07 19:16:45,125 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-07 19:40:45,393 [HttpRunnerManager:36] [common:type_change] [ERROR]- ${getvalue_jp(json, '$.size')}转换int失败
+2019-03-07 19:41:00,378 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 20}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': 'json.size', 'expected': "${getvalue_jp(json, '$.size')}"}]}}
+2019-03-07 19:42:17,726 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 20}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': 'json.size', 'expected': '${getvalue_jp()}'}]}}
+2019-03-07 19:43:23,394 [HttpRunnerManager:36] [common:type_change] [ERROR]- ${getvalue_jp()}转换int失败
+2019-03-07 19:43:28,287 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 20}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': 'json.size', 'expected': '${getvalue_jp()}'}]}}
+2019-03-07 19:44:37,767 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 20}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': '$', 'expected': '${getvalue_jp()}'}]}}
+2019-03-08 09:59:33,175 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-08 13:31:54,425 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': '/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': 'admin', 'password': '888888'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}], 'parameters': [{'userLoginName-password': [['admin', 'admin'], ['123456', '888888']]}]}}
+2019-03-08 13:34:20,904 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': '/auth/auth/login', 'method': 'GET', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}], 'parameters': [{'userLoginName-password': [['admin', 'admin'], ['123456', '888888']]}]}}
+2019-03-08 13:43:57,020 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': '/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': '$username', 'password': '$pwd'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}], 'parameters': [{'username-pwd': [['admin', 'admin'], ['123456', '888888']]}]}}
+2019-03-08 13:44:48,738 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': '/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': '$username', 'password': '$pwd'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}], 'parameters': [{'username-pwd': [['admin', '123456'], ['admin', '888888']]}]}}
+2019-03-08 13:46:43,587 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 10}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': '$', 'expected': '${getvalue_jp()}'}]}}
+2019-03-08 14:29:00,040 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': '/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': '$username', 'password': '$pwd'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}], 'variables': [{'username': 'admin'}, {'pwd': '888888'}]}}
+2019-03-08 14:32:53,718 [HttpRunnerManager:192] [operation:add_config_data] [INFO]- 运维平台31配置添加成功: {'config': {'request': {}, 'name': '运维平台31', 'variables': [{'username': 'admin'}, {'pwd': '888888'}]}}
+2019-03-08 14:34:15,935 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 10}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': '$', 'expected': '${getvalue_jp()}'}]}}
+2019-03-08 14:35:30,994 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 10}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': 'json.size', 'expected': '${getvalue_jp()}'}]}}

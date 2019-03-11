@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset='utf-8'/>
+    <meta name='description' content=''/>
+    <meta name='robots' content='noodp, noydir'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href='http://extentreports.com/resx/dist/css/extent.css' type='text/css' rel='stylesheet'/>
+
+    <title> - TestReport</title>
+
+    <style type='text/css'>
+        .node.level-1 ul {
+            display: none;
+        }
+
+        .node.level-1.active ul {
+            display: block;
+        }
+
+        .card-panel.environment th:first-child {
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body class='extent standard default hide-overflow dark'>
+<div id='theme-selector' alt='切换主题，默认黑色' title='切换主题'>
+    <span><i class='material-icons'>desktop_windows</i></span>
+</div>
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+        <!-- slideout menu -->
+        <ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+            <li class='waves-effect active'><a href='#!' view='test-view'
+                                               onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a>
+            </li>
+            <li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i
+                    class='material-icons'>label_outline</i></a></li>
+            <li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');"
+                                        view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+        </ul>
+
+        <!-- report name -->
+        <span class='report-name'>Test Report: </span>
+
+        <!-- report headline -->
+        <span class='report-headline'></span>
+
+        <!-- nav-right -->
+        <ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+            <li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>2019-03-08 14:53:31</span>
+                </a>
+            </li>
+            <li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>HttpRunner 1.5.8 </span>
+                </a>
+            </li>
+            <li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>CPython 3.6.5 </span>
+                </a>
+            </li>
+            <li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>Darwin-14.5.0-x86_64-i386-64bit</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- container -->
+<div class='container'>
+
+    <div id='test-view' class='view'>
+
+        <section id='controls'>
+            <div class='controls grey lighten-4'>
+                <!-- test toggle -->
+                <div class='chip transparent'>
+                    <a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true'
+                       data-beloworigin='true' data-hover='true' href='#'>
+                        <i class='material-icons'>warning</i> Status
+                    </a>
+                    <ul id='tests-toggle' class='dropdown-content'>
+                        <li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a>
+                        </li>
+                        <li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+                        <li status="skip"><a href="#!">Skip <i class="material-icons cyan-text">redo</i></a></li>
+                        <li class='divider'></li>
+                        <li status='clear' clear='true'><a href='#!'>Clear Filters <i
+                                class='material-icons'>clear</i></a></li>
+                    </ul>
+                </div>
+                <!-- test toggle -->
+
+                <!-- category toggle -->
+                <div class='chip transparent'>
+                    <a class='dropdown-button category-toggle' data-activates='category-toggle'
+                       data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+                        <i class='material-icons'>local_offer</i> Category
+                    </a>
+                    <ul id='category-toggle' class='dropdown-content'>
+                        
+                            <li><a href='#'>我的告警</a>
+                            </li>
+                        
+                            <li><a href='#'>登录</a>
+                            </li>
+                        
+
+
+                        <li class='divider'></li>
+                        <li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+                    </ul>
+                </div>
+                <!-- category toggle -->
+
+                <!-- clear filters -->
+                <div class='chip transparent hide'>
+                    <a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+                        <i class='material-icons'>close</i> Clear
+                    </a>
+                </div>
+                <!-- clear filters -->
+
+                <!-- enable dashboard -->
+                <div id='toggle-test-view-charts' class='chip transparent'>
+                    <a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+                        <i class='material-icons'>track_changes</i> Dashboard
+                    </a>
+                </div>
+                <!-- enable dashboard -->
+
+                <!-- search -->
+                <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                    <a href="#" class='search-div'>
+                        <i class='material-icons'>search</i> Search
+                    </a>
+
+                    <div class='input-field left hide'>
+                        <input style="color: red" id='search-tests' type='text' class='validate browser-default'
+                               placeholder='Search Tests...'>
+                    </div>
+
+                </div>
+                <!-- search -->
+            </div>
+        </section>
+
+
+        <div id='test-view-charts' class='subview-full'>
+
+            <div id='test-view-charts' class='subview-full'>
+                <div id='charts-row' class='row nm-v nm-h'>
+                    <div class='col s12 m6 l6 np-h'>
+                        <div class='card-panel nm-v'>
+                            <div class='left panel-name'>Tests</div>
+                            <div class='chart-box'>
+                                <canvas id='parent-analysis' width='100' height='80'></canvas>
+                            </div>
+                            <div class='block text-small'>
+                            <span class='tooltipped' data-position='top'><span
+                                    class='strong'>3</span> test(s) passed</span>
+                                <span class='tooltipped' data-position='top'><span
+                                        class='strong'>0</span> test(s) failed</span>
+                            </div>
+                            <div class='block text-small'>
+                            <span class='strong tooltipped' data-position='top'
+                            >0</span>
+                                test(s) errored
+                                <span class='strong tooltipped' data-position='top'
+                                >0</span>
+                                test(s) skipped
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='col s12 m6 l6 np-h'>
+                        <div class='card-panel nm-v'>
+                            <div class='left panel-name'>Suites</div>
+                            <div class='chart-box'>
+                                <canvas id='child-analysis' width='100' height='80'></canvas>
+                            </div>
+                            <div class='block text-small'>
+                            <span id="pass_suites" class='tooltipped' data-position='top'>
+                            </span>
+                            </div>
+                            <div class='block text-small'>
+                                <span id="fail_suites" class='strong tooltipped' data-position='top'></span> suite(s)
+                                failed
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class='subview-left left'>
+
+            <div class='view-summary'>
+                <h5>Suites</h5>
+                <ul id='test-collection' class='test-collection'>
+
+                    
+                        
+                            <li class='test displayed active has-leaf pass' status='pass' bdd='true'
+                                test-id='我的告警_1'>
+                                
+                        <div class='test-heading'>
+                            <span class='test-name'>我的告警</span>
+                            <span class='test-time'>base_url: http://10.202.228.31:8088</span>
+                            
+                                <span class='test-status right pass'>pass</span>
+                            
+
+
+                        </div>
+                        <div class='test-content hide'>
+                            <div class='test-time-info'>
+                                <span class='label start-time'>2019-03-08 14:53:31</span>
+                                <span class='label end-time'>20.573 seconds</span>
+                            </div>
+                            <div class='test-desc'>Pass: 2 ;
+                                Fail: 0 ;
+                                Error: 0
+                                Skip: 0 ;
+                            </div>
+                            <div class='test-attributes'>
+                                <div class='category-list'>
+                                    <span class='category label white-text'>我的告警</span>
+                                    <span class='category label white-text'>base_url: http://10.202.228.31:8088</span>
+                                </div>
+                            </div>
+                            <ul class='collapsible node-list' data-collapsible='accordion'>
+                                
+                                    
+                                        <li class='node level-1 leaf pass' status='pass'
+                                            test-id='我的告警_登录_1'>
+                                            
+                                <div class='collapsible-header'>
+                                    <div class='node-name'>登录</div>
+                                    <span class='node-time'></span>
+                                    <span class='node-duration'>response_time: 315.02 ms</span>
+                                    
+                                        <span class='test-status right pass'>pass</span>
+                                    
+
+                                </div>
+                                <div class='collapsible-body'>
+                                    <div class='category-list right'>
+                                        <span class='category label white-text'>我的告警</span>
+                                        <span class='category label white-text'>登录</span>
+                                    </div>
+                                    <div class='node-steps'>
+                                        <table class='bordered table-results'>
+                                            <thead>
+                                            <tr>
+                                                <th>Status</th>
+                                                <th>Params</th>
+                                                <th>Details</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class='info' status='info'>
+                                                <td class='status info' title='info' alt='info'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>url</td>
+                                                <td class='step-details'>http://10.202.228.31:8088/auth/auth/login?password=888888&userLoginName=admin</td>
+                                            </tr>
+                                            <tr class='info' status='info'>
+                                                <td class='status info' title='info' alt='info'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>method</td>
+                                                <td class='step-details'>GET</td>
+                                            </tr>
+                                            <tr class='info' status='info'>
+                                                <td class='status info' title='info' alt='info'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>status_code</td>
+                                                <td class='step-details'>200</td>
+                                            </tr>
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>headers</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                
+                                                                    <div>
+                                                                        <strong>user-agent</strong>: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Accept-Encoding</strong>: gzip, deflate
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Accept</strong>: */*
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Connection</strong>: keep-alive
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>content-type</strong>: application/json;charset=UTF-8
+                                                                    </div>
+                                                                
+                                                            
+                                                        </td>
+
+                                                    </tr>
+                                                
+                                            
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>params</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                {'password': '888888', 'userLoginName': 'admin'}
+                                                            
+                                                        </td>
+
+                                                    </tr>
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>body</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                None
+                                                            
+                                                        </td>
+
+                                                    </tr>
+                                                
+                                            
+
+                                            
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>headers</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                
+                                                                    <div>
+                                                                        <strong>Set-Cookie</strong>: max.shiro.session=a30d5c5e2e4f446a81f177d4e4a62bb2; Path=/; HttpOnly, rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Thu, 07-Mar-2019 06:53:32 GMT
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Content-Type</strong>: text/plain;charset=UTF-8
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Content-Length</strong>: 32
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Date</strong>: Fri, 08 Mar 2019 06:53:31 GMT
+                                                                    </div>
+                                                                
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>cookies</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                <RequestsCookieJar[<Cookie max.shiro.session=a30d5c5e2e4f446a81f177d4e4a62bb2 for 10.202.228.31/>]>
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>text</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                
+                                                                    <pre>a30d5c5e2e4f446a81f177d4e4a62bb2</pre>
+                                                                
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                
+                                            
+                                                
+                                            
+
+                                            <tr class='log' status='pass'>
+                                                <td class='status pass' title='pass' alt='pass'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>Validators</td>
+                                                <td class='step-details'>
+                                                    
+                                                        <div>
+                                                            <strong>equals:</strong>[ 200
+                                                            ,&nbsp;&nbsp;200 ]
+                                                        </div>
+                                                    
+                                                </td>
+                                            </tr>
+
+                                            <tr class='info' status='info'>
+                                                <td class='status info' title='info' alt='info'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>Statistics</td>
+                                                <td class='step-details'>
+                                                    <div>
+                                                        content_size(bytes): 32
+                                                    </div>
+                                                    <div>
+                                                        response_time(ms): 315.02
+                                                    </div>
+                                                    <div>
+                                                        elapsed(ms): 309.818
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                </li>
+                                
+                                    
+                                        <li class='node level-1 leaf pass' status='pass'
+                                            test-id='我的告警_我的告警_2'>
+                                            
+                                <div class='collapsible-header'>
+                                    <div class='node-name'>我的告警</div>
+                                    <span class='node-time'></span>
+                                    <span class='node-duration'>response_time: 20222.14 ms</span>
+                                    
+                                        <span class='test-status right pass'>pass</span>
+                                    
+
+                                </div>
+                                <div class='collapsible-body'>
+                                    <div class='category-list right'>
+                                        <span class='category label white-text'>我的告警</span>
+                                        <span class='category label white-text'>我的告警</span>
+                                    </div>
+                                    <div class='node-steps'>
+                                        <table class='bordered table-results'>
+                                            <thead>
+                                            <tr>
+                                                <th>Status</th>
+                                                <th>Params</th>
+                                                <th>Details</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class='info' status='info'>
+                                                <td class='status info' title='info' alt='info'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>url</td>
+                                                <td class='step-details'>http://10.202.228.31:8088/alarm/historyAlarm/getHistoryAlarms</td>
+                                            </tr>
+                                            <tr class='info' status='info'>
+                                                <td class='status info' title='info' alt='info'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>method</td>
+                                                <td class='step-details'>POST</td>
+                                            </tr>
+                                            <tr class='info' status='info'>
+                                                <td class='status info' title='info' alt='info'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>status_code</td>
+                                                <td class='step-details'>200</td>
+                                            </tr>
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>headers</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                
+                                                                    <div>
+                                                                        <strong>User-Agent</strong>: python-requests/2.18.4
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Accept-Encoding</strong>: gzip, deflate
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Accept</strong>: */*
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Connection</strong>: keep-alive
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>content-type</strong>: application/json;charset=UTF-8
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>max-token</strong>: a30d5c5e2e4f446a81f177d4e4a62bb2
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Cookie</strong>: max.shiro.session=a30d5c5e2e4f446a81f177d4e4a62bb2
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Content-Length</strong>: 222
+                                                                    </div>
+                                                                
+                                                            
+                                                        </td>
+
+                                                    </tr>
+                                                
+                                            
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>json</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 10}
+                                                            
+                                                        </td>
+
+                                                    </tr>
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>body</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                {&#34;asc&#34;: false, &#34;current&#34;: 1, &#34;orderByField&#34;: &#34;&#34;, &#34;page&#34;: 1, &#34;params&#34;: {&#34;alarmContent&#34;: &#34;&#34;, &#34;alarmIp&#34;: &#34;&#34;, &#34;alarmLevel&#34;: &#34;&#34;, &#34;endTime&#34;: &#34;&#34;, &#34;sourceCiName&#34;: &#34;&#34;, &#34;sourceType&#34;: &#34;&#34;, &#34;startTime&#34;: &#34;&#34;, &#34;systemId&#34;: &#34;&#34;}, &#34;size&#34;: 10}
+                                                            
+                                                        </td>
+
+                                                    </tr>
+                                                
+                                            
+
+                                            
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>headers</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                
+                                                                    <div>
+                                                                        <strong>transfer-encoding</strong>: chunked
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Content-Type</strong>: application/json;charset=UTF-8
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Date</strong>: Fri, 08 Mar 2019 06:53:52 GMT
+                                                                    </div>
+                                                                
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>cookies</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                {}
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>text</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                
+                                                                    <pre>{"total":317639,"size":10,"current":1,"records":[{"id":317411,"sourceId":"661cb55d8750464583bd8c15eec2226a","sourceName":"Zabbix-32","sourceAlarmKey":"51251","sourceCiId":"df3007ddcb854b64b960be55ffd5442c","sourceCiName":"zabbix-agent-32_2.66","sourceType":null,"sourceTypeName":null,"systemId":null,"systemName":null,"alarmLevel":1,"alarmLevelName":"普通","alarmType":null,"alarmTypeName":null,"alarmIp":"172.18.2.66","alarmContent":"Processor load is too high on zabbix-agent-32_2.66","alarmCount":1,"alarmStatus":1,"alarmStatusName":"恢复","alarmTime":"2019-03-08T05:38:22.000+0000","alarmLastTime":null,"maxLevel":1,"maxLevelName":"普通","recoverTime":"2019-03-08T05:42:22.000+0000","operaStatus":3,"operaStatusName":"关闭","operaUser":null,"operaUserName":null,"flowId":null,"flowOperaUser":null,"flowOperaUserName":null,"lastOperaUser":null,"lastOperaUserName":null,"lastOperaTime":null,"closeTime":"2019-03-08T05:42:22.000+0000","closeReason":"系统自动恢复","closeMethod":"0","closeMethodName":"自动关闭","closeUser":null,"closeUserName":null},{"id":317575,"sourceId":"661cb55d8750464583bd8c15eec2226a","sourceName":"Zabbix-32","sourceAlarmKey":"24866","sourceCiId":"47f131d37c084117a432528a92ae8550","sourceCiName":"zabbix-agent-32_1.133","sourceType":null,"sourceTypeName":null,"systemId":null,"systemName":null,"alarmLevel":1,"alarmLevelName":"普通","alarmType":null,"alarmTypeName":null,"alarmIp":"172.18.1.133","alarmContent":"Processor load is too high on zabbix-agent-32_1.133","alarmCount":1,"alarmStatus":1,"alarmStatusName":"恢复","alarmTime":"2019-03-08T05:37:45.000+0000","alarmLastTime":null,"maxLevel":1,"maxLevelName":"普通","recoverTime":"2019-03-08T05:42:54.000+0000","operaStatus":3,"operaStatusName":"关闭","operaUser":null,"operaUserName":null,"flowId":null,"flowOperaUser":null,"flowOperaUserName":null,"lastOperaUser":null,"lastOperaUserName":null,"lastOperaTime":null,"closeTime":"2019-03-08T05:42:54.000+0000","closeReason":"系统自动恢复","closeMethod":"0","closeMethodName":"自动关闭","closeUser":null,"closeUserName":null},{"id":317571,"sourceId":"661cb55d8750464583bd8c15eec2226a","sourceName":"Zabbix-32","sourceAlarmKey":"17143","sourceCiId":"633436fa6281487bae79215dd5b9265d","sourceCiName":"zabbix-agent-32_0.53","sourceType":null,"sourceTypeName":null,"systemId":null,"systemName":null,"alarmLevel":1,"alarmLevelName":"普通","alarmType":null,"alarmTypeName":null,"alarmIp":"172.18.0.53","alarmContent":"Processor load is too high on zabbix-agent-32_0.53","alarmCount":1,"alarmStatus":1,"alarmStatusName":"恢复","alarmTime":"2019-03-08T05:37:44.000+0000","alarmLastTime":null,"maxLevel":1,"maxLevelName":"普通","recoverTime":"2019-03-08T05:42:54.000+0000","operaStatus":3,"operaStatusName":"关闭","operaUser":null,"operaUserName":null,"flowId":null,"flowOperaUser":null,"flowOperaUserName":null,"lastOperaUser":null,"lastOperaUserName":null,"lastOperaTime":null,"closeTime":"2019-03-08T05:42:54.000+0000","closeReason":"系统自动恢复","closeMethod":"0","closeMethodName":"自动关闭","closeUser":null,"closeUserName":null},{"id":317586,"sourceId":"661cb55d8750464583bd8c15eec2226a","sourceName":"Zabbix-32","sourceAlarmKey":"19580","sourceCiId":"f5461e06a0734e2d890a3a783c6762d3","sourceCiName":"zabbix-agent-32_0.114","sourceType":null,"sourceTypeName":null,"systemId":null,"systemName":null,"alarmLevel":1,"alarmLevelName":"普通","alarmType":null,"alarmTypeName":null,"alarmIp":"172.18.0.114","alarmContent":"Processor load is too high on zabbix-agent-32_0.114","alarmCount":1,"alarmStatus":1,"alarmStatusName":"恢复","alarmTime":"2019-03-08T05:37:44.000+0000","alarmLastTime":null,"maxLevel":1,"maxLevelName":"普通","recoverTime":"2019-03-08T05:42:54.000+0000","operaStatus":3,"operaStatusName":"关闭","operaUser":null,"operaUserName":null,"flowId":null,"flowOperaUser":null,"flowOperaUserName":null,"lastOperaUser":null,"lastOperaUserName":null,"lastOperaTime":null,"closeTime":"2019-03-08T05:42:54.000+0000","closeReason":"系统自动恢复","closeMethod":"0","closeMethodName":"自动关闭","closeUser":null,"closeUserName":null},{"id":317587,"sourceId":"661cb55d8750464583bd8c15eec2226a","sourceName":"Zabbix-32","sourceAlarmKey":"18119","sourceCiId":"ca498b09c06d4ccfaa4baedd6c24d217","sourceCiName":"Vzabbix-agent-32_0.103","sourceType":null,"sourceTypeName":null,"systemId":null,"systemName":null,"alarmLevel":1,"alarmLevelName":"普通","alarmType":null,"alarmTypeName":null,"alarmIp":"172.18.0.103","alarmContent":"Processor load is too high on Vzabbix-agent-32_0.103","alarmCount":1,"alarmStatus":1,"alarmStatusName":"恢复","alarmTime":"2019-03-08T05:37:44.000+0000","alarmLastTime":null,"maxLevel":1,"maxLevelName":"普通","recoverTime":"2019-03-08T05:42:54.000+0000","operaStatus":3,"operaStatusName":"关闭","operaUser":null,"operaUserName":null,"flowId":null,"flowOperaUser":null,"flowOperaUserName":null,"lastOperaUser":null,"lastOperaUserName":null,"lastOperaTime":null,"closeTime":"2019-03-08T05:42:54.000+0000","closeReason":"系统自动恢复","closeMethod":"0","closeMethodName":"自动关闭","closeUser":null,"closeUserName":null},{"id":317558,"sourceId":"661cb55d8750464583bd8c15eec2226a","sourceName":"Zabbix-32","sourceAlarmKey":"20429","sourceCiId":"cd6a0432d65d4ef3bfc4b97742840b26","sourceCiName":"Vzabbix-agent-32_0.159","sourceType":null,"sourceTypeName":null,"systemId":null,"systemName":null,"alarmLevel":1,"alarmLevelName":"普通","alarmType":null,"alarmTypeName":null,"alarmIp":"172.18.0.159","alarmContent":"Processor load is too high on Vzabbix-agent-32_0.159","alarmCount":1,"alarmStatus":1,"alarmStatusName":"恢复","alarmTime":"2019-03-08T05:37:43.000+0000","alarmLastTime":null,"maxLevel":1,"maxLevelName":"普通","recoverTime":"2019-03-08T05:42:53.000+0000","operaStatus":3,"operaStatusName":"关闭","operaUser":null,"operaUserName":null,"flowId":null,"flowOperaUser":null,"flowOperaUserName":null,"lastOperaUser":null,"lastOperaUserName":null,"lastOperaTime":null,"closeTime":"2019-03-08T05:42:53.000+0000","closeReason":"系统自动恢复","closeMethod":"0","closeMethodName":"自动关闭","closeUser":null,"closeUserName":null},{"id":317562,"sourceId":"661cb55d8750464583bd8c15eec2226a","sourceName":"Zabbix-32","sourceAlarmKey":"25548","sourceCiId":"c67b66a0482d4d99b4a11d6091828756","sourceCiName":"zabbix-agent-32_1.169","sourceType":null,"sourceTypeName":null,"systemId":null,"systemName":null,"alarmLevel":1,"alarmLevelName":"普通","alarmType":null,"alarmTypeName":null,"alarmIp":"172.18.1.169","alarmContent":"Processor load is too high on zabbix-agent-32_1.169","alarmCount":1,"alarmStatus":1,"alarmStatusName":"恢复","alarmTime":"2019-03-08T05:37:43.000+0000","alarmLastTime":null,"maxLevel":1,"maxLevelName":"普通","recoverTime":"2019-03-08T05:42:53.000+0000","operaStatus":3,"operaStatusName":"关闭","operaUser":null,"operaUserName":null,"flowId":null,"flowOperaUser":null,"flowOperaUserName":null,"lastOperaUser":null,"lastOperaUserName":null,"lastOperaTime":null,"closeTime":"2019-03-08T05:42:53.000+0000","closeReason":"系统自动恢复","closeMethod":"0","closeMethodName":"自动关闭","closeUser":null,"closeUserName":null},{"id":317564,"sourceId":"661cb55d8750464583bd8c15eec2226a","sourceName":"Zabbix-32","sourceAlarmKey":"23224","sourceCiId":"e67bd64d95a0426dacfa51e8caed979a","sourceCiName":"Vzabbix-agent-32_1.43","sourceType":null,"sourceTypeName":null,"systemId":null,"systemName":null,"alarmLevel":1,"alarmLevelName":"普通","alarmType":null,"alarmTypeName":null,"alarmIp":"172.18.1.43","alarmContent":"Processor load is too high on Vzabbix-agent-32_1.43","alarmCount":1,"alarmStatus":1,"alarmStatusName":"恢复","alarmTime":"2019-03-08T05:37:43.000+0000","alarmLastTime":null,"maxLevel":1,"maxLevelName":"普通","recoverTime":"2019-03-08T05:42:53.000+0000","operaStatus":3,"operaStatusName":"关闭","operaUser":null,"operaUserName":null,"flowId":null,"flowOperaUser":null,"flowOperaUserName":null,"lastOperaUser":null,"lastOperaUserName":null,"lastOperaTime":null,"closeTime":"2019-03-08T05:42:53.000+0000","closeReason":"系统自动恢复","closeMethod":"0","closeMethodName":"自动关闭","closeUser":null,"closeUserName":null},{"id":317568,"sourceId":"661cb55d8750464583bd8c15eec2226a","sourceName":"Zabbix-32","sourceAlarmKey":"50603","sourceCiId":"a4874389ddb947be812646ea5ba86e15","sourceCiName":"zabbix-agent-32_2.32","sourceType":null,"sourceTypeName":null,"systemId":null,"systemName":null,"alarmLevel":1,"alarmLevelName":"普通","alarmType":null,"alarmTypeName":null,"alarmIp":"172.18.2.32","alarmContent":"Processor load is too high on zabbix-agent-32_2.32","alarmCount":1,"alarmStatus":1,"alarmStatusName":"恢复","alarmTime":"2019-03-08T05:37:43.000+0000","alarmLastTime":null,"maxLevel":1,"maxLevelName":"普通","recoverTime":"2019-03-08T05:42:53.000+0000","operaStatus":3,"operaStatusName":"关闭","operaUser":null,"operaUserName":null,"flowId":null,"flowOperaUser":null,"flowOperaUserName":null,"lastOperaUser":null,"lastOperaUserName":null,"lastOperaTime":null,"closeTime":"2019-03-08T05:42:53.000+0000","closeReason":"系统自动恢复","closeMethod":"0","closeMethodName":"自动关闭","closeUser":null,"closeUserName":null},{"id":317572,"sourceId":"661cb55d8750464583bd8c15eec2226a","sourceName":"Zabbix-32","sourceAlarmKey":"17836","sourceCiId":"a68b4e5d66124def9429d3bda9befeb5","sourceCiName":"Vzabbix-agent-32_0.88","sourceType":null,"sourceTypeName":null,"systemId":null,"systemName":null,"alarmLevel":1,"alarmLevelName":"普通","alarmType":null,"alarmTypeName":null,"alarmIp":"172.18.0.88","alarmContent":"Processor load is too high on Vzabbix-agent-32_0.88","alarmCount":1,"alarmStatus":1,"alarmStatusName":"恢复","alarmTime":"2019-03-08T05:37:43.000+0000","alarmLastTime":null,"maxLevel":1,"maxLevelName":"普通","recoverTime":"2019-03-08T05:42:53.000+0000","operaStatus":3,"operaStatusName":"关闭","operaUser":null,"operaUserName":null,"flowId":null,"flowOperaUser":null,"flowOperaUserName":null,"lastOperaUser":null,"lastOperaUserName":null,"lastOperaTime":null,"closeTime":"2019-03-08T05:42:53.000+0000","closeReason":"系统自动恢复","closeMethod":"0","closeMethodName":"自动关闭","closeUser":null,"closeUserName":null}],"pages":31764}</pre>
+                                                                
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                
+                                            
+                                                
+                                            
+
+                                            <tr class='log' status='pass'>
+                                                <td class='status pass' title='pass' alt='pass'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>Validators</td>
+                                                <td class='step-details'>
+                                                    
+                                                        <div>
+                                                            <strong>equals:</strong>[ 10
+                                                            ,&nbsp;&nbsp;10 ]
+                                                        </div>
+                                                    
+                                                </td>
+                                            </tr>
+
+                                            <tr class='info' status='info'>
+                                                <td class='status info' title='info' alt='info'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>Statistics</td>
+                                                <td class='step-details'>
+                                                    <div>
+                                                        content_size(bytes): 10287
+                                                    </div>
+                                                    <div>
+                                                        response_time(ms): 20222.14
+                                                    </div>
+                                                    <div>
+                                                        elapsed(ms): 219.791
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    
+                        
+                            <li class='test displayed active has-leaf pass' status='pass' bdd='true'
+                                test-id='登录_2'>
+                                
+                        <div class='test-heading'>
+                            <span class='test-name'>登录</span>
+                            <span class='test-time'>base_url: http://10.202.228.31:8088</span>
+                            
+                                <span class='test-status right pass'>pass</span>
+                            
+
+
+                        </div>
+                        <div class='test-content hide'>
+                            <div class='test-time-info'>
+                                <span class='label start-time'>2019-03-08 14:53:51</span>
+                                <span class='label end-time'>0.096 seconds</span>
+                            </div>
+                            <div class='test-desc'>Pass: 1 ;
+                                Fail: 0 ;
+                                Error: 0
+                                Skip: 0 ;
+                            </div>
+                            <div class='test-attributes'>
+                                <div class='category-list'>
+                                    <span class='category label white-text'>登录</span>
+                                    <span class='category label white-text'>base_url: http://10.202.228.31:8088</span>
+                                </div>
+                            </div>
+                            <ul class='collapsible node-list' data-collapsible='accordion'>
+                                
+                                    
+                                        <li class='node level-1 leaf pass' status='pass'
+                                            test-id='登录_登录_1'>
+                                            
+                                <div class='collapsible-header'>
+                                    <div class='node-name'>登录</div>
+                                    <span class='node-time'></span>
+                                    <span class='node-duration'>response_time: 77.58 ms</span>
+                                    
+                                        <span class='test-status right pass'>pass</span>
+                                    
+
+                                </div>
+                                <div class='collapsible-body'>
+                                    <div class='category-list right'>
+                                        <span class='category label white-text'>登录</span>
+                                        <span class='category label white-text'>登录</span>
+                                    </div>
+                                    <div class='node-steps'>
+                                        <table class='bordered table-results'>
+                                            <thead>
+                                            <tr>
+                                                <th>Status</th>
+                                                <th>Params</th>
+                                                <th>Details</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class='info' status='info'>
+                                                <td class='status info' title='info' alt='info'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>url</td>
+                                                <td class='step-details'>http://10.202.228.31:8088/auth/auth/login?password=888888&userLoginName=admin</td>
+                                            </tr>
+                                            <tr class='info' status='info'>
+                                                <td class='status info' title='info' alt='info'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>method</td>
+                                                <td class='step-details'>GET</td>
+                                            </tr>
+                                            <tr class='info' status='info'>
+                                                <td class='status info' title='info' alt='info'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>status_code</td>
+                                                <td class='step-details'>200</td>
+                                            </tr>
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>headers</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                
+                                                                    <div>
+                                                                        <strong>user-agent</strong>: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Accept-Encoding</strong>: gzip, deflate
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Accept</strong>: */*
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Connection</strong>: keep-alive
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>content-type</strong>: application/json;charset=UTF-8
+                                                                    </div>
+                                                                
+                                                            
+                                                        </td>
+
+                                                    </tr>
+                                                
+                                            
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>params</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                {'password': '888888', 'userLoginName': 'admin'}
+                                                            
+                                                        </td>
+
+                                                    </tr>
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>body</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                None
+                                                            
+                                                        </td>
+
+                                                    </tr>
+                                                
+                                            
+
+                                            
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>headers</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                
+                                                                    <div>
+                                                                        <strong>Set-Cookie</strong>: max.shiro.session=e8301910c8194d5181f1c89d0eac42ee; Path=/; HttpOnly, rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Thu, 07-Mar-2019 06:53:52 GMT
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Content-Type</strong>: text/plain;charset=UTF-8
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Content-Length</strong>: 32
+                                                                    </div>
+                                                                
+                                                                    <div>
+                                                                        <strong>Date</strong>: Fri, 08 Mar 2019 06:53:51 GMT
+                                                                    </div>
+                                                                
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>cookies</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                <RequestsCookieJar[<Cookie max.shiro.session=e8301910c8194d5181f1c89d0eac42ee for 10.202.228.31/>]>
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                
+                                            
+                                                
+                                                    <tr class='log' status='debug'>
+                                                        <td class='status debug' title='debug' alt='debug'><i
+                                                                class='material-icons'>low_priority</i></td>
+                                                        <td class='timestamp'>text</td>
+                                                        <td class='step-details'>
+                                                            
+                                                                
+                                                                    <pre>e8301910c8194d5181f1c89d0eac42ee</pre>
+                                                                
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                
+                                            
+                                                
+                                            
+
+                                            <tr class='log' status='pass'>
+                                                <td class='status pass' title='pass' alt='pass'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>Validators</td>
+                                                <td class='step-details'>
+                                                    
+                                                        <div>
+                                                            <strong>equals:</strong>[ 200
+                                                            ,&nbsp;&nbsp;200 ]
+                                                        </div>
+                                                    
+                                                </td>
+                                            </tr>
+
+                                            <tr class='info' status='info'>
+                                                <td class='status info' title='info' alt='info'><i
+                                                        class='material-icons'>low_priority</i></td>
+                                                <td class='timestamp'>Statistics</td>
+                                                <td class='step-details'>
+                                                    <div>
+                                                        content_size(bytes): 32
+                                                    </div>
+                                                    <div>
+                                                        response_time(ms): 77.58
+                                                    </div>
+                                                    <div>
+                                                        elapsed(ms): 75.543
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- subview left -->
+
+        <div class='subview-right left'>
+            <div class='view-summary'>
+                <h5 class='test-name'></h5>
+
+                <div id='step-filters' class="right">
+                    <span class="blue-text" status="info" alt="info" title="info"><i
+                            class="material-icons">info_outline</i></span>
+                    <span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+                    <span class="red-text" status="fail" alt="fail" title="fail"><i
+                            class="material-icons">cancel</i></span>
+                    <span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i
+                            class="material-icons">cancel</i></span>
+                    <span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i
+                            class="material-icons">error</i></span>
+                    <span class="orange-text" alt="warning" status="warning" title="warning"><i
+                            class="material-icons">warning</i></span>
+                    <span class="teal-text" status="skip" alt="skip" title="skip"><i
+                            class="material-icons">redo</i></span>
+                    <span status="clear" alt="Clear filters" title="Clear filters"><i
+                            class="material-icons">clear</i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- subview right -->
+    <!-- test view -->
+    <div id='category-view' class='view hide'>
+
+        <section id='controls'>
+            <div class='controls grey lighten-4'>
+                <!-- search -->
+                <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                    <a href="#" class='search-div'>
+                        <i class='material-icons'>search</i> Search
+                    </a>
+
+                    <div class='input-field left hide'>
+                        <input tyle="color: red;" id='search-tests' type='text'
+                               class='validate browser-default'
+                               placeholder='Search Tests...'>
+                    </div>
+
+                </div>
+                <!-- search -->
+            </div>
+        </section>
+
+        <div class='subview-left left'>
+
+            <div class='view-summary'>
+                <h5>Categories</h5>
+                <ul id='category-collection' class='category-collection'>
+
+                    <li class='category displayed active'>
+                        <div class='category-heading'>
+                            <span class='category-name'>All Suites</span>
+                            <span class='category-status right'>
+							    <span class='label pass'>3 </span>
+                                
+                                
+                                
+                                </span>
+                        </div>
+                        <div class='category-content hide'>
+                            <div class='category-status-counts'>
+                                <span class='label green accent-4 white-text'>Passed: 3</span>
+                                <span class='label red lighten-1 white-text'>Failed: 0</span>
+                                <span class='label blue lighten-1 white-text'>Errored: 0</span>
+                                <span class="label yellow darken-2 white-text">Skipped: 0</span>
+                            </div>
+
+                            <div class='category-tests'>
+                                <table class='bordered table-results'>
+                                    <thead>
+                                    <tr>
+                                        <th>Timestamp</th>
+                                        <th>TestName</th>
+                                        <th>Status</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    
+                                        <tr style="border: 1px solid #49cc90; background-color: rgba(73, 204, 144, .1)">
+                                            <td>2019-03-08 14:53:31</td>
+                                            <td class='linked'
+                                                test-id='我的告警_1'>我的告警</td>
+                                            
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            
+
+                                        </tr>
+                                        
+                                            
+                                                <tr>
+                                                    <td>2019-03-08 14:53:31</td>
+                                                    <td class='linked'
+                                                        test-id='我的告警_登录_1'>登录</td>
+                                                    
+                                                        <td><span class='test-status pass'>pass</span></td>
+                                                    
+                                                </tr>
+                                            
+                                        
+                                            
+                                        
+                                    
+                                        <tr style="border: 1px solid #49cc90; background-color: rgba(73, 204, 144, .1)">
+                                            <td>2019-03-08 14:53:51</td>
+                                            <td class='linked'
+                                                test-id='登录_2'>登录</td>
+                                            
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            
+
+                                        </tr>
+                                        
+                                            
+                                        
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+
+                    
+                        <li class='category displayed active'>
+                            <div class='category-heading'>
+                                <span class='category-name'>我的告警</span>
+                                <span class='category-status right'>
+							    <span class='label pass'>2 </span>
+                                    
+                                    
+                                    
+                                </span>
+                            </div>
+                            <div class='category-content hide'>
+                                <div class='category-status-counts'>
+                                    <span class='label green accent-4 white-text'>Passed: 2</span>
+                                    <span class='label red lighten-1 white-text'>Failed: 0</span>
+                                    <span class='label blue lighten-1 white-text'>Errored: 0</span>
+                                    <span class="label yellow darken-2 white-text">Skipped: 0</span>
+                                </div>
+
+                                <div class='category-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        
+                                            <tr>
+                                                <td>2019-03-08 14:53:31</td>
+                                                <td class='linked'
+                                                    test-id='我的告警_登录_1'>登录</td>
+                                                
+                                                    <td><span class='test-status pass'>pass</span></td>
+                                                
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td>2019-03-08 14:53:31</td>
+                                                <td class='linked'
+                                                    test-id='我的告警_我的告警_2'>我的告警</td>
+                                                
+                                                    <td><span class='test-status pass'>pass</span></td>
+                                                
+                                            </tr>
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <li class='category displayed active'>
+                            <div class='category-heading'>
+                                <span class='category-name'>登录</span>
+                                <span class='category-status right'>
+							    <span class='label pass'>1 </span>
+                                    
+                                    
+                                    
+                                </span>
+                            </div>
+                            <div class='category-content hide'>
+                                <div class='category-status-counts'>
+                                    <span class='label green accent-4 white-text'>Passed: 1</span>
+                                    <span class='label red lighten-1 white-text'>Failed: 0</span>
+                                    <span class='label blue lighten-1 white-text'>Errored: 0</span>
+                                    <span class="label yellow darken-2 white-text">Skipped: 0</span>
+                                </div>
+
+                                <div class='category-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        
+                                            <tr>
+                                                <td>2019-03-08 14:53:51</td>
+                                                <td class='linked'
+                                                    test-id='登录_登录_1'>登录</td>
+                                                
+                                                    <td><span class='test-status pass'>pass</span></td>
+                                                
+                                            </tr>
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class='subview-right left'>
+            <div class='view-summary'>
+                <h5 class='category-name'></h5>
+            </div>
+        </div>
+    </div>
+    <!-- category view -->
+
+    <div id='dashboard-view' class='view hide'>
+        <div class='card-panel transparent np-v'>
+            <h5>Dashboard</h5>
+
+            <div class='row'>
+                <div class='col s2'>
+                    <div class='card-panel r'>
+                        Pass
+                        <div class='panel-lead'>3</div>
+                    </div>
+                </div>
+                <div class='col s2'>
+                    <div class='card-panel r'>
+                        Fail
+                        <div class='panel-lead'>0</div>
+                    </div>
+                </div>
+                <div class='col s2'>
+                    <div class='card-panel r'>
+                        Error
+                        <div class='panel-lead'>0</div>
+                    </div>
+                </div>
+                <div class='col s2'>
+                    <div class='card-panel r'>
+                        Skip
+                        <div class='panel-lead'>0</div>
+                    </div>
+                </div>
+                <div class='col s2'>
+                    <div class='card-panel r'>
+                        Start
+                        <div class='panel-lead'>2019-03-08 14:53:31</div>
+                    </div>
+                </div>
+                <div class='col s2'>
+                    <div class='card-panel r'>
+                        Time Taken
+                        <div class='panel-lead'>20.669 seconds</div>
+                    </div>
+                </div>
+                <div class='col s4'>
+                    <div class='card-panel'>
+                        <span class='right label cyan white-text'>Categories</span>
+                        <p>&nbsp;</p>
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Passed</th>
+                                <th>Failed</th>
+                                <th>Errored</th>
+                                <th>Skipped</th>
+                            </tr>
+                            <tr>
+                                <td>All Suites</td>
+                                <td class="pass">3</td>
+                                <td class="fail">0</td>
+                                <td class="error">0</td>
+                                <td class="skip">0</td>
+                            </tr>
+
+                            
+                                <tr>
+                                    <td>我的告警</td>
+                                    <td class="pass">2</td>
+                                    <td class="fail">0</td>
+                                    <td class="error">0</td>
+                                    <td class="skip">0</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>登录</td>
+                                    <td class="pass">1</td>
+                                    <td class="fail">0</td>
+                                    <td class="error">0</td>
+                                    <td class="skip">0</td>
+                                </tr>
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- dashboard view -->
+    <!-- testrunner-logs view -->
+    <!-- container -->
+</div>
+<script>
+    var test_suite_success = 0;
+    
+        
+            test_suite_success = test_suite_success + 1;
+        
+
+    
+        
+            test_suite_success = test_suite_success + 1;
+        
+
+    
+
+    var statusGroup = {
+        passParent: 3,
+        failParent: 0,
+        fatalParent: 0,
+        errorParent: 0,
+        warningParent: 0,
+        skipParent: 0,
+        exceptionsParent: 0,
+
+        passChild: test_suite_success,
+        failChild: 2 -test_suite_success,
+        fatalChild: 0,
+        errorChild: 0,
+        warningChild: 0,
+        skipChild: 0,
+        infoChild: 0,
+        exceptionsChild: 0,
+
+        passGrandChild: 0,
+        failGrandChild: 0,
+        fatalGrandChild: 0,
+        errorGrandChild: 0,
+        warningGrandChild: 0,
+        skipGrandChild: 0,
+        infoGrandChild: 0,
+        exceptionsGrandChild: 0,
+    };
+
+    document.getElementById('pass_suites').innerHTML = "<span class='strong'>" + test_suite_success + "</span> suite(s) passed";//找到id为'myId'的标签内插入html变量的值
+    document.getElementById('fail_suites').innerText = 2 -test_suite_success;//找到id为'myId'的标签替换它的内容为html的值
+
+</script>
+
+<script src='http://extentreports.com/resx/dist/js/extent.js' type='text/javascript'></script>
+
+
+<script type='text/javascript'>
+    $(window).off("keydown");
+</script>
+</body>
+
+</html>
