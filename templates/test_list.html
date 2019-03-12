@@ -48,6 +48,7 @@
         </div>
     </div>
 
+    <!-- select env -->
     <div class="am-modal am-modal-confirm" tabindex="-1" id="select_env">
         <div class="am-modal-dialog">
             <div class="am-modal-hd">HttpRunnerManager</div>
@@ -73,6 +74,16 @@
         </div>
     </div>
 
+
+    <!-- loading -->
+    <div class="am-modal am-modal-loading am-modal-no-btn" tabindex="-1" id="modalloading">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">用例正在执行...</div>
+            <div class="am-modal-bd">
+                <span class="am-icon-spinner am-icon-spin"></span>
+            </div>
+        </div>
+    </div>
 
     <div class="admin-biaogelist">
         <div class="listbiaoti am-cf">
@@ -308,19 +319,22 @@
             });
         }
 
+        // 运行测试用例，弹出模态框
         function run_test(index) {
             $('#select_env').modal({
                 relatedTarget: this,
                 onConfirm: function () {
+                    // open loading
+                    $('#modalloading').modal();
                     post('/api/run_test/', {
-                        'id': index,
-                        'env_name': $('#env_name').val()
+                       'id': index,
+                       'env_name': $('#env_name').val()
                     })
                 },
                 onCancel: function () {
                 }
             });
-        }
+        };
 
         $('#select_all').click(function () {
             var isChecked = $(this).prop("checked");
@@ -330,6 +344,8 @@
         $().ready(function () {
             auto_load('#pro_filter', '/api/add_case/', '#module', 'module');
         });
+
+
 
     </script>
 {% endblock %}

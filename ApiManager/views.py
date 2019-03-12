@@ -6,7 +6,7 @@ import sys
 
 import paramiko
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse, StreamingHttpResponse
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, redirect
 from django.utils.safestring import mark_safe
 from djcelery.models import PeriodicTask
 from dwebsocket import accept_websocket
@@ -50,8 +50,6 @@ def login(request):
     if request.method == 'POST':
         username = request.POST.get('account')
         password = request.POST.get('password')
-        print(username)
-        print(password)
 
         if UserInfo.objects.filter(username__exact=username).filter(password__exact=password).count() == 1:
             logger.info('{username} 登录成功'.format(username=username))
@@ -117,7 +115,8 @@ def index(request):
         'test_length': test_length,
         'suite_length': suite_length,
         'account': request.session["now_account"],
-        'total': total
+        'total': total,
+        'localhost': request.get_host()[0:-5]
     }
 
     init_filter_session(request)
@@ -801,3 +800,14 @@ def echo(request):
             for i, line in enumerate(stdout):
                 request.websocket.send(bytes(line, encoding='utf8'))
             client.close()
+
+@login_check
+def flower(request):
+    """
+    跳转Flower监控页面
+    :param request:
+    :return:
+    """
+    host = request.get_host()[0 : -5]
+    return redirect("http://{}:5555/dashboard".format(host))
+

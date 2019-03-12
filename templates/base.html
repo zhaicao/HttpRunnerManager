@@ -131,7 +131,7 @@
             <h3 class="am-icon-gears"><em></em> <a href="#">系统设置</a></h3>
             <ul>
                 <li><a href="/api/env_list/1/">运 行 环 境</a></li>
-                <li><a href="http://localhost:5555/dashboard">任 务 监 控</a></li>
+                <li><a href="/api/flower" target="_blank">任 务 监 控</a></li>
               {% comment %}  <li><a href="/api/echo/">实验室</a></li>{% endcomment %}
             </ul>
         </div>
@@ -197,7 +197,7 @@
     {% endblock %}
 
     <script type="text/javascript">
-        jQuery(".sideMenu").slide({
+        $(".sideMenu").slide({
             titCell: "h3", //鼠标触发对象
             targetCell: "ul", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
             effect: "slideDown", //targetCell下拉效果

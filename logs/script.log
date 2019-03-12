@@ -516,3 +516,254 @@ ValueError: invalid literal for int() with base 10: '����_quant_login_out(�����
 2019-03-11 16:45:27,572 [HttpRunnerManager:35] [operation:add_register_data] [INFO]- 新增用户：ApiManager.UserInfo.objects
 2019-03-11 16:45:35,078 [HttpRunnerManager:57] [views:login] [INFO]- zhaorong468 登录成功
 2019-03-11 17:47:38,694 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-12 09:56:02,549 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+ModuleNotFoundError: No module named 'None'
+2019-03-12 09:56:49,471 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+ModuleNotFoundError: No module named 'None'
+2019-03-12 09:56:55,257 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+ModuleNotFoundError: No module named 'None'
+2019-03-12 09:57:35,285 [django.request:93] [base:get_response] [WARNING]- Not Found: /api
+2019-03-12 10:02:08,829 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+ModuleNotFoundError: No module named 'None'
+2019-03-12 10:07:04,518 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+TypeError: getattr(): attribute name must be string
+2019-03-12 10:07:24,100 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+TypeError: getattr(): attribute name must be string
+2019-03-12 10:08:03,918 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+TypeError: getattr(): attribute name must be string
+2019-03-12 10:08:41,829 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+ModuleNotFoundError: No module named 'None'
+2019-03-12 10:12:55,439 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-12 10:13:19,508 [HttpRunnerManager:91] [views:log_out] [INFO]- zhaicao退出
+2019-03-12 10:13:24,717 [django.request:93] [base:get_response] [WARNING]- Not Found: /api
+2019-03-12 10:17:10,354 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-12 10:17:29,697 [HttpRunnerManager:91] [views:log_out] [INFO]- zhaicao退出
+2019-03-12 10:17:53,029 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-12 10:22:37,348 [HttpRunnerManager:57] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-12 11:11:18,269 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-12 13:39:58,977 [django.request:93] [base:get_response] [WARNING]- Not Found: /dashboard
+2019-03-12 13:45:27,248 [django.request:93] [base:get_response] [WARNING]- Not Found: /dashboard
+2019-03-12 13:46:11,455 [HttpRunnerManager:91] [views:log_out] [INFO]- zhaicao退出
+2019-03-12 13:46:18,073 [HttpRunnerManager:57] [views:login] [INFO]- zhaicao 登录成功
+2019-03-12 13:57:55,668 [django.request:93] [base:get_response] [WARNING]- Not Found: /dashboard
+2019-03-12 14:05:53,844 [HttpRunnerManager:110] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': '系统管理', 'test_user': '赵荣', 'simple_desc': '', 'other_desc': '', 'belong_project': <ProjectInfo: ProjectInfo object (1)>}
+2019-03-12 14:06:02,045 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/env_list/1/:5555/dashboard
+2019-03-12 14:06:57,296 [django.request:93] [base:get_response] [WARNING]- Not Found: /:5555/dashboard
+2019-03-12 14:25:50,634 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 获取指标单位树用例添加成功: {'test': {'request': {'url': '/monitor/monitor/getUnitsTree', 'method': 'GET', 'data': {'sourceType': 'zabbix'}}, 'name': '获取指标单位树'}}
+2019-03-12 15:15:21,840 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取指标单位树用例更新成功: {'test': {'request': {'url': '/monitor/monitor/getUnitsTree', 'method': 'GET', 'data': {'sourceType': 'zabbix'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '获取指标单位树'}}
+2019-03-12 15:29:16,317 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取指标单位树用例更新成功: {'test': {'request': {'url': '/monitor/monitor/getUnitsTree', 'method': 'GET', 'data': {'sourceType': 'zabbix'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36', 'max-token': '$token'}}, 'name': '获取指标单位树'}}
+2019-03-12 15:44:13,771 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取指标单位树用例更新成功: {'test': {'request': {'url': '/monitor/monitor/getUnitsTree', 'method': 'GET', 'data': {'sourceType': 'zabbix'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36', 'max-token': '$token'}}, 'name': '获取指标单位树', 'validate': [{'comparator': 'equals', 'check': 'Response code', 'expected': '200'}]}}
+2019-03-12 15:46:07,727 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- rewrerwer用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': 'rewrerwer'}}
+2019-03-12 15:47:10,492 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 111用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '111'}}
+2019-03-12 15:48:23,090 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 111用例更新成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '111'}}
+2019-03-12 15:49:27,932 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 配置库用例更新成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '配置库'}}
+2019-03-12 15:50:11,293 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 3we用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '3we'}}
+2019-03-12 15:51:39,299 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 222用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '222'}}
+2019-03-12 15:52:19,858 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 444用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '444'}}
+2019-03-12 15:55:52,663 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 1用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '1'}}
+2019-03-12 15:56:42,802 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 2用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '2'}}
+2019-03-12 16:11:07,064 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 241, in run_test
+    return render_to_response('report_template.html', runner.summary)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 735: 'static'. Did you forget to register or load this tag?
+2019-03-12 16:11:52,245 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 241, in run_test
+    return render_to_response('report_template.html', runner.summary)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 735: 'static'. Did you forget to register or load this tag?
+2019-03-12 16:17:17,124 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/static/assets/js/extent.js
+2019-03-12 16:17:43,375 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/static/assets/js/extent.js
+2019-03-12 16:18:18,867 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 1 用例/配置已经被删除啦！！
+2019-03-12 16:18:25,715 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 1 用例/配置已经被删除啦！！
+2019-03-12 16:18:27,548 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 1 用例/配置已经被删除啦！！
+2019-03-12 16:18:40,886 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 1 用例/配置已经被删除啦！！
+2019-03-12 16:18:41,345 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 1 用例/配置已经被删除啦！！
+2019-03-12 16:19:11,377 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/run_test/static/assets/js/extent.js
+2019-03-12 16:19:23,739 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 1 用例/配置已经被删除啦！！
+2019-03-12 16:21:16,362 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取指标单位树用例更新成功: {'test': {'request': {'url': '/monitor/monitor/getUnitsTree', 'method': 'GET', 'data': {'sourceType': 'zabbix'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36', 'max-token': '$token'}}, 'name': '获取指标单位树', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': '200'}]}}
+2019-03-12 16:21:16,958 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 1 用例/配置已经被删除啦！！
+2019-03-12 16:21:28,695 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 1 用例/配置已经被删除啦！！
+2019-03-12 16:22:07,886 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 1用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '1'}}
+2019-03-12 16:22:08,411 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 1 用例/配置已经被删除啦！！
+2019-03-12 16:23:09,073 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:00:51,213 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:01:03,040 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:07:05,580 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:09:09,650 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 获得监控系统列表用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '获得监控系统列表'}}
+2019-03-12 17:09:10,172 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:14:27,213 [HttpRunnerManager:110] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': '配置项目管理-配置库-业务系统', 'test_user': '赵荣', 'simple_desc': '', 'other_desc': '', 'belong_project': <ProjectInfo: ProjectInfo object (1)>}
+2019-03-12 17:15:44,823 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:17:28,263 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:18:18,336 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:18:29,934 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:18:31,700 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:18:36,625 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:19:11,640 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:19:43,752 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:21:18,530 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 10}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': 'json.size', 'expected': '${getvalue_jp()}'}]}}
+2019-03-12 17:21:19,034 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:22:10,730 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 10}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': 'json.size', 'expected': '${getvalue_jp()}'}]}}
+2019-03-12 17:22:11,263 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:22:32,263 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:22:36,216 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 2 用例/配置已经被删除啦！！
+2019-03-12 17:22:57,047 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 1用例更新成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '1'}}
+2019-03-12 17:24:19,041 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获得监控系统列表用例更新成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '获得监控系统列表'}}
+2019-03-12 17:34:05,888 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 10}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': 'json.size', 'expected': '${getvalue_jp()}'}]}}
+2019-03-12 18:55:52,128 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 我的告警用例更新成功: {'test': {'request': {'url': '/alarm/historyAlarm/getHistoryAlarms', 'method': 'POST', 'json': {'asc': False, 'current': 1, 'orderByField': '', 'page': 1, 'params': {'alarmContent': '', 'alarmIp': '', 'alarmLevel': '', 'endTime': '', 'sourceCiName': '', 'sourceType': '', 'startTime': '', 'systemId': ''}, 'size': 10}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '我的告警', 'validate': [{'comparator': 'equals', 'check': 'json.size', 'expected': '${getvalue_jp()}'}]}}
+2019-03-12 19:13:02,509 [HttpRunnerManager:62] [operation:add_project_data] [INFO]- 项目添加成功：{'project_name': '测试Demo项目', 'responsible_name': '翟操', 'test_user': '翟操', 'dev_user': '翟操', 'publish_app': '翟操', 'simple_desc': 'Demo', 'other_desc': 'Demo'}
+2019-03-12 19:13:45,123 [HttpRunnerManager:110] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': '测试Demo模块', 'test_user': '翟操', 'simple_desc': '', 'other_desc': '', 'belong_project': <ProjectInfo: ProjectInfo object (2)>}
+2019-03-12 19:18:49,478 [HttpRunnerManager:201] [operation:add_config_data] [INFO]- 运维平台31配置更新成功: {'config': {'request': {'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '运维平台31', 'variables': [{'username': 'admin'}, {'pwd': '888888'}]}}
+2019-03-12 19:21:58,137 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获得监控系统列表用例更新成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '获得监控系统列表', 'extract': [{'max-token': '$token'}]}}
+2019-03-12 19:27:57,324 [HttpRunnerManager:55] [views:login] [INFO]- zhaicao 登录成功
+2019-03-12 19:47:46,494 [HttpRunnerManager:55] [views:login] [INFO]- zhaicao 登录成功

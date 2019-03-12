@@ -64,6 +64,7 @@ function info_ajax(id, url) {
 
 }
 
+/*Ajax请求后台数据*/
 function auto_load(id, url, target, type) {
     var data = $(id).serializeJSON();
     if (id === '#form_message' || id ==='#belong_message' || id === '#pro_filter') {
@@ -94,6 +95,7 @@ function auto_load(id, url, target, type) {
         data: JSON.stringify(data),
         contentType: "application/json",
         success: function (data) {
+            console.info(data);
             if (type === 'module') {
                 show_module(data, target)
             } else {
