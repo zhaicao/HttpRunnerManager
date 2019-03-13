@@ -98,9 +98,10 @@ def run_by_batch(test_list, base_url, path, type=None, mode=False):
     """
 
     if mode:
-        for index in range(len(test_list) - 2):
-            form_test = test_list[index].split('=')
-            value = form_test[1]
+        for value in test_list:
+            #form_test = test_list[index].split('=')
+            #value = form_test[1]
+
             if type == 'project':
                 run_by_project(value, base_url, path)
             elif type == 'module':
@@ -123,10 +124,10 @@ def run_by_batch(test_list, base_url, path, type=None, mode=False):
                 run_by_suite(value, base_url, path)
 
         else:
-            for index in range(len(test_list) - 1):
-                form_test = test_list[index].split('=')
-                index = form_test[1]
-                run_by_single(index, base_url, path)
+            for value in test_list:
+                #form_test = test_list[index].split('=')
+                #index = form_test[1]
+                run_by_single(value, base_url, path)
 
 
 def run_by_module(id, base_url, path):

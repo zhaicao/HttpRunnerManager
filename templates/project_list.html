@@ -337,9 +337,12 @@
                             var obj = JSON.parse(json2map);
                             obj['env_name'] = data['env_name'];
                             obj['type'] = data['type'];
-                            post('/api/run_batch_test/', obj);
+                            //post('/api/run_batch_test/', obj);
+                            window.open('/api/run_batch_test/?obj='+ JSON.stringify(obj));
                         } else {
-                            post('/api/run_test/', data);
+                            //post('/api/run_test/', data);
+                            // open window
+                            window.open('/api/run_test/?id='+ data.id+ '&&env_name='+ $('#env_name').val())+ '&&type='+ data.type;
                         }
                     } else {
                         $.ajax({

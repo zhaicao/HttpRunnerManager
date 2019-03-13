@@ -287,7 +287,10 @@
                             var json2map = JSON.stringify(data);
                             var obj = JSON.parse(json2map);
                             obj['env_name'] = $('#env_name').val();
-                            post('/api/run_batch_test/', obj)
+                            //post('/api/run_batch_test/', obj)
+                            window.open('/api/run_batch_test/?obj='+ JSON.stringify(obj));
+                            //页面刷新，初始化index。治标
+                            window.location.reload()
                         },
                         onCancel: function () {
                         }
@@ -324,12 +327,17 @@
             $('#select_env').modal({
                 relatedTarget: this,
                 onConfirm: function () {
-                    // open loading
+                    // open window
+                    window.open('/api/run_test/?id='+index+'&&env_name='+$('#env_name').val());
+                    //页面刷新，初始化index。治标
+                    window.location.reload()
+                    /*
                     $('#modalloading').modal();
-                    post('/api/run_test/', {
+                    var param = {
                        'id': index,
                        'env_name': $('#env_name').val()
-                    })
+                    };
+                    */
                 },
                 onCancel: function () {
                 }
@@ -344,6 +352,7 @@
         $().ready(function () {
             auto_load('#pro_filter', '/api/add_case/', '#module', 'module');
         });
+
 
 
 

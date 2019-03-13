@@ -767,3 +767,510 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 735: '
 2019-03-12 19:21:58,137 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获得监控系统列表用例更新成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '获得监控系统列表', 'extract': [{'max-token': '$token'}]}}
 2019-03-12 19:27:57,324 [HttpRunnerManager:55] [views:login] [INFO]- zhaicao 登录成功
 2019-03-12 19:47:46,494 [HttpRunnerManager:55] [views:login] [INFO]- zhaicao 登录成功
+2019-03-13 10:47:57,837 [HttpRunnerManager:55] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-13 10:47:58,480 [HttpRunnerManager:55] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-13 10:47:59,245 [HttpRunnerManager:55] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-13 10:47:59,805 [HttpRunnerManager:55] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-13 10:47:59,923 [HttpRunnerManager:55] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-13 11:32:44,022 [HttpRunnerManager:55] [views:login] [INFO]- zhaicao 登录成功
+2019-03-13 11:35:22,874 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表用例更新成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '根据分类ID获取监控系统列表', 'extract': [{'max-token': '$token'}]}}
+2019-03-13 11:39:21,435 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表用例更新成功: {'test': {'request': {'url': 'cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '根据分类ID获取监控系统列表', 'extract': [{'max-token': '$token'}]}}
+2019-03-13 11:41:12,658 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表用例更新成功: {'test': {'request': {'url': 'cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'}}, 'name': '根据分类ID获取监控系统列表', 'extract': [{'max-token': '$token'}]}}
+2019-03-13 11:43:20,945 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表用例更新成功: {'test': {'request': {'url': 'cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '根据分类ID获取监控系统列表', 'extract': [{'max-token': '$token'}]}}
+2019-03-13 11:44:34,558 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表用例更新成功: {'test': {'request': {'url': 'cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '根据分类ID获取监控系统列表', 'validate': [{'comparator': 'equals', 'check': 'Status Code', 'expected': '200'}], 'extract': [{'max-token': '$token'}]}}
+2019-03-13 11:47:22,370 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表11用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '根据分类ID获取监控系统列表11'}}
+2019-03-13 11:47:43,174 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表11用例更新成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '根据分类ID获取监控系统列表11'}}
+2019-03-13 11:48:59,369 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '根据分类ID获取监控系统列表1'}}
+2019-03-13 11:51:55,641 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': 'cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '根据分类ID获取监控系统列表1'}}
+2019-03-13 11:53:01,925 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': 'cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'Status Code', 'expected': '200'}], 'extract': [{'max-token': 'content'}]}}
+2019-03-13 11:57:37,077 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': 'cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': '200'}], 'extract': [{'max-token': 'content'}]}}
+2019-03-13 11:58:35,986 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': 'cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'max-token': 'content'}]}}
+2019-03-13 12:50:15,640 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+TypeError: test_list() missing 1 required positional argument: 'id'
+2019-03-13 13:43:18,396 [HttpRunnerManager:55] [views:login] [INFO]- zhaicao 登录成功
+2019-03-13 14:22:35,387 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 223, in run_test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-03-13 14:22:58,291 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': 'cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'max-token': 'content'}]}}
+2019-03-13 14:23:29,604 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': 'cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 14:23:36,972 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 223, in run_test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-03-13 15:01:24,340 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 225, in run_test
+    type = kwargs.pop('type')
+KeyError: 'type'
+2019-03-13 15:03:04,726 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 225, in run_test
+    type = kwargs.pop('type')
+KeyError: 'type'
+2019-03-13 15:16:19,218 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 222, in run_test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-03-13 15:37:23,721 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': 'cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token', 'Origin': 'http://10.202.228.31'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 15:39:59,493 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token', 'Origin': 'http://10.202.228.31'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 15:41:56,428 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciSearchInfo/getDefSearchFieldByTypeId', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token', 'Origin': 'http://10.202.228.31'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 15:43:20,357 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciSearchInfo/getDefSearchFieldByTypeId', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token', 'Origin': 'http://10.202.228.31'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 15:46:57,529 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciSearchInfo/getDefSearchFieldByTypeId', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token', 'Origin': 'http://10.202.228.31'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 15:48:21,481 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 191, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 236, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on '10.202.228.30' (60)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 37, in wrapper
+    if not request.session.get('login_status'):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 66, in get
+    return self._session.get(key, default)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 196, in _get_session
+    self._session_cache = self.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 34, in load
+    expire_date__gt=timezone.now()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1179, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    sql, params = self.as_sql()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 459, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 391, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/where.py", line 80, in as_sql
+    sql, params = compiler.compile(child)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 391, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/lookups.py", line 160, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/lookups.py", line 153, in process_lhs
+    db_type = self.lhs.output_field.db_type(connection=connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 648, in db_type
+    return connection.data_types[self.get_internal_type()] % data
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 133, in data_types
+    if self.features.supports_microsecond_precision:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 65, in supports_microsecond_precision
+    return self.connection.mysql_version >= (5, 6, 4)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 345, in mysql_version
+    with self.temporary_connection() as cursor:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/base/base.py", line 576, in temporary_connection
+    cursor = self.cursor()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 236, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '10.202.228.30' (60)")
+2019-03-13 15:48:55,462 [HttpRunnerManager:55] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-13 15:49:00,501 [HttpRunnerManager:55] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-13 15:50:20,305 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciSearchInfo/getDefSearchFieldByTypeId', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token', 'Origin': 'http://10.202.228.31'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 16:58:16,855 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 16:59:37,112 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 17:08:26,939 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': 'http://10.202.228.31:8088/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 17:18:21,001 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciInfo/queryCi', 'method': 'GET', 'json': {'asc': True, 'orderByField': 'name', 'params': {'typeId': 'cb84d83319f2e403ead1a053795ed6564', 'needCheckPermission': True, 'searchInfo': [{'fieldValue': None, 'field': {'code': 'businessSystem', 'fuzzyQuery': True, 'dataType': 202, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'name', 'fuzzyQuery': False, 'dataType': 199, 'inputType': 100}}, {'fieldValue': None, 'field': {'code': '60cd89e12bd14f49be252b00293645ae', 'fuzzyQuery': True, 'dataType': 205, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'ciSystemManager', 'fuzzyQuery': True, 'dataType': 205, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'unitId', 'fuzzyQuery': True, 'dataType': 203, 'inputType': 300}}, {'fieldValue': None, 'field': {'code': '9683740d37554ec38589c5da4451b267', 'fuzzyQuery': True, 'dataType': 205, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'state', 'fuzzyQuery': True, 'dataType': 201, 'inputType': 300}}, {'fieldValue': None, 'field': {'code': 'ip', 'fuzzyQuery': False, 'dataType': 101, 'inputType': 100}}, {'fieldValue': None, 'field': {'code': 'createUser', 'fuzzyQuery': False, 'dataType': 205, 'inputType': 300}}]}, 'size': 10, 'current': 1}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '根据分类ID获取监控系统列表', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 17:19:56,609 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 222用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '222'}}
+2019-03-13 17:20:42,380 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 22用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '22'}}
+2019-03-13 17:26:10,236 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 11用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciInfo/queryCi', 'method': 'POST', 'json': {'asc': True, 'orderByField': 'name', 'params': {'typeId': 'cb84d83319f2e403ead1a053795ed6564', 'needCheckPermission': True, 'searchInfo': [{'fieldValue': None, 'field': {'code': 'businessSystem', 'fuzzyQuery': True, 'dataType': 202, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'name', 'fuzzyQuery': False, 'dataType': 199, 'inputType': 100}}, {'fieldValue': None, 'field': {'code': '60cd89e12bd14f49be252b00293645ae', 'fuzzyQuery': True, 'dataType': 205, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'ciSystemManager', 'fuzzyQuery': True, 'dataType': 205, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'unitId', 'fuzzyQuery': True, 'dataType': 203, 'inputType': 300}}, {'fieldValue': None, 'field': {'code': '9683740d37554ec38589c5da4451b267', 'fuzzyQuery': True, 'dataType': 205, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'state', 'fuzzyQuery': True, 'dataType': 201, 'inputType': 300}}, {'fieldValue': None, 'field': {'code': 'ip', 'fuzzyQuery': False, 'dataType': 101, 'inputType': 100}}, {'fieldValue': None, 'field': {'code': 'createUser', 'fuzzyQuery': False, 'dataType': 205, 'inputType': 300}}]}, 'size': 10, 'current': 1}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '11', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 17:30:50,053 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 22用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciInfo/queryCi', 'method': 'POST', 'json': {'asc': True, 'orderByField': 'name', 'params': {'typeId': 'cb84d83319f2e403ead1a053795ed6564', 'needCheckPermission': True, 'searchInfo': [{'fieldValue': None, 'field': {'code': 'businessSystem', 'fuzzyQuery': True, 'dataType': 202, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'name', 'fuzzyQuery': False, 'dataType': 199, 'inputType': 100}}, {'fieldValue': None, 'field': {'code': '60cd89e12bd14f49be252b00293645ae', 'fuzzyQuery': True, 'dataType': 205, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'ciSystemManager', 'fuzzyQuery': True, 'dataType': 205, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'unitId', 'fuzzyQuery': True, 'dataType': 203, 'inputType': 300}}, {'fieldValue': None, 'field': {'code': '9683740d37554ec38589c5da4451b267', 'fuzzyQuery': True, 'dataType': 205, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'state', 'fuzzyQuery': True, 'dataType': 201, 'inputType': 300}}, {'fieldValue': None, 'field': {'code': 'ip', 'fuzzyQuery': False, 'dataType': 101, 'inputType': 100}}, {'fieldValue': None, 'field': {'code': 'createUser', 'fuzzyQuery': False, 'dataType': 205, 'inputType': 300}}]}, 'size': 10, 'current': 1}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'max-token': '$token'}}, 'name': '22', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 17:35:53,168 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 查询监控系统CI用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciInfo/queryCi', 'method': 'POST', 'json': {'asc': True, 'orderByField': 'name', 'params': {'typeId': 'cb84d83319f2e403ead1a053795ed6564', 'needCheckPermission': True, 'searchInfo': [{'fieldValue': None, 'field': {'code': 'businessSystem', 'fuzzyQuery': True, 'dataType': 202, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'name', 'fuzzyQuery': False, 'dataType': 199, 'inputType': 100}}, {'fieldValue': None, 'field': {'code': '60cd89e12bd14f49be252b00293645ae', 'fuzzyQuery': True, 'dataType': 205, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'ciSystemManager', 'fuzzyQuery': True, 'dataType': 205, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'unitId', 'fuzzyQuery': True, 'dataType': 203, 'inputType': 300}}, {'fieldValue': None, 'field': {'code': '9683740d37554ec38589c5da4451b267', 'fuzzyQuery': True, 'dataType': 205, 'inputType': 400}}, {'fieldValue': None, 'field': {'code': 'state', 'fuzzyQuery': True, 'dataType': 201, 'inputType': 300}}, {'fieldValue': None, 'field': {'code': 'ip', 'fuzzyQuery': False, 'dataType': 101, 'inputType': 100}}, {'fieldValue': None, 'field': {'code': 'createUser', 'fuzzyQuery': False, 'dataType': 205, 'inputType': 300}}]}, 'size': 10, 'current': 1}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'max-token': '$token'}}, 'name': '查询监控系统CI', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 17:45:28,942 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 17:48:22,479 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:01:07,177 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_batch_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 271, in run_batch_test
+    print(json.loads(obj))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 2 (char 1)
+2019-03-13 18:02:56,789 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_batch_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 271, in run_batch_test
+    print(type(obj))
+UnboundLocalError: local variable 'type' referenced before assignment
+2019-03-13 18:07:53,647 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'max-token': '$token', 'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'content.success', 'expected': 'true'}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:13:54,001 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'max-token': '$token', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'content.success', 'expected': 'true'}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:16:52,300 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'max-token': '$token', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:23:43,933 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_batch_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 278, in run_batch_test
+    run_by_batch(test_list, base_url, testcase_dir_path)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/utils/runner.py", line 127, in run_by_batch
+    form_test = test_list[index].split('=')
+TypeError: 'dict_values' object does not support indexing
+2019-03-13 18:24:14,256 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 获取配置项变更日志用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '获取配置项变更日志'}}
+2019-03-13 18:24:28,384 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_batch_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 278, in run_batch_test
+    run_by_batch(test_list, base_url, testcase_dir_path)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/utils/runner.py", line 128, in run_by_batch
+    index = form_test[1]
+IndexError: list index out of range
+2019-03-13 18:27:11,978 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取配置项变更日志用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciFieldChangeInfo/queryLog', 'method': 'POST', 'json': {'params': {'startDate': '', 'endDate': '', 'ciFieldChangeInfo': {'ciTypeId': '', 'fieldId': '', 'operaUser': ''}}, 'size': 20, 'current': 1}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'}}, 'name': '获取配置项变更日志', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}]}}
+2019-03-13 18:28:04,728 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取配置项变更日志用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciFieldChangeInfo/queryLog', 'method': 'POST', 'json': {'params': {'startDate': '', 'endDate': '', 'ciFieldChangeInfo': {'ciTypeId': '', 'fieldId': '', 'operaUser': ''}}, 'size': 20, 'current': 1}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '获取配置项变更日志', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:29:06,741 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取配置项模板变更日志用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciFieldChangeInfo/queryLog', 'method': 'POST', 'json': {'params': {'startDate': '', 'endDate': '', 'ciFieldChangeInfo': {'ciTypeId': '', 'fieldId': '', 'operaUser': ''}}, 'size': 20, 'current': 1}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '获取配置项模板变更日志', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:30:08,091 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'max-token': '$token', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:31:52,521 [HttpRunnerManager:36] [common:type_change] [ERROR]- cb84d83319f2e403ead1a053795ed6564转换float失败
+2019-03-13 18:33:08,976 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_batch_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 270, in run_batch_test
+    obj = json.loads(request.GET.get('obj', None))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 348, in loads
+    'not {!r}'.format(s.__class__.__name__))
+TypeError: the JSON object must be str, bytes or bytearray, not 'NoneType'
+2019-03-13 18:34:10,861 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 获取指标单位树1用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '获取指标单位树1'}}
+2019-03-13 18:37:18,659 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取指标单位树1用例更新成功: {'test': {'request': {'url': '/monitor/monitor/getUnitsTree', 'method': 'GET', 'data': {'sourceType': 'zabbix'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'max-token': '$token'}}, 'name': '获取指标单位树1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:38:25,547 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取指标单位树1用例更新成功: {'test': {'request': {'url': '/monitor/monitor/getUnitsTree', 'method': 'POST', 'data': {'sourceType': 'zabbix'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'max-token': '$token'}}, 'name': '获取指标单位树1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:39:55,305 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_batch_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 270, in run_batch_test
+    obj = json.loads(request.GET.get('obj', None))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 348, in loads
+    'not {!r}'.format(s.__class__.__name__))
+TypeError: the JSON object must be str, bytes or bytearray, not 'NoneType'
+2019-03-13 18:42:16,757 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取指标单位树1用例更新成功: {'test': {'request': {'url': '/monitor/monitor/getUnitsTree', 'method': 'POST', 'data': {'sourceType': 'zabbix'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'max-token': '$token', 'Host': '10.202.228.31:8088'}}, 'name': '获取指标单位树1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:43:03,978 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取指标单位树1用例更新成功: {'test': {'request': {'url': '/monitor/monitor/getUnitsTree', 'method': 'POST', 'data': {'sourceType': 'zabbix'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'max-token': '$token'}}, 'name': '获取指标单位树1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:44:04,883 [HttpRunnerManager:55] [views:login] [INFO]- zhaicao 登录成功
+2019-03-13 18:47:36,968 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取指标单位树1用例更新成功: {'test': {'request': {'url': '/monitor/monitor/getUnitsTree', 'method': 'GET', 'data': {'sourceType': 'zabbix'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36', 'max-token': '$token'}}, 'name': '获取指标单位树1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:48:53,196 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 运行监控-指标映射，获取指标单位树用例更新成功: {'test': {'request': {'url': '/monitor/monitor/getUnitsTree', 'method': 'GET', 'data': {'sourceType': 'zabbix'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36', 'max-token': '$token'}}, 'name': '运行监控-指标映射，获取指标单位树', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:49:59,357 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 18:52:49,739 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_batch_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 270, in run_batch_test
+    obj = json.loads(request.GET.get('obj', None))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 348, in loads
+    'not {!r}'.format(s.__class__.__name__))
+TypeError: the JSON object must be str, bytes or bytearray, not 'NoneType'
+2019-03-13 18:53:28,793 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'max-token': '$token', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 18:53:29,277 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 18:53:37,795 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 18:54:47,524 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_batch_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 270, in run_batch_test
+    obj = json.loads(request.GET.get('obj', None))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 348, in loads
+    'not {!r}'.format(s.__class__.__name__))
+TypeError: the JSON object must be str, bytes or bytearray, not 'NoneType'
+2019-03-13 18:55:33,435 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 236, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/utils/runner.py", line 168, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/utils/runner.py", line 29, in run_by_single
+    obj = TestCaseInfo.objects.get(id=index)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 394, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1215, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1085, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/lookups.py", line 18, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/lookups.py", line 68, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 947, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '[object HTMLInputElement]'
+2019-03-13 18:55:49,635 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 236, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/utils/runner.py", line 168, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/utils/runner.py", line 29, in run_by_single
+    obj = TestCaseInfo.objects.get(id=index)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 394, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1215, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1085, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/lookups.py", line 18, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/lookups.py", line 68, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 947, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '[object HTMLInputElement]'
+2019-03-13 19:01:03,814 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 通过分类Id获取监控系统CI树用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '通过分类Id获取监控系统CI树'}}
+2019-03-13 19:01:04,950 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 19:03:50,414 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 通过分类Id获取监控系统CI树用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciInfo/queryCiTreeByTypeId', 'method': 'POST', 'data': {'id': 's1', 'fieldId': '0a060341d2e54607adcfdbd6f89b0340'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36', 'max-token': '$token'}}, 'name': '通过分类Id获取监控系统CI树', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 19:03:51,538 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 19:03:58,892 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 19:04:33,792 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 通过分类Id获取监控系统CI树用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciInfo/queryCiTreeByTypeId', 'method': 'GET', 'data': {'id': 's1', 'fieldId': '0a060341d2e54607adcfdbd6f89b0340'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36', 'max-token': '$token'}}, 'name': '通过分类Id获取监控系统CI树', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 19:04:34,807 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 19:04:43,451 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 19:07:28,492 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 19:07:29,752 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 19:07:43,800 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 19:09:02,837 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 根据分类ID获取监控系统列表1用例更新成功: {'test': {'request': {'url': '/cmdb/mould/ciQueryFieldInfo/getQueryColumnInfoById', 'method': 'GET', 'data': {'typeId': 'cb84d83319f2e403ead1a053795ed6564'}, 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36', 'max-token': '$token', 'Accept': 'application/json, text/plain, */*'}}, 'name': '根据分类ID获取监控系统列表1', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}]}}
+2019-03-13 19:09:03,956 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 19:12:53,817 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 19:13:08,565 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 19:13:28,729 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 19:15:15,824 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': '/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': '$username', 'password': '$pwd'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}], 'parameters': [{'username-pwd': [['admin', 888888], ['zhaicao', 99999], ['zhaorong', 123]]}]}}
+2019-03-13 19:15:16,715 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 19:15:28,085 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！

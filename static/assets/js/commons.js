@@ -64,7 +64,12 @@ function info_ajax(id, url) {
 
 }
 
-/*Ajax请求后台数据*/
+/*Ajax请求加载模块和用例信息
+id: 格式化序列的表单
+url: 请求的URL
+target: 加载数据目标
+type: 类型
+*/
 function auto_load(id, url, target, type) {
     var data = $(id).serializeJSON();
     if (id === '#form_message' || id ==='#belong_message' || id === '#pro_filter') {

@@ -229,15 +229,14 @@ def run_test(request):
         main_hrun.delay(testcase_dir_path, report_name)
         return HttpResponse('用例执行中，请稍后查看报告即可,默认时间戳命名报告')
     else:
-        id = request.POST.get('id')
-        base_url = request.POST.get('env_name')
-        type = request.POST.get('type', 'test')
+        id = request.GET.get('id')
+        base_url = request.GET.get('env_name')
+        type = request.GET.get('type', 'test')
 
         run_test_by_type(id, base_url, testcase_dir_path, type)
         runner.run(testcase_dir_path)
         shutil.rmtree(testcase_dir_path)
         runner.summary = timestamp_to_datetime(runner.summary, type=False)
-
         return render_to_response('report_template.html', runner.summary)
 
 
@@ -267,9 +266,12 @@ def run_batch_test(request):
         main_hrun.delay(testcase_dir_path, report_name)
         return HttpResponse('用例执行中，请稍后查看报告即可,默认时间戳命名报告')
     else:
-        type = request.POST.get('type', None)
-        base_url = request.POST.get('env_name')
-        test_list = request.body.decode('utf-8').split('&')
+
+        obj = json.loads(request.GET.get('obj', None))
+
+        type = obj.pop('type', None)
+        base_url = obj.pop('env_name')
+        test_list = list(obj.values())
         if type:
             run_by_batch(test_list, base_url, testcase_dir_path, type=type, mode=True)
         else:
