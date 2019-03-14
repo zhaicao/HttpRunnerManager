@@ -288,7 +288,7 @@
                             var obj = JSON.parse(json2map);
                             obj['env_name'] = $('#env_name').val();
                             //post('/api/run_batch_test/', obj)
-                            window.open('/api/run_batch_test/?obj='+ JSON.stringify(obj));
+                            window.open('/api/run_case/?obj='+ JSON.stringify(obj));
                             //页面刷新，初始化index。治标
                             window.location.reload()
                         },
@@ -328,8 +328,8 @@
                 relatedTarget: this,
                 onConfirm: function () {
                     // open window
-                    window.open('/api/run_test/?id='+index+'&&env_name='+$('#env_name').val());
-                    //页面刷新，初始化index。治标
+                    window.open('/api/run_case/?id='+index+'&&env_name='+$('#env_name').val());
+                    //页面刷新，初始化index。初始化模态框数据
                     window.location.reload()
                     /*
                     $('#modalloading').modal();

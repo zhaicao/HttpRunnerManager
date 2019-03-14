@@ -1274,3 +1274,130 @@ ValueError: invalid literal for int() with base 10: '[object HTMLInputElement]'
 2019-03-13 19:15:15,824 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': '/auth/auth/login', 'method': 'GET', 'params': {'userLoginName': '$username', 'password': '$pwd'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}}, 'name': '登录', 'validate': [{'comparator': 'equals', 'check': 'status_code', 'expected': 200}], 'extract': [{'token': 'content'}], 'parameters': [{'username-pwd': [['admin', 888888], ['zhaicao', 99999], ['zhaorong', 123]]}]}}
 2019-03-13 19:15:16,715 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
 2019-03-13 19:15:28,085 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 20:12:36,043 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 20:12:56,910 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-13 20:16:34,919 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 11:24:40,664 [HttpRunnerManager:55] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-14 11:25:25,887 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:23:53,381 [HttpRunnerManager:55] [views:login] [INFO]- zhaicao 登录成功
+2019-03-14 13:24:25,328 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:24:30,846 [django.request:93] [base:get_response] [WARNING]- Not Found: /run_case.html
+2019-03-14 13:24:31,653 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:28:37,179 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:28:40,295 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:28:45,590 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/run_case.html
+2019-03-14 13:28:45,978 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:29:23,188 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:29:28,701 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:29:32,734 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/run_case/run_case.html
+2019-03-14 13:29:32,941 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:30:12,137 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/run_case/run_case.html
+2019-03-14 13:30:12,421 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:30:58,021 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:32:13,820 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:32:50,797 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:34:30,544 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:39:48,562 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:40:27,569 [HttpRunnerManager:55] [views:login] [INFO]- zhaicao 登录成功
+2019-03-14 13:40:31,868 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:40:43,895 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:41:39,169 [HttpRunnerManager:55] [views:login] [INFO]- zhaicao 登录成功
+2019-03-14 13:41:45,592 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:41:51,401 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:50:41,513 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:50:46,953 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 223, in run_test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-03-14 13:50:47,124 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:53:08,986 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:54:27,036 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:54:41,691 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:55:04,209 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 13:55:18,288 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 14:13:06,894 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 14:13:18,421 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 14:13:36,712 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 14:49:07,249 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 14:50:11,779 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 15:23:48,018 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 15:27:17,517 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 15:27:27,378 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 15:29:26,803 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 15:54:33,626 [HttpRunnerManager:76] [operation:add_project_data] [INFO]- 项目更新成功：{'project_name': '智能运维平台', 'responsible_name': '翟操', 'test_user': '赵荣', 'dev_user': '刘颖', 'publish_app': 'spring cloud112', 'simple_desc': '123', 'other_desc': ''}
+2019-03-14 15:54:42,157 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 15:56:23,831 [HttpRunnerManager:192] [operation:add_config_data] [INFO]- 234配置添加成功: {'config': {'request': {}, 'name': '234'}}
+2019-03-14 16:09:37,168 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 16:13:12,253 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 16:55:37,648 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 17:06:30,119 [HttpRunnerManager:55] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-14 17:10:50,186 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 17:16:01,890 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 18:48:12,126 [HttpRunnerManager:55] [views:login] [INFO]- zhaicao 登录成功
+2019-03-14 18:48:18,520 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:10:46,866 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:13:08,986 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:13:42,952 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:14:01,630 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:15:01,331 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:30:57,617 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:31:05,401 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:31:06,371 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:32:05,576 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:00,038 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:04,397 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:06,606 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:08,706 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:09,340 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:09,688 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:27,932 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:30,630 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:33,631 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:33,739 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:34,452 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:35,607 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:36,679 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:36,834 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:37,329 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:37,767 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:37,907 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:39,074 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:39,668 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:39,677 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:33:39,687 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:36:58,406 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:36:58,590 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:36:58,833 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:36:58,861 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:36:59,000 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:36:59,110 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:37:25,113 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:37:25,237 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:39:49,382 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:39:49,464 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:39:49,627 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:39:49,728 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:39:49,747 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:39:49,998 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:39:50,104 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:46:13,573 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:53:12,630 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:53:12,696 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！
+2019-03-14 19:59:19,025 [HttpRunnerManager:619] [common:update_include] [WARNING]- 依赖的 获取指标单位树 用例/配置已经被删除啦！！

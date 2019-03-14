@@ -50,7 +50,16 @@ function do_stop(){
 
 function do_reload(){
     do_stop
-    do_start
+    i=1
+    while [ $i -le 120 ]
+    do
+        if [ `ps -ef | grep "$WORKER" | grep -v "grep" | wc -l` == 0 ] && [ `ps -ef | grep "$BEAT" | grep -v "grep" | wc -l` == 0 ] && [ `ps -ef | grep "$FLOWER" | grep -v "grep" | wc -l` == 0 ];then
+            do_start
+            break
+        fi
+        let i++
+        sleep 0.5
+    done
 }
 
 

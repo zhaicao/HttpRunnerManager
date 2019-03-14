@@ -84,7 +84,7 @@
                 <li><a href="javascript:;" data-target="#tab2">variables/parameters/hooks</a></li>
             </ul>
 
-            <div class="am-tabs-bd">
+            <div class="am-tabs-bd am-tabs-bd-ofv">
                 <div class="am-tab-panel" id="tab1">
                     <div style="float: left; width: 40%;">
                         <form class="form-horizontal" id="belong_message">
@@ -92,7 +92,7 @@
                                 <div class="input-group col-md-10 col-md-offset-1">
                                     <div class="input-group-addon" style="color: #0a628f">所属项目</div>
                                     <select id='project' name="project" class="form-control"
-                                            onchange="auto_load('#belong_message', '/api/add_case/', '#belong_module_id', 'module')">
+                                            onchange="auto_load('#belong_message', '/api/add_case/', '#belong_module_id', 'module')" data-am-selected="{btnWidth: '100%'}">
                                         <option value="请选择">请选择</option>
                                         {% for foo in project %}
                                             <option value="{{ foo.project_name }}">{{ foo.project_name }}</option>
@@ -106,15 +106,7 @@
                                     <div class="input-group-addon" style="color: #0a628f">可选模块</div>
                                     <select id="belong_module_id" name="module" class="form-control"
                                             onchange="auto_load('#belong_message', '/api/add_case/', '#belong_case_id', 'case');
-                                        auto_load('#belong_message', '/api/add_case/', '#config', 'config')">
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="input-group col-md-10 col-md-offset-1">
-                                    <div class="input-group-addon" style="color: #0a628f">可选用例</div>
-                                    <select id="belong_case_id" name="include" class="form-control">
+                                        auto_load('#belong_message', '/api/add_case/', '#config', 'config')" data-am-selected="{searchBox: 1, btnWidth: '100%'}">
                                     </select>
                                 </div>
                             </div>
@@ -122,10 +114,19 @@
                             <div class="form-group">
                                 <div class="input-group col-md-10 col-md-offset-1">
                                     <div class="input-group-addon" style="color: #0a628f">可选配置</div>
-                                    <select id="config" name="config" class="form-control">
+                                    <select id="config" name="config" class="form-control" data-am-selected="{searchBox: 1, btnWidth: '100%'}">
                                     </select>
                                 </div>
                             </div>
+
+                            <div class="form-group">
+                                <div class="input-group col-md-10 col-md-offset-1">
+                                    <div class="input-group-addon" style="color: #0a628f">可选用例</div>
+                                    <select id="belong_case_id" name="include" class="form-control" data-am-selected="{searchBox: 1, btnWidth: '100%'}">
+                                    </select>
+                                </div>
+                            </div>
+
                         </form>
                     </div>
                     <div style="float: right; width: 50%;margin-right: 1%;">
@@ -206,9 +207,9 @@
 
                 <div class="am-tab-panel" id="tab3">
                     <div class="form-inline">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon">URL</div>
+                        <div class="form-group" style="width:60%">
+                            <div class="input-group col-md-12">
+                                <div class="input-group-addon" style="width:10px">URL</div>
                                 <input type="text" class="form-control" id="url" name="url" placeholder="api url">
                             </div>
                         </div>
@@ -235,7 +236,8 @@
                                 </select>
                             </div>
                         </div>
-
+                    </div>
+                    <div style="margin-top:10px">
                         <button class="btn btn-info" value="添 加" id="add_data" onclick="add_row('data')">add data
                         </button>
                         <button class="btn btn-danger" value="删 除" id="del_data" onclick="del_row('data')">del data

@@ -315,10 +315,10 @@
                             obj['env_name'] = data['env_name'];
                             obj['type'] = data['type'];
                             //post('/api/run_batch_test/', obj);
-                            window.open('/api/run_batch_test/?obj='+ JSON.stringify(obj));
+                            window.open('/api/run_case/?obj='+ JSON.stringify(obj));
                         } else {
                             //post('/api/run_test/', data);
-                            window.open('/api/run_test/?id='+ data.id+ '&&env_name=' + data.env_name+ '&&type='+ data.type);
+                            window.open('/api/run_case/?id='+ data.id+ '&&env_name=' + data.env_name+ '&&type='+ data.type);
                         }
                     } else {
                         $.ajax({

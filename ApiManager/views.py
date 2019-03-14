@@ -813,3 +813,13 @@ def flower(request):
     host = request.get_host()[0 : -5]
     return redirect("http://{}:5555/dashboard".format(host))
 
+@login_check
+def run_case(request):
+    """
+    运维用例过度页面
+    :param request:
+    :return: 返回
+    """
+    return render_to_response("run_case.html")
+
+
