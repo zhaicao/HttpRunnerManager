@@ -83,7 +83,7 @@ Key Features
         python manage.py runserver 0.0.0.0:8000
     ```
 
-9. 启动worker, 如果选择同步执行并确保不会使用到定时任务，那么此步骤可忽略，可使用[脚本](celeruAll.sh)实现一键启停
+9. 启动worker, 如果选择同步执行并确保不会使用到定时任务，那么此步骤可忽略，可使用[脚本](celeryAll.sh)实现一键启停
     ```bash
         python manage.py celery -A HttpRunnerManager worker --loglevel=info  #启动worker
         python manage.py celery beat --loglevel=info #启动定时任务监听器
