@@ -5,7 +5,7 @@ Design Philosophy
 -----------------
 
 - 基于HttpRunner的接口自动化测试平台: `HttpRunner`_, `djcelery`_ and `Django`_. HttpRunner手册: http://cn.httprunner.org/
-- 感谢原作者的分享https://github.com/HttpRunner/HttpRunnerManager ,在原作基础上改进部分功能，优化功能体现，将持续维护。
+- 感谢原作者的分享https://github.com/HttpRunner/HttpRunnerManager ,在原作基础上改进部分功能，优化功能体验，将持续维护。
 
 Key Features
 ------------
