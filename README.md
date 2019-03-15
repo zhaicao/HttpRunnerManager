@@ -4,7 +4,8 @@ HttpRunnerManager
 Design Philosophy
 -----------------
 
-基于HttpRunner的接口自动化测试平台: `HttpRunner`_, `djcelery`_ and `Django`_. HttpRunner手册: http://cn.httprunner.org/
+- 基于HttpRunner的接口自动化测试平台: `HttpRunner`_, `djcelery`_ and `Django`_. HttpRunner手册: http://cn.httprunner.org/
+- 感谢原作者的分享https://github.com/HttpRunner/HttpRunnerManager，在原作基础上改进部分功能，优化功能体现，将持续维护。
 
 Key Features
 ------------
@@ -31,7 +32,7 @@ Key Features
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'HttpRunner',  # 新建数据库名
             'USER': 'root',  # 数据库登录名
-            'PASSWORD': 'lcc123456',  # 数据库登录密码
+            'PASSWORD': 'adminzc',  # 数据库登录密码
             'HOST': '127.0.0.1',  # 数据库所在服务器ip地址
             'PORT': '3306',  # 监听端口 默认3306即可
         }
@@ -63,7 +64,7 @@ Key Features
         CELERYD_MAX_TASKS_PER_CHILD = 100  # 每个worker执行了多少任务就会死掉，我建议数量可以大一些，默认100
     ```
 
-5. 命令行窗口执行pip install -r requirements.txt 安装工程所依赖的库文件
+5. 命令行窗口执行pip install -r requirements.txt 安装工程所依赖的库文件,若下载比慢可使用豆瓣镜像pip install -i http://pypi.douban.com/simple/ -r requirements.txt
 
 6. 命令行窗口切换到HttpRunnerManager目录 生成数据库迁移脚本,并生成表结构
     ```bash
@@ -81,11 +82,11 @@ Key Features
         python manage.py runserver 0.0.0.0:8000
     ```
 
-9. 启动worker, 如果选择同步执行并确保不会使用到定时任务，那么此步骤可忽略
+9. 启动worker, 如果选择同步执行并确保不会使用到定时任务，那么此步骤可忽略，可使用[脚本](celeruAll.sh)实现一键启停
     ```bash
         python manage.py celery -A HttpRunnerManager worker --loglevel=info  #启动worker
         python manage.py celery beat --loglevel=info #启动定时任务监听器
-        celery flower #启动任务监控后台
+        python manage.py celery flower #启动任务监控后台
     ```
 
 10. 访问：http://localhost:5555/dashboard 即可查看任务列表和状态
@@ -148,10 +149,9 @@ Key Features
 
 
 ###  其他
-MockServer：https://github.com/yinquanwang/MockServer
 
 因时间限制，平台可能还有很多潜在的bug，使用中如遇到问题，欢迎issue,
-如果任何疑问好好的建议欢迎github提issue, 或者可以直接加群(628448476)，反馈会比较快
+如果任何疑问好好的建议欢迎github提issue。
 
 
 
