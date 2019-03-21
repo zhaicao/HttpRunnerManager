@@ -5,7 +5,7 @@ Design Philosophy
 -----------------
 
 - 基于HttpRunner的接口自动化测试平台: `HttpRunner`_, `djcelery`_ and `Django`_. HttpRunner手册: http://cn.httprunner.org/
-- 感谢原作者的分享https://github.com/HttpRunner/HttpRunnerManager，在原作基础上改进部分功能，优化功能体现，将持续维护。
+- 感谢原作者的分享https://github.com/HttpRunner/HttpRunnerManager ,在原作基础上改进部分功能，优化功能体验，将持续维护。
 
 Key Features
 ------------
@@ -65,7 +65,7 @@ Key Features
         CELERYD_MAX_TASKS_PER_CHILD = 100  # 每个worker执行了多少任务就会死掉，我建议数量可以大一些，默认100
     ```
 
-5. 命令行窗口执行pip install -r requirements.txt 安装工程所依赖的库文件,若下载比慢可使用豆瓣镜像pip install -i http://pypi.douban.com/simple/ -r requirements.txt
+5. 命令行窗口执行pip install -r requirements.txt 安装工程所依赖的库文件,若下载比较慢或失败可使用豆瓣镜像pip install -i http://pypi.douban.com/simple/ -r requirements.txt
 
 6. 命令行窗口切换到HttpRunnerManager目录 生成数据库迁移脚本,并生成表结构
     ```bash
@@ -83,7 +83,7 @@ Key Features
         python manage.py runserver 0.0.0.0:8000
     ```
 
-9. 启动worker, 如果选择同步执行并确保不会使用到定时任务，那么此步骤可忽略，可使用[脚本](celeruAll.sh)实现一键启停
+9. 启动worker, 如果选择同步执行并确保不会使用到定时任务，那么此步骤可忽略，可使用[脚本](celeryAll.sh)实现一键启停
     ```bash
         python manage.py celery -A HttpRunnerManager worker --loglevel=info  #启动worker
         python manage.py celery beat --loglevel=info #启动定时任务监听器
@@ -92,7 +92,7 @@ Key Features
 
 10. 访问：http://localhost:5555/dashboard 即可查看任务列表和状态
 
-11. 浏览器输入：http://127.0.0.1:8000/api/register/  注册用户，开始尽情享用平台吧
+11. 浏览器输入：http://127.0.0.1:8000/api/register/ 或 http://127.0.0.1:8000 注册用户，开始尽情享用平台吧
 
 12. 浏览器输入http://127.0.0.1:8000/admin/  输入步骤6设置的用户名、密码，登录后台运维管理系统，可后台管理数据
 
