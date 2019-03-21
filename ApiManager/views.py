@@ -3,6 +3,7 @@ import logging
 import os
 import shutil
 import sys
+import time
 
 import paramiko
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse, StreamingHttpResponse
@@ -13,7 +14,7 @@ from dwebsocket import accept_websocket
 
 from ApiManager import separator
 from ApiManager.models import ProjectInfo, ModuleInfo, TestCaseInfo, UserInfo, EnvInfo, TestReports, DebugTalk, \
-    TestSuite
+    TestSuite, DataInfo
 from ApiManager.tasks import main_hrun
 from ApiManager.utils.common import module_info_logic, project_info_logic, case_info_logic, config_info_logic, \
     set_filter_session, get_ajax_msg, register_info_logic, task_logic, load_modules, upload_file_logic, \
@@ -833,24 +834,67 @@ def run_case(request):
     return render_to_response("run_case.html")
 
 @login_check
-def get_proSubInfo(request):
+def get_proAllInfo(request, id=None):
 
-    postData = json.loads(request.body.decode('utf-8'))
-    proName = postData.get('projectId')
-    moduleId =  postData.get('moduletId')
+    if request.method == 'GET':
+        project_list = list(ProjectInfo.objects.values('id', 'project_name').order_by('-update_time'))
+        return HttpResponse(json.dumps(project_list) if project_list else "")
+    else:
+        postData = json.loads(request.body.decode('utf-8'))
+        proName = postData.get('projectId')
+        moduleId = postData.get('moduletId')
+        if proName:
+            #获取项目信息及项目下的所有module
+            data = ProjectInfo.objects.values('id', 'project_name').filter(project_name=proName)\
+                .order_by('-update_time')[0]
+            data['modules'] = list(ModuleInfo.objects.filter(belong_project__project_name=proName) \
+                .values('id', 'module_name').order_by('-create_time'))
 
-    if proName:
-        #获取项目信息及项目下的所有module
-        data = ProjectInfo.objects.values('id', 'project_name').filter(project_name=proName)\
-            .order_by('-update_time')[0]
-        data['modules'] = list(ModuleInfo.objects.filter(belong_project__project_name=proName) \
-        .values('id', 'module_name').order_by('-create_time'))
-
-    if moduleId:
-        #获取项目和module下所有的configs和case
-        data['configs'] = list(TestCaseInfo.objects.filter(belong_module=moduleId, type__exact=2).\
+        if moduleId:
+            #获取项目和module下所有的configs和case
+            data['configs'] = list(TestCaseInfo.objects.filter(belong_module=moduleId, type__exact=2).\
                                values('id', 'name').order_by('-create_time'))
 
-        data['cases'] = list(TestCaseInfo.objects.filter(belong_module=moduleId, type__exact=1)\
+            data['cases'] = list(TestCaseInfo.objects.filter(belong_module=moduleId, type__exact=1)\
                              .values('id', 'name').order_by('-create_time'))
-    return HttpResponse(json.dumps(data) if data else "")
+        return HttpResponse(json.dumps(data) if data else "")
+
+@login_check
+def data_list(request, id=None):
+    account = request.session["now_account"]
+    if request.method == 'GET':
+        return render_to_response('data_list.html', {"data": "data"})
+    elif request.method == 'POST':
+        fileObj = request.FILES.get('file')
+        dataInfo = json.loads(request.POST.get('info'))
+        type = dataInfo.pop('type')
+        # 时间戳重新命名
+        fileName = (str(int(time.time()))) + '.' + fileObj.name.split('.')[-1]
+
+        belong_project = ProjectInfo.objects.get(id__exact=dataInfo['belong_project'])
+
+        dataInfo.update(
+            {
+                'belong_project': belong_project,
+                'physical_file': fileName,
+                'author': account,
+                'isdel': 0
+            }
+        )
+
+        DataInfo.objects.create(**dataInfo)
+
+        try:
+            f = open(os.path.join('data', fileName), 'wb')
+            for chunk in fileObj.chunks():
+                f.write(chunk)
+            f.close()
+        except:
+            return HttpResponse('File Write Error')
+
+
+        return HttpResponse('ok')
+    elif request.method == 'PUT':
+        return render_to_response('data_list.html', {"data": "test"})
+    else:
+        return render_to_response('data_list.html', {"data": "test"})

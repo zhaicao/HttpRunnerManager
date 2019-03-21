@@ -125,3 +125,15 @@ class TestSuite(BaseTable):
     belong_project = models.ForeignKey(ProjectInfo, on_delete=models.CASCADE)
     suite_name = models.CharField(max_length=100, null=False)
     include = models.TextField(null=False)
+
+class DataInfo(BaseTable):
+    class Meta:
+        verbose_name = '数据文件'
+        db_table = 'DataInfo'
+
+    belong_project = models.ForeignKey(ProjectInfo, null=True, blank=True, on_delete=models.SET_NULL)
+    datafile_name = models.CharField('数据文件名', max_length=100, null=False)
+    author = models.CharField('创建者', max_length=50, null=False)
+    physical_file = models.CharField('物理文件名', max_length=100, null=False)
+    details = models.TextField('详情', null=True)
+    isdel = models.IntegerField('是否删除', null=False)
