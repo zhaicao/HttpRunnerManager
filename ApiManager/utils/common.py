@@ -64,6 +64,7 @@ def key_value_list(keyword, **kwargs):
             elif keyword == 'teardown_hooks':
                 if value.get('value') != '':
                     lists.append(value.get('value'))
+            #elif keyword == 'parameters':
             else:
                 key = value.pop('key')
                 val = value.pop('value')
@@ -88,9 +89,15 @@ def key_value_list(keyword, **kwargs):
                         value[key] = msg
                     elif keyword == 'parameters':
                         try:
-                            if not isinstance(eval(val), list):
+                            # $函数与list数组区别校验
+                            if '$' in val:
+                                import re
+                                function_regexp = r"\$\{([\w_]+\([\$\w\.\/-_ =,]*\))\}"
+                                val = re.search(function_regexp, val).group()
+                            elif not isinstance(eval(val), list):
                                 return '{keyword}: {val}格式错误'.format(keyword=keyword, val=val)
-                            value[key] = eval(val)
+
+                            value[key] = val
                         except Exception:
                             logging.error('{val}->eval 异常'.format(val=val))
                             return '{keyword}: {val}格式错误'.format(keyword=keyword, val=val)

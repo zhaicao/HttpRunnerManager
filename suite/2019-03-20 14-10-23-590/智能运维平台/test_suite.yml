@@ -1,0 +1,8 @@
+config:
+    name: "demo"
+
+testcases:
+    testcase1_name:
+        testcase: CMDB/登录.yml
+        parameters:
+            username-pwd: ${P(data/data.csv)}

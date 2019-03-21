@@ -21,8 +21,8 @@ from HttpRunnerManager.activator import process
 from ApiManager import views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
     url(r'^$', views.login),
+    url(r'^admin/', admin.site.urls),
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/assets/img/favicon.ico')),
     url('^(?P<app>(\w+))/(?P<function>(\w+))/$', process),
     url('^(?P<app>(\w+))/(?P<function>(\w+))/(?P<id>(\w+))/$', process),

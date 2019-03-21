@@ -438,7 +438,13 @@ def edit_case(request, id=None):
         'info': test_info[0],
         'request': request['test'],
         'include': include,
-        'project': ProjectInfo.objects.all().values('project_name').order_by('-create_time')
+        'project': ProjectInfo.objects.all().values('project_name').order_by('-create_time'),
+        'modules': list(ModuleInfo.objects.filter(belong_project__project_name=test_info[0].belong_project) \
+        .values('id', 'module_name').order_by('-create_time')),
+        'configs': list(TestCaseInfo.objects.filter(belong_module=test_info[0].belong_module_id, type__exact=2).\
+                               values('id', 'name').order_by('-create_time')),
+        'cases': list(TestCaseInfo.objects.filter(belong_module=test_info[0].belong_module_id, type__exact=1)\
+                             .values('id', 'name').order_by('-create_time'))
     }
     return render_to_response('edit_case.html', manage_info)
 
@@ -465,7 +471,11 @@ def edit_config(request, id=None):
         'info': config_info[0],
         'request': request['config'],
         'project': ProjectInfo.objects.all().values(
-            'project_name').order_by('-create_time')
+            'project_name').order_by('-create_time'),
+        'modules': list(ModuleInfo.objects.filter(belong_project__project_name=config_info[0].belong_project) \
+                        .values('id', 'module_name').order_by('-create_time'))
+
+
     }
     return render_to_response('edit_config.html', manage_info)
 
@@ -822,4 +832,25 @@ def run_case(request):
     """
     return render_to_response("run_case.html")
 
+@login_check
+def get_proSubInfo(request):
 
+    postData = json.loads(request.body.decode('utf-8'))
+    proName = postData.get('projectId')
+    moduleId =  postData.get('moduletId')
+
+    if proName:
+        #获取项目信息及项目下的所有module
+        data = ProjectInfo.objects.values('id', 'project_name').filter(project_name=proName)\
+            .order_by('-update_time')[0]
+        data['modules'] = list(ModuleInfo.objects.filter(belong_project__project_name=proName) \
+        .values('id', 'module_name').order_by('-create_time'))
+
+    if moduleId:
+        #获取项目和module下所有的configs和case
+        data['configs'] = list(TestCaseInfo.objects.filter(belong_module=moduleId, type__exact=2).\
+                               values('id', 'name').order_by('-create_time'))
+
+        data['cases'] = list(TestCaseInfo.objects.filter(belong_module=moduleId, type__exact=1)\
+                             .values('id', 'name').order_by('-create_time'))
+    return HttpResponse(json.dumps(data) if data else "")

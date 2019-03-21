@@ -60,6 +60,11 @@
                                 <div class="input-group-addon" style="color: #0a628f">所属模块</div>
                                 <select id="belong_module_id" name="module" class="form-control">
                                     <option value="{{ info.belong_module.id }}">{{ info.belong_module.module_name }}</option>
+                                    {% for obj in modules %}
+                                        {% ifnotequal info.belong_module_id obj.id %}
+                                            <option value='{{ obj.id }}'>{{ obj.module_name }}</option>
+                                        {% endifnotequal %}
+                                    {% endfor %}
                                 </select>
                             </div>
                         </div>

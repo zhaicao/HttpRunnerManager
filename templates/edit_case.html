@@ -49,7 +49,7 @@
                     <label class="control-label col-sm-3"
                            style="font-weight: inherit; font-size: small ">选择项目:</label>
                     <div class="col-sm-8">
-                        <select name="project" class="form-control"
+                        <select id="model_project" name="project" class="form-control"
                                 onchange="auto_load('#form_message', '/api/edit_case/', '#module', 'module')">
                             <option value="{{ info.belong_project }}"
                                     selected>{{ info.belong_project }}</option>
@@ -58,7 +58,7 @@
                                     <option value='{{ obj.project_name }}'>{{ obj.project_name }}</option>
                                 {% endifnotequal %}
                             {% endfor %}
-
+                            <option value="请选择">请选择</option>
                         </select>
                     </div>
 
@@ -70,6 +70,11 @@
                     <div class="col-sm-8">
                         <select class="form-control" id="module" name="module">
                             <option value="{{ info.belong_module.id }}">{{ info.belong_module.module_name }}</option>
+                            {% for obj in modules %}
+                                {% ifnotequal info.belong_module_id obj.id %}
+                                    <option value='{{ obj.id }}'>{{ obj.module_name }}</option>
+                                {% endifnotequal %}
+                            {% endfor %}
                         </select>
                     </div>
 
@@ -83,7 +88,7 @@
     </div>
 
 
-    <div class="admin-biaogelist">
+    <div class="admin-biaogelist" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
         <div class="listbiaoti am-cf">
             <ul class="am-icon-flag on"> 用例修改</ul>
@@ -106,8 +111,8 @@
                             <div class="form-group">
                                 <div class="input-group col-md-10 col-md-offset-1">
                                     <div class="input-group-addon" style="color: #0a628f">可选项目</div>
-                                    <select name="project_case" class="form-control"
-                                            onchange="auto_load('#belong_message', '/api/edit_case/', '#belong_module_id', 'module')" data-am-selected="{btnWidth: '100%'}">
+                                    <select id="belong_project" name="project" class="form-control"
+                                            onchange="auto_load('#belong_message', '/api/edit_case/', '#belong_module_id', 'module')">
                                         <option value="{{ info.belong_project }}"
                                                 selected>{{ info.belong_project }}</option>
                                         {% for obj in project %}
@@ -115,6 +120,7 @@
                                                 <option value='{{ obj.project_name }}'>{{ obj.project_name }}</option>
                                             {% endifnotequal %}
                                         {% endfor %}
+
                                     </select>
                                 </div>
                             </div>
@@ -126,6 +132,11 @@
                                             onchange="auto_load('#belong_message', '/api/add_case/', '#belong_case_id', 'case');
                                         auto_load('#belong_message', '/api/edit_case/', '#config', 'config')" data-am-selected="{searchBox: 1, btnWidth: '100%'}">
                                         <option value="{{ info.belong_module.id }}">{{ info.belong_module.module_name }}</option>
+                                        {% for obj in modules %}
+                                            {% ifnotequal info.belong_module_id obj.id %}
+                                                <option value='{{ obj.id }}'>{{ obj.module_name }}</option>
+                                            {% endifnotequal %}
+                                        {% endfor %}
                                     </select>
                                 </div>
                             </div>
@@ -134,9 +145,17 @@
                                 <div class="input-group col-md-10 col-md-offset-1">
                                     <div class="input-group-addon" style="color: #0a628f">可选配置</div>
                                     <select id="config" name="config" class="form-control" data-am-selected="{searchBox: 1, btnWidth: '100%'}">
+
                                         {% if 'config' in include.0.keys %}
                                             <option value="{{ include.0.config.0 }}">{{ include.0.config.1 }}</option>
+                                        {% else %}
+                                            <option value=""></option>
                                         {% endif %}
+                                        {% for obj in configs %}
+                                            {% ifnotequal include.0.config.1 obj.name %}
+                                                <option value='{{ obj.id }}'>{{ obj.name }}</option>
+                                            {% endifnotequal %}
+                                        {% endfor %}
                                     </select>
                                 </div>
                             </div>
@@ -145,6 +164,12 @@
                                 <div class="input-group col-md-10 col-md-offset-1">
                                     <div class="input-group-addon" style="color: #0a628f">可选用例</div>
                                     <select id="belong_case_id" name="include" class="form-control" data-am-selected="{searchBox: 1, btnWidth: '100%'}">
+                                        <option value=""></option>
+                                        {% for obj in cases %}
+
+                                        <option value='{{ obj.id }}'>{{ obj.name }}</option>
+
+                                        {% endfor %}
                                     </select>
                                 </div>
                             </div>
@@ -349,9 +374,9 @@
                 </div>
                 <div class="am-tab-panel" id="tab3">
                     <div class="form-inline">
-                        <div class="form-group" style="width:60%">
-                            <div class="input-group col-md-12">
-                                <div class="input-group-addon" style="width:10px">URL</div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">URL</div>
                                 <input type="text" class="form-control am-input-sm " placeholder="api url"
                                        name="url"
                                        id="url" value="{{ request.request.url }}">
@@ -409,16 +434,15 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
-                    <div style="margin-top:10px">
-                        <div class="form-group">
+
                         <button class="btn btn-info" value="添 加" onclick="add_row('data')" id="add_data">add data
                         </button>
                         <button class="btn btn-danger" value="删 除" onclick="del_row('data')" id="del_data">del data
                         </button>
                         <button class="btn btn-info" value="添 加" onclick="add_row('header')">add headers</button>
                         <button class="btn btn-danger" value="删 除" onclick="del_row('header')">del headers</button>
-                        </div>
+
+
                         <form id="form_request_data">
                             {% if 'json' in request.request.keys %}
                                 <span style="font-size:10px;" id="json-text">
@@ -521,6 +545,8 @@
                                 </table>
                             {% endif %}
                         </form>
+
+
 
                         <form id="form_request_headers">
                             <table class="table table-hover table-condensed table-bordered table-striped" id="header">
@@ -855,6 +881,11 @@
             if ($("li[name='pre_config']").length <= 0) {
                 $('#config_pre').val("");
             }
+
+            // 保持modal和界面一致
+            _copyOptions($('#model_project'), $('#belong_project'));
+            _copyOptions($('#module'), $('#belong_module_id'));
+
             $('#save_test').modal({
                 relatedTarget: this,
                 onConfirm: function () {
@@ -865,64 +896,18 @@
             });
         })
 
-        $(function(){
-            console.info($("select[name='project_case']").val())
-            $('#belong_module_id').append("<option value='1'>1</option>")
-            $('#belong_module_id').append("<option value='2'>2</option>")
 
-
-        })
-
-
-
-        function auto_load(id, url, target, type) {
-            var data = $(id).serializeJSON();
-            console.info(data);
-            // 判断类型
-            if (id === '#form_message' || id ==='#belong_message' || id === '#pro_filter') {
-                data = {
-                    "test": {
-                        "name": data,
-                        "type": type
-                    }
-                }
-            } else if (id === '#form_config') {
-                data = {
-                    "config": {
-                        "name": data,
-                        "type": type
-                    }
-                }
-            } else {
-                data = {
-                    "task": {
-                        "name": data,
-                        "type": type
-                    }
-                }
-            }
-            console.info(data);
-
-        $.ajax({
-            type: 'post',
-            url: url,
-            data: JSON.stringify(data),
-            contentType: "application/json",
-            success: function (data) {
-                console.info(data);
-                if (type === 'module') {
-                    show_module(data, target)
-                } else {
-                    show_case(data, target)
-                }
-            }
-            ,
-            error: function () {
-                myAlert('Sorry，服务器可能开小差啦, 请重试!');
-            }
-        });
-    }
+        function _copyOptions(gObj, sObj){
+            /* 复制select的Option，并选中
+            gObj 目标对象
+            sObj 源对象
+            */
+                gObj.empty();
+                sObj.find('option').each(function(){
+                    gObj.append("<option value="+ $(this).val() +">"+ $(this).text() +"</option>");
+                });
+                gObj.find("option[value="+ sObj.val() +"]").attr("selected",true);
+            };
 
     </script>
 {% endblock %}
-
