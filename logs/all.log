@@ -11175,3 +11175,742 @@ django.db.utils.IntegrityError: (1048, "Column 'isdel' cannot be null")
 2019-03-21 20:18:58,151 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/data_list/ HTTP/1.1" 500 21940
 2019-03-21 20:19:37,725 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 2
 2019-03-21 20:26:09,508 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 2
+2019-03-22 10:49:32,266 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 302 0
+2019-03-22 10:49:32,351 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3907
+2019-03-22 10:49:39,645 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2019-03-22 10:49:40,094 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18472
+2019-03-22 10:49:40,275 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/commons.js HTTP/1.1" 304 0
+2019-03-22 10:49:40,280 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 304 0
+2019-03-22 10:49:55,336 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 66078
+2019-03-22 10:49:55,971 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 10:49:57,935 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/1/ HTTP/1.1" 200 51180
+2019-03-22 10:50:20,802 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20975
+2019-03-22 10:50:21,172 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 10:50:21,192 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 10:50:32,783 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20975
+2019-03-22 10:50:33,237 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 10:50:33,261 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 10:50:38,131 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 66078
+2019-03-22 10:50:38,772 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 10:50:40,161 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/1/ HTTP/1.1" 200 51180
+2019-03-22 10:50:50,836 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20975
+2019-03-22 10:50:52,456 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 10:50:52,482 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 10:51:36,408 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 2
+2019-03-22 10:52:41,367 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 66078
+2019-03-22 10:52:41,765 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 10:52:51,440 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/suite_list/1/ HTTP/1.1" 200 28115
+2019-03-22 10:53:01,278 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?obj={%22suite_1%22:%221%22,%22env_name%22:%22http://10.202.228.31:8088%22,%22type%22:%22suite%22} HTTP/1.1" 200 2928
+2019-03-22 10:53:02,541 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_batch_test/?obj={%22suite_1%22:%221%22,%22env_name%22:%22http://10.202.228.31:8088%22,%22type%22:%22suite%22} HTTP/1.1" 200 94197
+2019-03-22 10:53:02,633 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/googleapis.css HTTP/1.1" 304 0
+2019-03-22 10:53:02,666 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/googleapis.css HTTP/1.1" 304 0
+2019-03-22 10:53:02,675 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/extent.css HTTP/1.1" 304 0
+2019-03-22 10:53:02,680 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/extent.js HTTP/1.1" 304 0
+2019-03-22 11:15:30,068 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 302 0
+2019-03-22 11:15:30,114 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3907
+2019-03-22 11:15:36,415 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2019-03-22 11:15:36,806 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18476
+2019-03-22 11:15:44,924 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 66082
+2019-03-22 11:15:46,126 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 11:16:35,552 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=16&&env_name=http://10.202.228.31:8088 HTTP/1.1" 200 2928
+2019-03-22 11:16:35,900 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 66082
+2019-03-22 11:16:36,639 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 11:16:55,099 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 66082
+2019-03-22 11:16:55,257 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/admin.css HTTP/1.1" 200 19660
+2019-03-22 11:16:55,265 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/common.css HTTP/1.1" 200 1004
+2019-03-22 11:16:55,266 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 200 21126
+2019-03-22 11:16:55,271 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/commons.js HTTP/1.1" 200 13371
+2019-03-22 11:16:58,194 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 11:16:58,252 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 11:17:00,041 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=16&&env_name=http://10.202.228.31:8088 HTTP/1.1" 200 2928
+2019-03-22 11:17:00,126 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/common.css HTTP/1.1" 200 1004
+2019-03-22 11:17:00,133 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/admin.css HTTP/1.1" 200 19660
+2019-03-22 11:17:00,137 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 200 21126
+2019-03-22 11:17:00,139 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/commons.js HTTP/1.1" 200 13371
+2019-03-22 11:17:01,395 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 11:17:01,444 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 11:17:08,770 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 66082
+2019-03-22 11:17:08,849 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/admin.css HTTP/1.1" 200 19660
+2019-03-22 11:17:08,891 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/common.css HTTP/1.1" 200 1004
+2019-03-22 11:17:08,894 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/commons.js HTTP/1.1" 200 13371
+2019-03-22 11:17:08,897 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 200 21126
+2019-03-22 11:17:10,650 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 11:17:10,691 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 11:17:10,807 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/log_out/ HTTP/1.1" 302 0
+2019-03-22 11:17:10,857 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3907
+2019-03-22 11:17:18,406 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2019-03-22 11:17:18,758 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18476
+2019-03-22 14:04:28,758 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 302 0
+2019-03-22 14:04:28,805 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3907
+2019-03-22 14:04:29,420 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:04:29,500 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:04:33,879 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2019-03-22 14:04:34,268 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18472
+2019-03-22 14:04:34,398 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 304 0
+2019-03-22 14:04:34,407 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/commons.js HTTP/1.1" 304 0
+2019-03-22 14:04:41,472 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20975
+2019-03-22 14:04:42,112 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:04:42,137 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:16:22,818 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20975
+2019-03-22 14:16:25,383 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:16:25,416 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:16:25,422 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:16:25,463 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:16:35,796 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20975
+2019-03-22 14:16:36,405 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:16:36,457 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:16:36,512 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:16:36,526 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:35:15,746 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 15
+2019-03-22 14:36:23,810 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 21004
+2019-03-22 14:36:25,320 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:36:25,340 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:36:25,386 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:36:25,393 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:37:18,844 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 15
+2019-03-22 14:39:28,951 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20996
+2019-03-22 14:39:29,908 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:39:29,954 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:39:29,974 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:39:30,039 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:40:32,974 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 15
+2019-03-22 14:43:22,191 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20991
+2019-03-22 14:43:23,409 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:43:23,428 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:43:23,460 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:43:23,474 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:43:33,016 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 27
+2019-03-22 14:43:58,538 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20870
+2019-03-22 14:43:59,281 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:43:59,313 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:43:59,358 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:43:59,392 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:44:06,387 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 27
+2019-03-22 14:44:38,378 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20871
+2019-03-22 14:44:39,123 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:44:39,186 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:44:39,195 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:44:39,201 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:44:46,273 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 27
+2019-03-22 14:45:28,366 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20868
+2019-03-22 14:45:29,159 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:45:29,196 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:45:29,218 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:45:29,253 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:45:36,833 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 27
+2019-03-22 14:46:50,267 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20906
+2019-03-22 14:46:51,071 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:46:51,074 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:46:51,131 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:46:51,136 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:46:58,004 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 27
+2019-03-22 14:47:28,528 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 27
+2019-03-22 14:47:43,294 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20938
+2019-03-22 14:47:43,879 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:47:43,908 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:47:43,943 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:47:43,974 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:48:05,758 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 27
+2019-03-22 14:49:38,835 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20938
+2019-03-22 14:49:41,653 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:49:41,674 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:49:41,711 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:49:41,721 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:49:52,979 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 4
+2019-03-22 14:51:33,891 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20877
+2019-03-22 14:51:34,704 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:51:34,734 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:51:34,759 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:51:34,771 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:51:40,016 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20877
+2019-03-22 14:51:40,641 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:51:40,672 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:51:40,718 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:51:40,741 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:51:58,886 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 4
+2019-03-22 14:52:58,820 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 4
+2019-03-22 14:53:06,703 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 4
+2019-03-22 14:53:16,134 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 4
+2019-03-22 14:54:03,080 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 4
+2019-03-22 14:54:24,798 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 4
+2019-03-22 14:57:00,947 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20877
+2019-03-22 14:57:01,973 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:57:02,021 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:57:02,084 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:57:02,094 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:57:04,412 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 27
+2019-03-22 14:58:12,745 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20877
+2019-03-22 14:58:13,430 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:58:13,502 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:58:13,504 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:58:13,513 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:58:16,736 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 15
+2019-03-22 14:58:22,696 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 15
+2019-03-22 14:58:38,163 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20877
+2019-03-22 14:58:38,832 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:58:38,878 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 14:58:38,929 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:58:38,936 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:58:40,352 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 15
+2019-03-22 14:59:58,063 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20841
+2019-03-22 14:59:58,961 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 14:59:58,994 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 14:59:59,073 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 14:59:59,120 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 15:00:00,718 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 15
+2019-03-22 15:00:03,919 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 15
+2019-03-22 15:10:00,484 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20841
+2019-03-22 15:10:01,955 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 15:10:02,033 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 15:10:02,039 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 15:10:02,042 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 15:25:05,516 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20794
+2019-03-22 15:25:06,358 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 15:25:06,390 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 15:25:06,526 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 15:25:06,569 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 15:25:12,211 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 15
+2019-03-22 15:25:59,999 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20794
+2019-03-22 15:26:01,884 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 15:26:01,939 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 15:26:01,948 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 15:26:02,162 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 15:26:18,550 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20794
+2019-03-22 15:26:19,490 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 15:26:19,563 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 15:26:19,568 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 15:26:19,586 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 16:07:35,198 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20796
+2019-03-22 16:07:36,776 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 16:07:36,812 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:08:27,696 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20800
+2019-03-22 17:08:28,784 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:08:28,793 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:08:28,844 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:08:28,847 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:10:52,075 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20795
+2019-03-22 17:10:53,927 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:10:54,027 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:10:54,035 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:10:54,036 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:16:37,343 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20989
+2019-03-22 17:16:38,341 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:16:38,418 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:17:39,402 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20790
+2019-03-22 17:17:40,505 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:17:40,511 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:17:40,556 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:17:40,562 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:18:38,530 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20989
+2019-03-22 17:18:39,171 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:18:39,206 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:18:42,366 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20989
+2019-03-22 17:18:42,905 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:18:42,948 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:20:01,653 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20989
+2019-03-22 17:20:02,410 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:20:02,436 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:20:19,200 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20767
+2019-03-22 17:20:19,914 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:20:19,967 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:20:20,003 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:20:20,066 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:20:31,463 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20794
+2019-03-22 17:20:32,003 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:20:32,035 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:20:43,487 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20792
+2019-03-22 17:20:44,291 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:20:44,335 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:20:44,364 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:20:44,397 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:20:55,161 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20988
+2019-03-22 17:20:55,823 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:20:55,855 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:20:55,922 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:20:55,979 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:21:23,873 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20892
+2019-03-22 17:21:24,719 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:21:24,792 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:21:24,837 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:21:24,845 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:21:35,313 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20892
+2019-03-22 17:21:35,885 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:21:35,925 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:21:35,956 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:21:35,991 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:26:17,312 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20814
+2019-03-22 17:26:18,134 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:26:18,168 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:26:18,188 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:26:18,228 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:26:28,718 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20812
+2019-03-22 17:26:29,322 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:26:29,376 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:26:29,423 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:26:29,449 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:28:57,293 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20842
+2019-03-22 17:28:58,207 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:28:58,258 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:29:08,496 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20843
+2019-03-22 17:29:08,938 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:29:08,961 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:29:17,421 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20845
+2019-03-22 17:29:18,000 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:29:18,033 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:29:28,924 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20844
+2019-03-22 17:29:29,694 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:29:29,725 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:29:37,099 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20838
+2019-03-22 17:29:37,464 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:29:37,483 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:29:42,195 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20840
+2019-03-22 17:29:42,786 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:29:42,821 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:29:56,817 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20845
+2019-03-22 17:29:57,483 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:29:57,513 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:29:57,535 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:29:57,582 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:30:29,287 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20847
+2019-03-22 17:30:30,029 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:30:30,039 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:30:30,079 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:30:30,118 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:31:04,006 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20834
+2019-03-22 17:31:04,880 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:31:04,963 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:31:04,985 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:31:05,003 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:31:31,561 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20831
+2019-03-22 17:31:32,370 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:31:32,419 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:31:32,428 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:31:32,481 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:32:41,122 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20831
+2019-03-22 17:32:42,502 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 17:32:42,518 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:32:42,560 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 17:32:42,567 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:33:05,745 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/data_list/ HTTP/1.1" 200 24
+2019-03-22 17:53:26,648 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = list(DataInfo.objects.value().order_by('-create_time'))
+AttributeError: 'Manager' object has no attribute 'value'
+2019-03-22 17:53:28,478 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 77532
+2019-03-22 17:53:29,546 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:53:29,601 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 17:59:25,607 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 867, in data_list
+    project = data.ProjectInfo
+AttributeError: 'QuerySet' object has no attribute 'ProjectInfo'
+2019-03-22 17:59:25,602 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 867, in data_list
+    project = data.ProjectInfo
+AttributeError: 'QuerySet' object has no attribute 'ProjectInfo'
+2019-03-22 17:59:26,097 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 79843
+2019-03-22 17:59:26,097 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 79843
+2019-03-22 17:59:27,179 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 17:59:27,211 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:04:53,442 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 867, in data_list
+    project = data.belong_project.all()
+AttributeError: 'QuerySet' object has no attribute 'belong_project'
+2019-03-22 18:04:54,456 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 79873
+2019-03-22 18:04:54,897 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:04:54,930 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:06:01,316 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 867, in data_list
+    project = data.belong_project
+AttributeError: 'QuerySet' object has no attribute 'belong_project'
+2019-03-22 18:06:02,210 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 79861
+2019-03-22 18:06:02,565 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:06:02,596 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:11:34,135 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 867, in data_list
+    project = data.belong_project
+AttributeError: 'QuerySet' object has no attribute 'belong_project'
+2019-03-22 18:11:34,384 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 79861
+2019-03-22 18:11:34,838 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:11:34,878 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:12:47,717 [django.request:93] [base:get_response] [WARNING]- Not Found: /api
+2019-03-22 18:12:47,730 [django.server:124] [basehttp:log_message] [WARNING]- "GET /api HTTP/1.1" 404 2494
+2019-03-22 18:12:51,569 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3907
+2019-03-22 18:13:15,202 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2019-03-22 18:13:15,746 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18472
+2019-03-22 18:13:34,771 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 66078
+2019-03-22 18:13:35,616 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 18:16:09,651 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1683, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1448, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.values('belong_project', 'project_name').order_by('-create_time')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1935, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1706, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+2019-03-22 18:16:10,011 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 121339
+2019-03-22 18:16:19,572 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1683, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1448, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.values('belong_project', 'project_name').order_by('-create_time')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1935, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1706, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+2019-03-22 18:16:19,830 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 121339
+2019-03-22 18:16:20,144 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:16:20,168 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:34:02,843 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 868, in data_list
+    print(data[0].values())
+AttributeError: 'DataInfo' object has no attribute 'values'
+2019-03-22 18:34:03,175 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 77955
+2019-03-22 18:34:04,281 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:34:04,309 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:38:48,209 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.valus('datafile_name', 'belong_project.project_name').order_by('-create_time')
+AttributeError: 'Manager' object has no attribute 'valus'
+2019-03-22 18:38:48,488 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 77795
+2019-03-22 18:38:49,375 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:38:49,417 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:39:13,299 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1683, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1448, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'belong_project.project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.values('datafile_name', 'belong_project.project_name').order_by('-create_time')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1935, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1706, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'belong_project.project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+2019-03-22 18:39:13,687 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 121026
+2019-03-22 18:39:14,140 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:39:14,163 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:44:18,263 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1683, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1448, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'belong_project.project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.values('datafile_name', 'belong_project.project_name').order_by('-create_time')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1935, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1706, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'belong_project.project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+2019-03-22 18:44:18,679 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 121048
+2019-03-22 18:44:19,083 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:44:19,115 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:44:41,955 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 20831
+2019-03-22 18:44:43,523 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 18:44:43,563 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 18:44:43,606 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:44:43,653 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:46:34,792 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1683, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1448, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.all().values('project_name').order_by('-create_time')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1935, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1706, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+2019-03-22 18:46:35,540 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 113941
+2019-03-22 18:46:36,083 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:46:36,105 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:47:05,655 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1683, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1448, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.all().values('project_name').order_by('-create_time')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1935, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1706, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+2019-03-22 18:47:07,298 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 113941
+2019-03-22 18:47:07,573 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:47:07,598 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:52:06,308 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 870, in data_list
+    print(data[0].project_name)
+AttributeError: 'DataInfo' object has no attribute 'project_name'
+2019-03-22 18:52:06,651 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/data_list/ HTTP/1.1" 500 78100
+2019-03-22 18:52:07,173 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:52:07,203 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:56:34,881 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 30462
+2019-03-22 18:56:36,051 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 18:56:36,114 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:56:36,118 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 18:56:36,160 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:58:22,705 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 28861
+2019-03-22 18:58:24,206 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 18:58:24,213 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:58:24,225 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 18:58:24,265 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:58:37,809 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 22439
+2019-03-22 18:58:38,497 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:58:38,581 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:58:38,622 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 18:58:38,652 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 18:59:47,154 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/ HTTP/1.1" 200 22439
+2019-03-22 18:59:48,116 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-22 18:59:48,224 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 126
+2019-03-22 18:59:48,254 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-22 18:59:48,263 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-22 18:59:50,649 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_config/3/ HTTP/1.1" 200 31614
+2019-03-22 18:59:53,259 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0

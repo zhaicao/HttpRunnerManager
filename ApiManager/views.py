@@ -18,7 +18,7 @@ from ApiManager.models import ProjectInfo, ModuleInfo, TestCaseInfo, UserInfo, E
 from ApiManager.tasks import main_hrun
 from ApiManager.utils.common import module_info_logic, project_info_logic, case_info_logic, config_info_logic, \
     set_filter_session, get_ajax_msg, register_info_logic, task_logic, load_modules, upload_file_logic, \
-    init_filter_session, get_total_values, timestamp_to_datetime
+    init_filter_session, get_total_values, timestamp_to_datetime, uploadFile
 from ApiManager.utils.operation import env_data_logic, del_module_data, del_project_data, del_test_data, copy_test_data, \
     del_report_data, add_suite_data, copy_suite_data, del_suite_data, edit_suite_data, add_test_reports
 from ApiManager.utils.pagination import get_pager_info
@@ -863,38 +863,20 @@ def get_proAllInfo(request, id=None):
 def data_list(request, id=None):
     account = request.session["now_account"]
     if request.method == 'GET':
-        return render_to_response('data_list.html', {"data": "data"})
+        dataList = DataInfo.objects.filter(belong_project__exact=2, datafile_name__contains='data').order_by('-create_time')
+        info = {
+            'account': account,
+            'dataList': dataList
+        }
+        return render_to_response('data_list.html', info)
     elif request.method == 'POST':
         fileObj = request.FILES.get('file')
         dataInfo = json.loads(request.POST.get('info'))
-        type = dataInfo.pop('type')
-        # 时间戳重新命名
-        fileName = (str(int(time.time()))) + '.' + fileObj.name.split('.')[-1]
+        mes = uploadFile(fileObj, dataInfo, account)
+        return HttpResponse(mes)
 
-        belong_project = ProjectInfo.objects.get(id__exact=dataInfo['belong_project'])
-
-        dataInfo.update(
-            {
-                'belong_project': belong_project,
-                'physical_file': fileName,
-                'author': account,
-                'isdel': 0
-            }
-        )
-
-        DataInfo.objects.create(**dataInfo)
-
-        try:
-            f = open(os.path.join('data', fileName), 'wb')
-            for chunk in fileObj.chunks():
-                f.write(chunk)
-            f.close()
-        except:
-            return HttpResponse('File Write Error')
-
-
-        return HttpResponse('ok')
     elif request.method == 'PUT':
+
         return render_to_response('data_list.html', {"data": "test"})
     else:
         return render_to_response('data_list.html', {"data": "test"})

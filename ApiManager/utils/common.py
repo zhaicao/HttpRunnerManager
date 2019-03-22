@@ -4,6 +4,8 @@ import json
 import logging
 import os
 import platform
+import time
+
 from json import JSONDecodeError
 
 import yaml
@@ -11,7 +13,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Sum
 from djcelery.models import PeriodicTask
 
-from ApiManager.models import ModuleInfo, TestCaseInfo, TestReports, TestSuite
+from ApiManager.models import ModuleInfo, TestCaseInfo, TestReports, TestSuite, DataInfo, ProjectInfo
 from ApiManager.utils.operation import add_project_data, add_module_data, add_case_data, add_config_data, \
     add_register_data
 from ApiManager.utils.task_opt import create_task
@@ -651,3 +653,27 @@ def timestamp_to_datetime(summary, type=True):
             except Exception:
                 pass
     return summary
+
+def uploadFile(file, dataInfo, account):
+    type = dataInfo.pop('type')
+    if DataInfo.objects.filter(datafile_name__exact=dataInfo['datafile_name']):
+        return '文件名已存在，请更换名称'
+    # 时间戳重新命名
+    fileName = (str(int(time.time()))) + '.' + file.name.split('.')[-1]
+    belong_project = ProjectInfo.objects.get(id__exact=dataInfo['belong_project'])
+    dataInfo.update(
+        {
+            'belong_project': belong_project,
+            'physical_file': fileName,
+            'author': account,
+            'isdel': 0
+        }
+    )
+    DataInfo.objects.create(**dataInfo)
+    try:
+        with open(os.path.join('data', fileName), 'wb') as  f:
+            for chunk in file.chunks():
+                f.write(chunk)
+    except:
+        return '文件上传异常'
+    return '数据文件上传成功'

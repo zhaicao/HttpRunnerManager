@@ -4093,3 +4093,357 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 76, in execute
     raise utils.IntegrityError(*tuple(e.args))
 django.db.utils.IntegrityError: (1048, "Column 'isdel' cannot be null")
+2019-03-22 10:49:39,574 [HttpRunnerManager:56] [views:login] [INFO]- zhaicao 登录成功
+2019-03-22 11:15:36,373 [HttpRunnerManager:56] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-22 11:17:10,768 [HttpRunnerManager:90] [views:log_out] [INFO]- zhaorong468退出
+2019-03-22 11:17:18,346 [HttpRunnerManager:56] [views:login] [INFO]- zhaorong468 登录成功
+2019-03-22 14:04:33,830 [HttpRunnerManager:56] [views:login] [INFO]- zhaicao 登录成功
+2019-03-22 17:53:26,648 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = list(DataInfo.objects.value().order_by('-create_time'))
+AttributeError: 'Manager' object has no attribute 'value'
+2019-03-22 17:59:25,607 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 867, in data_list
+    project = data.ProjectInfo
+AttributeError: 'QuerySet' object has no attribute 'ProjectInfo'
+2019-03-22 17:59:25,602 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 867, in data_list
+    project = data.ProjectInfo
+AttributeError: 'QuerySet' object has no attribute 'ProjectInfo'
+2019-03-22 18:04:53,442 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 867, in data_list
+    project = data.belong_project.all()
+AttributeError: 'QuerySet' object has no attribute 'belong_project'
+2019-03-22 18:06:01,316 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 867, in data_list
+    project = data.belong_project
+AttributeError: 'QuerySet' object has no attribute 'belong_project'
+2019-03-22 18:11:34,135 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 867, in data_list
+    project = data.belong_project
+AttributeError: 'QuerySet' object has no attribute 'belong_project'
+2019-03-22 18:12:47,717 [django.request:93] [base:get_response] [WARNING]- Not Found: /api
+2019-03-22 18:13:15,136 [HttpRunnerManager:56] [views:login] [INFO]- zhaicao 登录成功
+2019-03-22 18:16:09,651 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1683, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1448, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.values('belong_project', 'project_name').order_by('-create_time')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1935, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1706, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+2019-03-22 18:16:19,572 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1683, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1448, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.values('belong_project', 'project_name').order_by('-create_time')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1935, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1706, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+2019-03-22 18:34:02,843 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 868, in data_list
+    print(data[0].values())
+AttributeError: 'DataInfo' object has no attribute 'values'
+2019-03-22 18:38:48,209 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.valus('datafile_name', 'belong_project.project_name').order_by('-create_time')
+AttributeError: 'Manager' object has no attribute 'valus'
+2019-03-22 18:39:13,299 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1683, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1448, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'belong_project.project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.values('datafile_name', 'belong_project.project_name').order_by('-create_time')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1935, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1706, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'belong_project.project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+2019-03-22 18:44:18,263 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1683, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1448, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'belong_project.project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.values('datafile_name', 'belong_project.project_name').order_by('-create_time')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1935, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1706, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'belong_project.project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+2019-03-22 18:46:34,792 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1683, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1448, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.all().values('project_name').order_by('-create_time')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1935, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1706, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+2019-03-22 18:47:05,655 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1683, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1448, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 866, in data_list
+    data = DataInfo.objects.all().values('project_name').order_by('-create_time')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1935, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1706, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'project_name' into field. Choices are: author, belong_project, belong_project_id, create_time, datafile_name, details, id, isdel, physical_file, update_time
+2019-03-22 18:52:06,308 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 870, in data_list
+    print(data[0].project_name)
+AttributeError: 'DataInfo' object has no attribute 'project_name'
