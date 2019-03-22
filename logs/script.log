@@ -4447,3 +4447,103 @@ Traceback (most recent call last):
   File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 870, in data_list
     print(data[0].project_name)
 AttributeError: 'DataInfo' object has no attribute 'project_name'
+2019-03-22 21:03:25,347 [HttpRunnerManager:61] [views:login] [INFO]- zhaicao 登录失败, 请检查用户名或者密码
+2019-03-22 21:13:36,160 [HttpRunnerManager:35] [operation:add_register_data] [INFO]- 新增用户：ApiManager.UserInfo.objects
+2019-03-22 21:13:42,679 [HttpRunnerManager:56] [views:login] [INFO]- zhaicao 登录成功
+2019-03-22 21:15:11,936 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 875, in data_list
+    mes = uploadFile(fileObj, dataInfo, account)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 663, in uploadFile
+    belong_project = ProjectInfo.objects.get(id__exact=dataInfo['belong_project'])
+  File "D:\Python\Python36\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Python\Python36\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+ApiManager.models.DoesNotExist: ProjectInfo matching query does not exist.
+2019-03-22 21:18:02,402 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 875, in data_list
+    mes = uploadFile(fileObj, dataInfo, account)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 663, in uploadFile
+    belong_project = ProjectInfo.objects.get(id__exact=dataInfo['belong_project'])
+  File "D:\Python\Python36\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Python\Python36\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+ApiManager.models.DoesNotExist: ProjectInfo matching query does not exist.
+2019-03-22 21:18:44,969 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/data_list/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 875, in data_list
+    mes = uploadFile(fileObj, dataInfo, account)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 663, in uploadFile
+    belong_project = ProjectInfo.objects.get(id__exact=dataInfo['belong_project'])
+  File "D:\Python\Python36\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Python\Python36\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+ApiManager.models.DoesNotExist: ProjectInfo matching query does not exist.
+2019-03-22 21:28:42,260 [HttpRunnerManager:62] [operation:add_project_data] [INFO]- 项目添加成功：{'project_name': 'Demo项目', 'responsible_name': 'zc', 'test_user': 'zc', 'dev_user': 'zc', 'publish_app': 'zc', 'simple_desc': '测试项目', 'other_desc': '测试项目'}
+2019-03-22 21:29:02,367 [HttpRunnerManager:62] [operation:add_project_data] [INFO]- 项目添加成功：{'project_name': '智能运维系统', 'responsible_name': 'zc', 'test_user': 'zc', 'dev_user': 'zc', 'publish_app': 'zc', 'simple_desc': 'test', 'other_desc': 'test'}
+2019-03-22 21:30:02,225 [HttpRunnerManager:110] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': '模块1', 'test_user': 'zc', 'simple_desc': 'zc', 'other_desc': 'zc', 'belong_project': <ProjectInfo: ProjectInfo object (1)>}
+2019-03-22 21:30:19,692 [HttpRunnerManager:110] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': '模块2', 'test_user': '翟操', 'simple_desc': '123', 'other_desc': '123', 'belong_project': <ProjectInfo: ProjectInfo object (1)>}
+2019-03-22 21:30:31,500 [HttpRunnerManager:110] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': '模块A', 'test_user': '1', 'simple_desc': '1', 'other_desc': '1', 'belong_project': <ProjectInfo: ProjectInfo object (2)>}
+2019-03-22 21:45:57,017 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/data_list/data/1553262186.docx/
+2019-03-22 21:46:19,596 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/data_list/data/1553262186.docx
+2019-03-22 21:46:47,599 [django.request:93] [base:get_response] [WARNING]- Not Found: /data/1553262186.docx
+2019-03-22 22:50:24,667 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/downfile/2/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'downfile'
+2019-03-22 22:51:26,806 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/fileDownload/2/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 41, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 888, in fileDownload
+    file=open('data/' + dataInfo.physical_file, 'rb')
+AttributeError: 'QuerySet' object has no attribute 'physical_file'

@@ -26,6 +26,7 @@ from ApiManager.utils.runner import run_by_batch, run_test_by_type
 from ApiManager.utils.task_opt import delete_task, change_task_status
 from ApiManager.utils.testcase import get_time_stamp
 from httprunner import HttpRunner
+from django.http import FileResponse
 
 logger = logging.getLogger('HttpRunnerManager')
 
@@ -861,6 +862,12 @@ def get_proAllInfo(request, id=None):
 
 @login_check
 def data_list(request, id=None):
+    '''
+    数据列表视图
+    :param request:
+    :param id:
+    :return:
+    '''
     account = request.session["now_account"]
     if request.method == 'GET':
         dataList = DataInfo.objects.filter(belong_project__exact=2, datafile_name__contains='data').order_by('-create_time')
@@ -880,3 +887,20 @@ def data_list(request, id=None):
         return render_to_response('data_list.html', {"data": "test"})
     else:
         return render_to_response('data_list.html', {"data": "test"})
+
+@login_check
+def fileDownload(request, id):
+    '''
+    下载数据文件
+    :param request:
+    :param id:  数据文件编号
+    :return:
+    '''
+    dataInfo = DataInfo.objects.filter(id=id)
+    filename = dataInfo[0].physical_file
+    file=open('data/' + filename, 'rb')
+    response =FileResponse(file)
+    response['Content-Type']='application/octet-stream'
+    response['Content-Disposition']='attachment;filename="{filename}.{postfix}"'\
+        .format(filename=dataInfo[0].datafile_name, postfix=filename.split('.')[-1])
+    return response

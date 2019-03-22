@@ -118,9 +118,9 @@ if DEBUG:
         'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'httprunner',  # 新建数据库名
-            'USER': 'httprunner',  # 数据库登录名
-            'PASSWORD': 'httprunner',  # 数据库登录密码
-            'HOST': '10.202.228.30',  # 数据库所在服务器ip地址
+            'USER': 'root',  # 数据库登录名
+            'PASSWORD': 'root',  # 数据库登录密码
+            'HOST': 'localhost',  # 数据库所在服务器ip地址
             'PORT': '3306',  # 监听端口 默认3306即可
         }
     }

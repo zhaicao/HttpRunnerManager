@@ -660,17 +660,17 @@ def uploadFile(file, dataInfo, account):
         return '文件名已存在，请更换名称'
     # 时间戳重新命名
     fileName = (str(int(time.time()))) + '.' + file.name.split('.')[-1]
-    belong_project = ProjectInfo.objects.get(id__exact=dataInfo['belong_project'])
-    dataInfo.update(
-        {
-            'belong_project': belong_project,
-            'physical_file': fileName,
-            'author': account,
-            'isdel': 0
-        }
-    )
-    DataInfo.objects.create(**dataInfo)
     try:
+        belong_project = ProjectInfo.objects.get(id__exact=dataInfo['belong_project'])
+        dataInfo.update(
+            {
+                'belong_project': belong_project,
+                'physical_file': fileName,
+                'author': account,
+                'isdel': 0
+            }
+        )
+        DataInfo.objects.create(**dataInfo)
         with open(os.path.join('data', fileName), 'wb') as  f:
             for chunk in file.chunks():
                 f.write(chunk)

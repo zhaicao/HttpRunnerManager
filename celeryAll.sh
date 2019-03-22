@@ -54,7 +54,9 @@ function do_reload(){
     while [ $i -le 120 ]
     do
         # validate service
-        if [ `ps -ef | grep "$WORKER" | grep -v "grep" | wc -l` == 0 ] && [ `ps -ef | grep "$BEAT" | grep -v "grep" | wc -l` == 0 ] && [ `ps -ef | grep "$FLOWER" | grep -v "grep" | wc -l` == 0 ];then
+        if [ `ps -ef | grep "$WORKER" | grep -v "grep" | wc -l` == 0 ] &&
+           [ `ps -ef | grep "$BEAT" | grep -v "grep" | wc -l` == 0 ] &&
+           [ `ps -ef | grep "$FLOWER" | grep -v "grep" | wc -l` == 0 ];then
             do_start
             break
         fi

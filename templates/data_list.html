@@ -22,9 +22,7 @@
                         <label class="control-label col-sm-3" for="project"
                            style="font-weight: inherit; font-size: small ">项目:</label>
                         <div class="col-sm-8">
-                            <select class="form-control" name="belong_project">
-                                <option value="1">智能运维平台</option>
-                                <option value="2">测试Demo项目</option>
+                            <select class="form-control _belong_project" name="belong_project">
                             </select>
                         </div>
                     </div>
@@ -134,7 +132,7 @@
                     <tr>
                         <td><input type="checkbox" name="config_{{ foo.id }}" value="{{ foo.id }}"/></td>
                         <td>{{ forloop.counter }}</td>
-                        <td><a href="/api/edit_config/{{ foo.id }}/">{{ foo.datafile_name }}</a>
+                        <td><a href="/api/fileDownload/{{ foo.id }}/" rel="external nofollow" >{{ foo.datafile_name }}</a>
                         </td>
                         <td>{{ foo.belong_project.project_name }}</td>
                         <td>{{ foo.author }}</td>
@@ -233,6 +231,7 @@
                 function(data){
                 $.each(JSON.parse(data), function(k, v){
                     $('._search_project').append('<option value='+ v.id +'>'+ v.project_name +'</option>')
+                    $('._belong_project').append('<option value='+ v.id +'>'+ v.project_name +'</option>')
                     })
                 })
         }
@@ -261,5 +260,7 @@
         $().ready(function () {
             auto_load('#pro_filter', '/api/add_case/', '#module', 'module');
         });
+
+
     </script>
 {% endblock %}
