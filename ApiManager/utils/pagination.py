@@ -103,6 +103,7 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
         belong_module = filter_query.get('belong_module')
         name = filter_query.get('name')
         user = filter_query.get('user')
+        fileName = filter_query.get('fileName')
 
     obj = Model.objects
 
@@ -133,6 +134,10 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
         elif name is not '':
             obj = obj.filter(suite_name__contains=name)
 
+    elif url == '/api/data_list/':
+        obj = obj.filter(belong_project__project_name__exact=belong_project, datafile_name__contains=fileName) if belong_project != 'All' \
+            else obj.filter(datafile_name__contains=fileName)
+
     elif url != '/api/env_list/' and url != '/api/debugtalk_list/':
         obj = obj.filter(type__exact=1) if url == '/api/test_list/' else obj.filter(type__exact=2)
 
@@ -149,6 +154,10 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
                 obj = obj.filter(belong_module__module_name__contains=belong_module)
             else:
                 obj = obj.filter(name__contains=name) if name is not '' else obj.filter(author__contains=user)
+
+
+
+
 
     if url != '/api/periodictask/':
         obj = obj.order_by('-update_time')

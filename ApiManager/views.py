@@ -863,44 +863,76 @@ def get_proAllInfo(request, id=None):
 @login_check
 def data_list(request, id=None):
     '''
-    数据列表视图
+    数据列表
     :param request:
     :param id:
     :return:
     '''
     account = request.session["now_account"]
     if request.method == 'GET':
-        dataList = DataInfo.objects.filter(belong_project__exact=2, datafile_name__contains='data').order_by('-create_time')
-        info = {
-            'account': account,
-            'dataList': dataList
+        filter_query = {
+            'belong_project': 'All',
+            'fileName': ''
         }
-        return render_to_response('data_list.html', info)
+        data_list = get_pager_info(
+            DataInfo, filter_query, '/api/data_list/', id)
+
+        manage_info = {
+            'account': account,
+            'dataList': data_list[1],
+            'page_list': data_list[0],
+            'info': filter_query,
+            'sum': data_list[2],
+            'project_all': ProjectInfo.objects.all().order_by('-update_time')
+        }
+        return render_to_response('data_list.html', manage_info)
+    # 查询
     elif request.method == 'POST':
-        fileObj = request.FILES.get('file')
-        dataInfo = json.loads(request.POST.get('info'))
-        mes = uploadFile(fileObj, dataInfo, account)
-        return HttpResponse(mes)
+        filter_query = set_filter_session(request)
+        data_list = get_pager_info(
+            DataInfo, filter_query, '/api/data_list/', id)
 
-    elif request.method == 'PUT':
+        manage_info = {
+            'account': account,
+            'dataList': data_list[1],
+            'page_list': data_list[0],
+            'info': filter_query,
+            'sum': data_list[2],
+            'project_all': ProjectInfo.objects.all().order_by('-update_time')
+        }
+        return render_to_response('data_list.html', manage_info)
 
-        return render_to_response('data_list.html', {"data": "test"})
-    else:
-        return render_to_response('data_list.html', {"data": "test"})
 
 @login_check
-def fileDownload(request, id):
+def fileDownload(request, id=None):
     '''
     下载数据文件
     :param request:
     :param id:  数据文件编号
     :return:
     '''
-    dataInfo = DataInfo.objects.filter(id=id)
-    filename = dataInfo[0].physical_file
-    file=open('data/' + filename, 'rb')
-    response =FileResponse(file)
-    response['Content-Type']='application/octet-stream'
-    response['Content-Disposition']='attachment;filename="{filename}.{postfix}"'\
+    account = request.session["now_account"]
+    if request.method == 'GET':
+        dataInfo = DataInfo.objects.filter(id=id)
+        filename = dataInfo[0].physical_file
+        file=open('data/' + filename, 'rb')
+        response =FileResponse(file)
+        response['Content-Type']='application/octet-stream'
+        response['Content-Disposition']='attachment;filename="{filename}.{postfix}"'\
         .format(filename=dataInfo[0].datafile_name, postfix=filename.split('.')[-1])
-    return response
+        return response
+    # 上传数据文件
+    elif request.method == 'POST':
+        fileObj = request.FILES.get('file')
+        dataInfo = json.loads(request.POST.get('info'))
+        mes = uploadFile(fileObj, dataInfo, account)
+        return HttpResponse(mes)
+    # 修改数据文件
+    elif request.method == 'PUT':
+        return render_to_response('data_list.html', {'data': 'PUT'})
+    # 删除数据文件
+    elif request.method == 'DELETE':
+        return render_to_response('data_list.html', {'data': 'DELETE'})
+    else:
+        return HttpResponse('Method Error')
+

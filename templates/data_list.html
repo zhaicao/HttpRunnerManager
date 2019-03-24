@@ -32,7 +32,7 @@
                            style="font-weight: inherit; font-size: small ">名称:</label>
                         <div class="col-sm-8">
                             <input name="datafile_name" type="text" class="form-control"
-                               placeholder="系统中逻辑名称">
+                               placeholder="系统中逻辑名称(无需后缀)">
                         </div>
                     </div>
 
@@ -81,26 +81,37 @@
             <dl class="am-icon-home" style="float: right;"> 当前位置： 用例管理 > <a href="#">数据列表</a></dl>
             <dl>
                 <button type="button" class="am-btn am-btn-primary am-round am-btn-xs am-icon-plus submit_modal">
-                    新增EXCEL
+                    新增CSV
                 </button>
                 <button type="button" class="am-btn am-btn-warning am-round am-btn-xs am-icon-plus">
-                    新增CSV
+                    新增Excel
                 </button>
             </dl>
         </div>
 
         <div class="am-btn-toolbars am-btn-toolbar am-kg am-cf">
-            <form id="pro_filter" method="post" action="/api/config_list/1/">
+            <form id="pro_filter" method="post" action="/api/data_list/1/">
                 <ul>
                     <li style="padding-top: 5px">
                         <select name="project" class="am-input-zm am-input-xm _search_project">
+                            <option value="{{ info.belong_project }}"
+                                    selected>{{ info.belong_project }}</option>
+                            {% for foo in project_all %}
+                                {% ifnotequal info.belong_project foo.project_name %}
+                                    <option value="{{ foo.project_name }}">{{ foo.project_name }}</option>
+                                {% endifnotequal %}
+
+                            {% endfor %}
+
+                            {% if info.belong_project != 'All' %}
                                 <option value="All">All</option>
+                            {% endif %}
                         </select>
 
                     </li>
 
-                    <li style="padding-top: 5px"><input value="{{ info.name }}" type="text" name="name"
-                                                        class=" am-input-zm am-input-xm"
+                    <li style="padding-top: 5px"><input value="{{ info.fileName }}" type="text" name="fileName"
+                                                        class=" am-input-zm am-input-xm _fileName"
                                                         placeholder="文件名"/></li>
                     <li>
                     <li>
@@ -169,16 +180,16 @@
     </div>
 
     <script type="text/javascript">
-
     $(function() {
         _render()
 
         function _render(){
             selectFile();
             initPro();
+            setProject();
 
         };
-
+        // 模态框
         $('.submit_modal').on('click', function() {
             $('#detail_modal').modal({
                 relatedTarget: this,
@@ -202,7 +213,7 @@
     	    file.append('info', JSON.stringify($('#data_form').serializeJSON()));
 		    $.ajax({
 			       type: 'POST',
-			       url: '/api/data_list/',
+			       url: '/api/fileDownload/',
 			       data: file,
 			       cache: false,
 			       processData: false,
@@ -230,10 +241,16 @@
             $.get("/api/get_proAllInfo/",
                 function(data){
                 $.each(JSON.parse(data), function(k, v){
-                    $('._search_project').append('<option value='+ v.id +'>'+ v.project_name +'</option>')
                     $('._belong_project').append('<option value='+ v.id +'>'+ v.project_name +'</option>')
                     })
                 })
+        }
+
+        function setProject(){
+            if ("{{ projectId }}"){
+                console.info($("._search_project").find("option[val={{ projectId }}]"))
+                $("._search_project").find("option[val={{ projectId }}]").attr("selected",true);
+            }
         }
 
 

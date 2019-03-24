@@ -472,13 +472,16 @@ def set_filter_session(request):
             request.session['module'] = request.POST.get('module')
     if 'report_name' in request.POST.keys():
         request.session['report_name'] = request.POST.get('report_name')
+    if 'fileName' in request.POST.keys():
+        request.session['fileName'] = request.POST.get('fileName')
 
     filter_query = {
         'user': request.session['user'],
         'name': request.session['name'],
         'belong_project': request.session['project'],
         'belong_module': request.session['module'],
-        'report_name': request.session['report_name']
+        'report_name': request.session['report_name'],
+        'fileName': request.session['fileName']
     }
 
     return filter_query
