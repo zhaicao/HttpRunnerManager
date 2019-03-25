@@ -473,8 +473,12 @@ def set_filter_session(request):
             request.session['module'] = request.POST.get('module')
     if 'report_name' in request.POST.keys():
         request.session['report_name'] = request.POST.get('report_name')
+    # fileName未在页面定义，需初始化
     if 'fileName' in request.POST.keys():
         request.session['fileName'] = request.POST.get('fileName')
+    else:
+        request.session['fileName'] = ''
+
 
     filter_query = {
         'user': request.session['user'],

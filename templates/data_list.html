@@ -213,7 +213,7 @@
         function uploadFile(URL){
             filePath = $('#doc-ipt-file-2').val().split('.')
             postfix = filePath[filePath.length - 1 ]
-            if ( postfix.toLowerCase == 'csv'){
+            if ( postfix.toLowerCase() == 'csv'){
                 var result = "";
                 var file = new FormData();
     	        file.append('file', $('#doc-ipt-file-2')[0].files[0]);

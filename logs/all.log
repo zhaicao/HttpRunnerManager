@@ -14236,3 +14236,525 @@ FileNotFoundError: [Errno 2] No such file or directory: 'data/1553170777.docx'
 2019-03-25 18:14:50,253 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name=http://10.202.228.31:8088 HTTP/1.1" 200 2928
 2019-03-25 18:14:53,371 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 66080
 2019-03-25 18:14:54,317 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:02:51,003 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3907
+2019-03-25 21:03:00,451 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2019-03-25 21:03:02,382 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18466
+2019-03-25 21:03:03,209 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 304 0
+2019-03-25 21:03:12,381 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/1/ HTTP/1.1" 200 29522
+2019-03-25 21:03:13,117 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 114
+2019-03-25 21:03:18,393 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/fileDownload/4/ HTTP/1.1" 200 52375
+2019-03-25 21:06:22,761 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/1/ HTTP/1.1" 200 29568
+2019-03-25 21:06:23,634 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-25 21:06:23,743 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 114
+2019-03-25 21:06:24,165 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-25 21:07:36,333 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/1/ HTTP/1.1" 200 29570
+2019-03-25 21:07:36,926 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-25 21:07:37,142 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 114
+2019-03-25 21:07:37,247 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-25 21:08:31,394 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/1/ HTTP/1.1" 200 29572
+2019-03-25 21:08:31,803 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-25 21:08:31,962 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 114
+2019-03-25 21:08:32,132 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-25 21:08:40,889 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/fileDownload/ HTTP/1.1" 200 24
+2019-03-25 21:08:41,559 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/1/ HTTP/1.1" 200 31200
+2019-03-25 21:08:42,045 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 114
+2019-03-25 21:10:19,520 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 374, in test_list
+    filter_query = set_filter_session(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 485, in set_filter_session
+    'fileName': request.session['fileName']
+  File "D:\Python\Python36\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'fileName'
+2019-03-25 21:10:20,603 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/test_list/1/ HTTP/1.1" 500 88208
+2019-03-25 21:10:40,695 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 374, in test_list
+    filter_query = set_filter_session(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 485, in set_filter_session
+    'fileName': request.session['fileName']
+  File "D:\Python\Python36\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'fileName'
+2019-03-25 21:10:41,594 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/test_list/1/ HTTP/1.1" 500 88274
+2019-03-25 21:13:04,697 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 374, in test_list
+    filter_query = set_filter_session(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 485, in set_filter_session
+    'fileName': request.session['fileName']
+  File "D:\Python\Python36\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'fileName'
+2019-03-25 21:13:05,565 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/test_list/1/ HTTP/1.1" 500 88409
+2019-03-25 21:13:05,600 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/test_list/1/ HTTP/1.1" 500 59
+2019-03-25 21:15:21,222 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 374, in test_list
+    filter_query = set_filter_session(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 485, in set_filter_session
+    'fileName': request.session['fileName']
+  File "D:\Python\Python36\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'fileName'
+2019-03-25 21:15:22,081 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/test_list/1/ HTTP/1.1" 500 88409
+2019-03-25 21:15:22,575 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-25 21:15:22,827 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-25 21:16:37,661 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 307, in project_list
+    filter_query = set_filter_session(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 485, in set_filter_session
+    'fileName': request.session['fileName']
+  File "D:\Python\Python36\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'fileName'
+2019-03-25 21:16:38,559 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/project_list/1/ HTTP/1.1" 500 88288
+2019-03-25 21:18:07,826 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 307, in project_list
+    filter_query = set_filter_session(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 489, in set_filter_session
+    'fileName': request.session['fileName']
+  File "D:\Python\Python36\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'fileName'
+2019-03-25 21:18:08,987 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/project_list/1/ HTTP/1.1" 500 88423
+2019-03-25 21:18:09,222 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-25 21:18:09,286 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-25 21:19:04,248 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 32715
+2019-03-25 21:19:06,583 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-25 21:19:06,677 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-25 21:20:10,103 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 23378
+2019-03-25 21:20:10,942 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:20:18,718 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/config_list/1/ HTTP/1.1" 200 19711
+2019-03-25 21:20:19,299 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:20:25,702 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/module_list/1/ HTTP/1.1" 200 33713
+2019-03-25 21:21:54,526 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 23378
+2019-03-25 21:21:55,127 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:21:59,209 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 35037
+2019-03-25 21:22:02,652 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 10
+2019-03-25 21:22:03,470 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:22:03,475 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:22:10,298 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:22:10,562 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:23:51,644 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 10
+2019-03-25 21:23:59,168 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 17
+2019-03-25 21:23:59,984 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 21:24:00,716 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:24:04,392 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 35037
+2019-03-25 21:24:09,481 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 21:24:10,046 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:24:16,378 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 21:24:16,390 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 21:24:17,415 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:32:06,184 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 21:32:06,519 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 21:32:07,667 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:32:21,007 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 178, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 39, in run_by_single
+    if isinstance(list, p.values()):
+TypeError: isinstance() arg 2 must be a type or tuple of types
+2019-03-25 21:32:21,290 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 91332
+2019-03-25 21:33:44,223 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 21:33:44,487 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 21:33:45,423 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:36:58,126 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 176, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 39, in run_by_single
+    for k,v in p:
+ValueError: too many values to unpack (expected 2)
+2019-03-25 21:36:58,383 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 90991
+2019-03-25 21:37:32,082 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 21:37:32,195 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 21:37:33,098 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:42:45,358 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 21:42:45,512 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 21:42:46,766 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:45:14,226 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/1/ HTTP/1.1" 200 42134
+2019-03-25 21:47:08,327 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2019-03-25 21:47:08,595 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 21:47:09,142 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:47:16,112 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 21:47:16,225 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 21:47:17,188 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:50:47,209 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 21:50:47,369 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 21:50:48,467 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 21:53:17,013 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 21:53:17,369 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 21:53:18,396 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:14:07,521 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:14:07,924 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:14:09,781 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:14:42,633 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 181, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 44, in run_by_single
+    ab = re.findall(_regexp, v)
+  File "D:\Python\Python36\lib\re.py", line 222, in findall
+    return _compile(pattern, flags).findall(string)
+  File "D:\Python\Python36\lib\re.py", line 301, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "D:\Python\Python36\lib\sre_compile.py", line 562, in compile
+    p = sre_parse.parse(p, flags)
+  File "D:\Python\Python36\lib\sre_parse.py", line 855, in parse
+    p = _parse_sub(source, pattern, flags & SRE_FLAG_VERBOSE, 0)
+  File "D:\Python\Python36\lib\sre_parse.py", line 416, in _parse_sub
+    not nested and not items))
+  File "D:\Python\Python36\lib\sre_parse.py", line 752, in _parse
+    len(char) + 1)
+sre_constants.error: unknown extension ?  at position 1
+2019-03-25 22:14:42,637 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 181, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 44, in run_by_single
+    ab = re.findall(_regexp, v)
+  File "D:\Python\Python36\lib\re.py", line 222, in findall
+    return _compile(pattern, flags).findall(string)
+  File "D:\Python\Python36\lib\re.py", line 301, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "D:\Python\Python36\lib\sre_compile.py", line 562, in compile
+    p = sre_parse.parse(p, flags)
+  File "D:\Python\Python36\lib\sre_parse.py", line 855, in parse
+    p = _parse_sub(source, pattern, flags & SRE_FLAG_VERBOSE, 0)
+  File "D:\Python\Python36\lib\sre_parse.py", line 416, in _parse_sub
+    not nested and not items))
+  File "D:\Python\Python36\lib\sre_parse.py", line 752, in _parse
+    len(char) + 1)
+sre_constants.error: unknown extension ?  at position 1
+2019-03-25 22:14:49,020 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 117874
+2019-03-25 22:14:50,001 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 118156
+2019-03-25 22:14:50,191 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 59
+2019-03-25 22:16:19,312 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:16:19,624 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:16:20,536 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:17:26,917 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 181, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 43, in run_by_single
+    ab = re.findall(_regexp, v)
+  File "D:\Python\Python36\lib\re.py", line 222, in findall
+    return _compile(pattern, flags).findall(string)
+  File "D:\Python\Python36\lib\re.py", line 301, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "D:\Python\Python36\lib\sre_compile.py", line 562, in compile
+    p = sre_parse.parse(p, flags)
+  File "D:\Python\Python36\lib\sre_parse.py", line 855, in parse
+    p = _parse_sub(source, pattern, flags & SRE_FLAG_VERBOSE, 0)
+  File "D:\Python\Python36\lib\sre_parse.py", line 416, in _parse_sub
+    not nested and not items))
+  File "D:\Python\Python36\lib\sre_parse.py", line 752, in _parse
+    len(char) + 1)
+sre_constants.error: unknown extension ?  at position 1
+2019-03-25 22:17:27,279 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 118144
+2019-03-25 22:17:43,899 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:17:44,435 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-25 22:17:44,588 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:17:44,827 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-25 22:17:47,833 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:17:47,991 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:17:49,463 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:26:05,810 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:26:06,262 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:26:08,347 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:29:10,572 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/1/ HTTP/1.1" 200 42793
+2019-03-25 22:29:29,384 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/data_list/1/ HTTP/1.1" 200 31152
+2019-03-25 22:29:33,327 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/get_proAllInfo/ HTTP/1.1" 200 114
+2019-03-25 22:29:42,400 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:29:46,590 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:29:50,400 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/1/ HTTP/1.1" 200 42793
+2019-03-25 22:30:03,357 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2019-03-25 22:30:03,599 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:30:04,329 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:30:15,919 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:30:17,849 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:30:18,975 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:32:45,327 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:32:45,634 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:32:46,796 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:41:31,486 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 59
+2019-03-25 22:42:44,780 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:42:45,444 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-25 22:42:45,530 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:42:45,807 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-25 22:43:43,439 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:43:43,546 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:43:44,579 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:44:41,661 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/1/ HTTP/1.1" 200 42790
+2019-03-25 22:44:49,982 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2019-03-25 22:44:50,305 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:44:50,828 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:44:53,252 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:44:53,491 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:44:54,541 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:45:17,371 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 189, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 37, in run_by_single
+    request['test']['parameters'] = parametersConversion(request['test']['parameters'])
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 174, in parametersConversion
+    physical_name = DataInfo.objects.get(datafile_name=datafile_name).physical_file
+  File "D:\Python\Python36\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Python\Python36\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+ApiManager.models.DoesNotExist: DataInfo matching query does not exist.
+2019-03-25 22:45:17,723 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 59
+2019-03-25 22:45:18,414 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 104247
+2019-03-25 22:46:01,560 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:46:01,821 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:46:02,675 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:46:19,267 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 189, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 37, in run_by_single
+    request['test']['parameters'] = parametersConversion(request['test']['parameters'])
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 174, in parametersConversion
+    physical_name = DataInfo.objects.filter(datafile_name=datafile_name).physical_file
+AttributeError: 'QuerySet' object has no attribute 'physical_file'
+2019-03-25 22:46:19,552 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 96043
+2019-03-25 22:49:35,247 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:49:35,378 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:49:36,696 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 191, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 37, in run_by_single
+    request['test']['parameters'] = parametersConversion(request['test']['parameters'])
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 176, in parametersConversion
+    raise Exception("物理数据文件不存在")
+Exception: 物理数据文件不存在
+2019-03-25 22:49:36,817 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:49:37,338 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 96066
+2019-03-25 22:49:56,989 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/1/ HTTP/1.1" 200 42791
+2019-03-25 22:50:24,974 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2019-03-25 22:50:25,164 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:50:25,923 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:50:29,189 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:50:29,410 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:50:29,975 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 191, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 37, in run_by_single
+    request['test']['parameters'] = parametersConversion(request['test']['parameters'])
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 177, in parametersConversion
+    v = v.replace(datafile_name, 'data/' + physicalFile.physical_file)
+AttributeError: 'QuerySet' object has no attribute 'physical_file'
+2019-03-25 22:50:30,269 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:50:30,388 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 96325
+2019-03-25 22:51:03,987 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:51:04,223 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:51:05,061 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:51:50,173 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:51:50,435 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:51:51,696 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:56:57,706 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:56:58,290 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:56:59,398 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2019-03-25 22:56:59,668 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2019-03-25 22:57:02,299 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:57:03,362 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:57:04,183 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:57:55,788 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 59
+2019-03-25 22:57:55,799 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 59
+2019-03-25 22:58:39,375 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:58:39,511 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:58:40,101 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 59
+2019-03-25 22:58:40,338 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:59:27,308 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:59:27,426 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:59:28,016 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 59
+2019-03-25 22:59:28,233 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 22:59:40,621 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 22:59:41,086 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 22:59:41,331 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 59
+2019-03-25 22:59:41,837 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 23:00:01,590 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 23:00:01,814 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 23:00:02,145 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 59
+2019-03-25 23:00:02,290 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 23:00:28,407 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/run_case/?id=1&&env_name= HTTP/1.1" 200 2928
+2019-03-25 23:00:28,576 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 26039
+2019-03-25 23:00:29,352 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2019-03-25 23:00:29,363 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/run_test/?id=1&&env_name= HTTP/1.1" 500 59

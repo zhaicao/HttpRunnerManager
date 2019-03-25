@@ -5318,3 +5318,342 @@ Traceback (most recent call last):
   File "/Users/Ricky/Documents/PythonWorkspace/HttpRunnerManager/ApiManager/views.py", line 927, in fileDownload
     file=open('data/' + filename, 'rb')
 FileNotFoundError: [Errno 2] No such file or directory: 'data/1553170777.docx'
+2019-03-25 21:02:59,622 [HttpRunnerManager:56] [views:login] [INFO]- zhaicao 登录成功
+2019-03-25 21:10:19,520 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 374, in test_list
+    filter_query = set_filter_session(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 485, in set_filter_session
+    'fileName': request.session['fileName']
+  File "D:\Python\Python36\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'fileName'
+2019-03-25 21:10:40,695 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 374, in test_list
+    filter_query = set_filter_session(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 485, in set_filter_session
+    'fileName': request.session['fileName']
+  File "D:\Python\Python36\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'fileName'
+2019-03-25 21:13:04,697 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 374, in test_list
+    filter_query = set_filter_session(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 485, in set_filter_session
+    'fileName': request.session['fileName']
+  File "D:\Python\Python36\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'fileName'
+2019-03-25 21:15:21,222 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 374, in test_list
+    filter_query = set_filter_session(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 485, in set_filter_session
+    'fileName': request.session['fileName']
+  File "D:\Python\Python36\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'fileName'
+2019-03-25 21:16:37,661 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 307, in project_list
+    filter_query = set_filter_session(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 485, in set_filter_session
+    'fileName': request.session['fileName']
+  File "D:\Python\Python36\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'fileName'
+2019-03-25 21:18:07,826 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 307, in project_list
+    filter_query = set_filter_session(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\common.py", line 489, in set_filter_session
+    'fileName': request.session['fileName']
+  File "D:\Python\Python36\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'fileName'
+2019-03-25 21:23:59,126 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 登录用例添加成功: {'test': {'request': {'url': 'http://code.py40.com/2004.html', 'method': 'POST', 'data': {'username': '$username', 'pwd': '$pwd'}}, 'name': '登录', 'parameters': [{'username-pwd': "[['admin', '888888'], ['admin', '123456']]"}]}}
+2019-03-25 21:32:21,007 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 178, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 39, in run_by_single
+    if isinstance(list, p.values()):
+TypeError: isinstance() arg 2 must be a type or tuple of types
+2019-03-25 21:36:58,126 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 176, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 39, in run_by_single
+    for k,v in p:
+ValueError: too many values to unpack (expected 2)
+2019-03-25 21:47:08,308 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://code.py40.com/2004.html', 'method': 'POST', 'data': {'username': '$username', 'pwd': '$pwd'}}, 'name': '登录', 'parameters': [{'username-pwd': "[['admin', '888888'], ['admin', '123456']]"}, {'abc': '${P(data.csv)}'}]}}
+2019-03-25 22:14:42,633 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 181, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 44, in run_by_single
+    ab = re.findall(_regexp, v)
+  File "D:\Python\Python36\lib\re.py", line 222, in findall
+    return _compile(pattern, flags).findall(string)
+  File "D:\Python\Python36\lib\re.py", line 301, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "D:\Python\Python36\lib\sre_compile.py", line 562, in compile
+    p = sre_parse.parse(p, flags)
+  File "D:\Python\Python36\lib\sre_parse.py", line 855, in parse
+    p = _parse_sub(source, pattern, flags & SRE_FLAG_VERBOSE, 0)
+  File "D:\Python\Python36\lib\sre_parse.py", line 416, in _parse_sub
+    not nested and not items))
+  File "D:\Python\Python36\lib\sre_parse.py", line 752, in _parse
+    len(char) + 1)
+sre_constants.error: unknown extension ?  at position 1
+2019-03-25 22:14:42,637 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 181, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 44, in run_by_single
+    ab = re.findall(_regexp, v)
+  File "D:\Python\Python36\lib\re.py", line 222, in findall
+    return _compile(pattern, flags).findall(string)
+  File "D:\Python\Python36\lib\re.py", line 301, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "D:\Python\Python36\lib\sre_compile.py", line 562, in compile
+    p = sre_parse.parse(p, flags)
+  File "D:\Python\Python36\lib\sre_parse.py", line 855, in parse
+    p = _parse_sub(source, pattern, flags & SRE_FLAG_VERBOSE, 0)
+  File "D:\Python\Python36\lib\sre_parse.py", line 416, in _parse_sub
+    not nested and not items))
+  File "D:\Python\Python36\lib\sre_parse.py", line 752, in _parse
+    len(char) + 1)
+sre_constants.error: unknown extension ?  at position 1
+2019-03-25 22:17:26,917 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 181, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 43, in run_by_single
+    ab = re.findall(_regexp, v)
+  File "D:\Python\Python36\lib\re.py", line 222, in findall
+    return _compile(pattern, flags).findall(string)
+  File "D:\Python\Python36\lib\re.py", line 301, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "D:\Python\Python36\lib\sre_compile.py", line 562, in compile
+    p = sre_parse.parse(p, flags)
+  File "D:\Python\Python36\lib\sre_parse.py", line 855, in parse
+    p = _parse_sub(source, pattern, flags & SRE_FLAG_VERBOSE, 0)
+  File "D:\Python\Python36\lib\sre_parse.py", line 416, in _parse_sub
+    not nested and not items))
+  File "D:\Python\Python36\lib\sre_parse.py", line 752, in _parse
+    len(char) + 1)
+sre_constants.error: unknown extension ?  at position 1
+2019-03-25 22:30:03,223 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://code.py40.com/2004.html', 'method': 'POST', 'data': {'username': '$username', 'pwd': '$pwd'}}, 'name': '登录', 'parameters': [{'username-pwd': "[['admin', '888888'], ['admin', '123456']]"}, {'abc': '${P(count)}'}]}}
+2019-03-25 22:44:49,974 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://code.py40.com/2004.html', 'method': 'POST', 'data': {'username': '$username', 'pwd': '$pwd'}}, 'name': '登录', 'parameters': [{'username-pwd': "[['admin', '888888'], ['admin', '123456']]"}, {'abc': '${P(123456)}'}]}}
+2019-03-25 22:45:17,371 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 189, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 37, in run_by_single
+    request['test']['parameters'] = parametersConversion(request['test']['parameters'])
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 174, in parametersConversion
+    physical_name = DataInfo.objects.get(datafile_name=datafile_name).physical_file
+  File "D:\Python\Python36\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Python\Python36\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+ApiManager.models.DoesNotExist: DataInfo matching query does not exist.
+2019-03-25 22:46:19,267 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 189, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 37, in run_by_single
+    request['test']['parameters'] = parametersConversion(request['test']['parameters'])
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 174, in parametersConversion
+    physical_name = DataInfo.objects.filter(datafile_name=datafile_name).physical_file
+AttributeError: 'QuerySet' object has no attribute 'physical_file'
+2019-03-25 22:49:36,696 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 191, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 37, in run_by_single
+    request['test']['parameters'] = parametersConversion(request['test']['parameters'])
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 176, in parametersConversion
+    raise Exception("物理数据文件不存在")
+Exception: 物理数据文件不存在
+2019-03-25 22:50:24,964 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 登录用例更新成功: {'test': {'request': {'url': 'http://code.py40.com/2004.html', 'method': 'POST', 'data': {'username': '$username', 'pwd': '$pwd'}}, 'name': '登录', 'parameters': [{'username-pwd': "[['admin', '888888'], ['admin', '123456']]"}, {'abc': '${P(count)}'}]}}
+2019-03-25 22:50:29,975 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 40, in wrapper
+    return func(request, *args, **kwargs)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\views.py", line 237, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 191, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 37, in run_by_single
+    request['test']['parameters'] = parametersConversion(request['test']['parameters'])
+  File "D:\Python\pythonWorkspace\HttpRunnerManager\ApiManager\utils\runner.py", line 177, in parametersConversion
+    v = v.replace(datafile_name, 'data/' + physicalFile.physical_file)
+AttributeError: 'QuerySet' object has no attribute 'physical_file'

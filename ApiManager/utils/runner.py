@@ -1,8 +1,9 @@
 import os
+import re
 
 from django.core.exceptions import ObjectDoesNotExist
 
-from ApiManager.models import TestCaseInfo, ModuleInfo, ProjectInfo, DebugTalk, TestSuite
+from ApiManager.models import TestCaseInfo, ModuleInfo, ProjectInfo, DebugTalk, TestSuite, DataInfo
 from ApiManager.utils.testcase import dump_python_file, dump_yaml_file
 
 
@@ -32,13 +33,8 @@ def run_by_single(index, base_url, path):
 
     include = eval(obj.include)
     request = eval(obj.request)
-
-    parameters = request['test']['parameters']
-
-    for p in parameters:
-        print(p)
-
-
+    # 数据文件逻辑名转物理名
+    request['test']['parameters'] = parametersConversion(request['test']['parameters'])
     name = obj.name
     project = obj.belong_project
     module = obj.belong_module.module_name
@@ -162,6 +158,27 @@ def run_by_project(id, base_url, path):
     for index in module_index_list:
         module_id = index[0]
         run_by_module(module_id, base_url, path)
+
+def parametersConversion(parametersList):
+    '''
+    parameters中数据文件逻辑名转物理文件名
+    :param parametersList:
+    :return:
+    '''
+    _regexp = r'[(](.*?)[)]'
+    parameters = list()
+    for p in parametersList:
+        for k, v in p.items():
+            if '${P' in v or '${parameter' in v:
+                datafile_name = re.findall(_regexp, v)[0]
+                try:
+                    physicalFile = DataInfo.objects.get(datafile_name=datafile_name).physical_file
+                except:
+                    raise Exception("物理数据文件不存在")
+                v = v.replace(datafile_name, 'data/' + physicalFile)
+            parameters.append({k: v})
+
+    return parameters
 
 
 def run_test_by_type(id, base_url, path, type):
