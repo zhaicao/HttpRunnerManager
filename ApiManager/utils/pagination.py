@@ -135,8 +135,8 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
             obj = obj.filter(suite_name__contains=name)
 
     elif url == '/api/data_list/':
-        obj = obj.filter(belong_project__project_name__exact=belong_project, datafile_name__contains=fileName) if belong_project != 'All' \
-            else obj.filter(datafile_name__contains=fileName)
+        obj = obj.filter(belong_project__project_name__exact=belong_project, datafile_name__contains=fileName).exclude(isdel=1) if belong_project != 'All' \
+            else obj.filter(datafile_name__contains=fileName).exclude(isdel=1)
 
     elif url != '/api/env_list/' and url != '/api/debugtalk_list/':
         obj = obj.filter(type__exact=1) if url == '/api/test_list/' else obj.filter(type__exact=2)

@@ -13,8 +13,8 @@
                         <label class="control-label col-sm-3" for="index"
                                style="font-weight: inherit; font-size: small " hidden>索引值：</label>
                         <div class="col-sm-9">
-                            <input name="type" type="text" class="form-control" id="index"
-                                   placeholder="type" value="1" hidden>
+                            <input name="type" type="text" class="form-control _dataId" id="index"
+                                   placeholder="type" hidden>
                         </div>
                     </div>
 
@@ -31,7 +31,7 @@
                         <label class="control-label col-sm-3" for="name"
                            style="font-weight: inherit; font-size: small ">名称:</label>
                         <div class="col-sm-8">
-                            <input name="datafile_name" type="text" class="form-control"
+                            <input name="datafile_name" type="text" class="form-control _datafile_name"
                                placeholder="系统中逻辑名称(无需后缀)">
                         </div>
                     </div>
@@ -63,7 +63,7 @@
         <div class="am-modal-dialog">
             <div class="am-modal-hd">HttpRunnerManager</div>
             <div class="am-modal-bd">
-                亲，请确认该配置是否被其他用例依赖后再谨慎删除哦
+                亲，若删除该记录则对应的数据文件也会删除。
             </div>
             <div class="am-modal-footer">
                 <span class="am-modal-btn" data-am-modal-cancel>取消</span>
@@ -83,9 +83,11 @@
                 <button type="button" class="am-btn am-btn-primary am-round am-btn-xs am-icon-plus submit_modal">
                     新增CSV
                 </button>
+                <!--
                 <button type="button" class="am-btn am-btn-warning am-round am-btn-xs am-icon-plus">
                     新增Excel
                 </button>
+                -->
             </dl>
         </div>
 
@@ -154,12 +156,12 @@
                                     <button type="button"
                                             class="am-btn am-btn-default am-btn-xs am-text-danger am-round"
                                             data-am-popover="{content: '更新数据文件', trigger: 'hover focus'}"
-                                            onclick="copy('#copy_list', '{{ foo.id }}')"><span
+                                            onclick="update('{{ foo.id }}:{{ foo.belong_project.id }}:{{ foo.datafile_name }}')"><span
                                             class="am-icon-copy"></span></button>
                                     <button type="button"
                                             class="am-btn am-btn-default am-btn-xs am-text-danger am-round"
                                             data-am-popover="{content: '删除', trigger: 'hover focus'}"
-                                            onclick="invalid('{{ foo.id }}')"><span
+                                            onclick="deleteRow('{{ foo.id }}')"><span
                                             class="am-icon-trash-o"></span></button>
 
                                 </div>
@@ -186,7 +188,6 @@
         function _render(){
             selectFile();
             initPro();
-            setProject();
 
         };
         // 模态框
@@ -194,9 +195,12 @@
             $('#detail_modal').modal({
                 relatedTarget: this,
                 onConfirm: function(options) {
-                    uploadFile()
+                    if( $('#doc-ipt-file-2').val() == '' || $('._datafile_name').val() == '' )
+                        myAlert('请输入文件名或选择待上传的文件！');
+                    else
+                        uploadFile('/api/fileDownload/');
                 },
-                // closeOnConfirm: false,
+                //closeOnConfirm: false,
                 onCancel: function() {
                    $("form input[name!='belong_project']").val('');
                    $('#file-list').empty();
@@ -206,23 +210,33 @@
 
     });
         // 上传文件请求
-        function uploadFile(){
-            var result = "";
-            var file = new FormData();
-    	    file.append('file', $('#doc-ipt-file-2')[0].files[0]);
-    	    file.append('info', JSON.stringify($('#data_form').serializeJSON()));
-		    $.ajax({
+        function uploadFile(URL){
+            filePath = $('#doc-ipt-file-2').val().split('.')
+            postfix = filePath[filePath.length - 1 ]
+            if ( postfix.toLowerCase == 'csv'){
+                var result = "";
+                var file = new FormData();
+    	        file.append('file', $('#doc-ipt-file-2')[0].files[0]);
+    	        file.append('info', JSON.stringify($('#data_form').serializeJSON()));
+		        $.ajax({
 			       type: 'POST',
-			       url: '/api/fileDownload/',
+			       url: URL,
 			       data: file,
 			       cache: false,
 			       processData: false,
                    contentType: false,
-                   async: false,//由于需要等待后端结果，故使用同步方式
+                   async: true,//由于需要等待后端结果，故使用同步方式
 			       success: function(data){
 			          myAlert(data);
+			          window.location.reload();
 			       }
 		     });
+            }
+            else{
+                myAlert('上传的文件格式不正确，仅支持上传CSV文件！');
+                $('.submit_modal').trigger('onclick');
+            }
+
     	};
 
         // 选择文件
@@ -245,38 +259,51 @@
                     })
                 })
         }
+        // 修改配置文件
+        function update(Obj){
+            // 设置记录信息
+            dataInfo = Obj.split(':');
+            $('._dataId').val(dataInfo[0]);
+            $('._belong_project').find("option[value='"+ dataInfo[1] + "']").attr("selected",true);
+            $('._datafile_name').val(dataInfo[2]);
 
-        function setProject(){
-            if ("{{ projectId }}"){
-                console.info($("._search_project").find("option[val={{ projectId }}]"))
-                $("._search_project").find("option[val={{ projectId }}]").attr("selected",true);
-            }
-        }
-
-
-
-
-
-        function copy(id, index) {
-            $('#index').val(index);
-            $('#my-copy').modal({
+            $('#detail_modal').modal({
                 relatedTarget: this,
-                onConfirm: function () {
-                    copy_data_ajax(id, '/api/config_list/1/')
+                onConfirm: function(options) {
+                    if( $('._datafile_name').val() == '' )
+                        myAlert('请输入文件名！');
+                    else
+                        uploadFile('/api/data_list/');
                 },
-                onCancel: function () {
+                //closeOnConfirm: false,
+                onCancel: function() {
+                   $("form input[name!='belong_project']").val('');
+                   $('#file-list').empty();
                 }
             });
         }
 
-        $('#select_all').click(function () {
-            var isChecked = $(this).prop("checked");
-            $("input[name^='config']").prop("checked", isChecked);
-        });
-
-        $().ready(function () {
-            auto_load('#pro_filter', '/api/add_case/', '#module', 'module');
-        });
+        function deleteRow(dId){
+            console.info('/api/data_list/'+ dId +'/');
+            $('#my-invalid').modal({
+               relatedTarget: this,
+               onConfirm: function(options) {
+                 $.ajax({
+			       type: 'GET',
+			       url: '/api/data_list/'+ dId +'/',
+			       data: {dId: JSON.stringify(dId)},
+			       cache: false,
+			       processData: false,
+                   contentType: false,
+                   async: false,//由于需要等待后端结果，故使用同步方式
+			       success: function(data){
+			          myAlert(data);
+			          window.location.reload();
+			       }
+		     });
+                }
+            });
+        }
 
 
     </script>

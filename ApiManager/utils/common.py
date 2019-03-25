@@ -17,6 +17,7 @@ from ApiManager.models import ModuleInfo, TestCaseInfo, TestReports, TestSuite, 
 from ApiManager.utils.operation import add_project_data, add_module_data, add_case_data, add_config_data, \
     add_register_data
 from ApiManager.utils.task_opt import create_task
+from django.db.models import Q
 
 
 logger = logging.getLogger('HttpRunnerManager')
@@ -657,6 +658,7 @@ def timestamp_to_datetime(summary, type=True):
                 pass
     return summary
 
+# 上传新数据文件
 def uploadFile(file, dataInfo, account):
     type = dataInfo.pop('type')
     if DataInfo.objects.filter(datafile_name__exact=dataInfo['datafile_name']):
@@ -680,3 +682,63 @@ def uploadFile(file, dataInfo, account):
     except:
         return '文件上传异常'
     return '数据文件上传成功'
+
+
+
+def updateFile(file, dataInfo, account):
+    '''
+    更新数据文件，若文件不存在，只更新字段数据
+    :param file:
+    :param dataInfo:
+    :param account:
+    :return:
+    '''
+    dId = dataInfo.pop('type')
+    if DataInfo.objects.filter(datafile_name__exact=dataInfo['datafile_name']).exclude(id=dId):
+        return '文件名已存在，请更换名称'
+    if file:
+        # 删除旧文件
+        physicalFile = DataInfo.objects.get(id=dId).physical_file
+        filePath = os.path.join('data', physicalFile)
+        if os.path.exists(filePath) and os.path.isfile(filePath):
+            os.remove(filePath)
+
+        # 时间戳重新命名
+        fileName = (str(int(time.time()))) + '.' + file.name.split('.')[-1]
+        try:
+            belong_project = ProjectInfo.objects.get(id__exact=dataInfo['belong_project'])
+            dataInfo.update(
+                {
+                    'belong_project': belong_project,
+                    'physical_file': fileName,
+                    'author': account,
+                    'isdel': 0
+                }
+            )
+            DataInfo.objects.filter(id=dId).update(**dataInfo)
+            # 写入文件
+            with open(os.path.join('data', fileName), 'wb') as  f:
+                for chunk in file.chunks():
+                    f.write(chunk)
+        except:
+            return '文件上传异常'
+        return '数据文件上传成功'
+    else:
+        belong_project = ProjectInfo.objects.get(id__exact=dataInfo['belong_project'])
+        dataInfo['belong_project'] = belong_project
+        DataInfo.objects.filter(id=dId).update(**dataInfo)
+        return '修改成功'
+
+
+def deleteData(dId):
+    try:
+        # 删除旧文件
+        physicalFile = DataInfo.objects.get(id=dId).physical_file
+        filePath = os.path.join('data', physicalFile)
+        if os.path.exists(filePath) and os.path.isfile(filePath):
+            os.remove(filePath)
+        # 更新记录
+        DataInfo.objects.filter(id__exact=dId).update(isdel='1')
+    except:
+        return '删除异常'
+    return '删除成功'

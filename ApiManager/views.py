@@ -16,9 +16,7 @@ from ApiManager import separator
 from ApiManager.models import ProjectInfo, ModuleInfo, TestCaseInfo, UserInfo, EnvInfo, TestReports, DebugTalk, \
     TestSuite, DataInfo
 from ApiManager.tasks import main_hrun
-from ApiManager.utils.common import module_info_logic, project_info_logic, case_info_logic, config_info_logic, \
-    set_filter_session, get_ajax_msg, register_info_logic, task_logic, load_modules, upload_file_logic, \
-    init_filter_session, get_total_values, timestamp_to_datetime, uploadFile
+from ApiManager.utils.common import *
 from ApiManager.utils.operation import env_data_logic, del_module_data, del_project_data, del_test_data, copy_test_data, \
     del_report_data, add_suite_data, copy_suite_data, del_suite_data, edit_suite_data, add_test_reports
 from ApiManager.utils.pagination import get_pager_info
@@ -27,6 +25,7 @@ from ApiManager.utils.task_opt import delete_task, change_task_status
 from ApiManager.utils.testcase import get_time_stamp
 from httprunner import HttpRunner
 from django.http import FileResponse
+from django.http import QueryDict
 
 logger = logging.getLogger('HttpRunnerManager')
 
@@ -870,37 +869,47 @@ def data_list(request, id=None):
     '''
     account = request.session["now_account"]
     if request.method == 'GET':
-        filter_query = {
-            'belong_project': 'All',
-            'fileName': ''
-        }
-        data_list = get_pager_info(
-            DataInfo, filter_query, '/api/data_list/', id)
+        if request.is_ajax():
+            mes = deleteData(id)
+            return HttpResponse(mes)
+        else:
+            filter_query = {
+                'belong_project': 'All',
+                'fileName': ''
+            }
+            data_list = get_pager_info(
+                DataInfo, filter_query, '/api/data_list/', id)
 
-        manage_info = {
-            'account': account,
-            'dataList': data_list[1],
-            'page_list': data_list[0],
-            'info': filter_query,
-            'sum': data_list[2],
-            'project_all': ProjectInfo.objects.all().order_by('-update_time')
-        }
-        return render_to_response('data_list.html', manage_info)
-    # 查询
+            manage_info = {
+                'account': account,
+                'dataList': data_list[1],
+                'page_list': data_list[0],
+                'info': filter_query,
+                'sum': data_list[2],
+                'project_all': ProjectInfo.objects.all().order_by('-update_time')
+            }
+            return render_to_response('data_list.html', manage_info)
+    # 修改文件和查询
     elif request.method == 'POST':
-        filter_query = set_filter_session(request)
-        data_list = get_pager_info(
-            DataInfo, filter_query, '/api/data_list/', id)
+        if request.is_ajax():
+            fileObj = request.FILES.get('file')
+            dataInfo = json.loads(request.POST.get('info'))
+            mes = updateFile(fileObj, dataInfo, account)
+            return HttpResponse(mes)
+        else:
+            filter_query = set_filter_session(request)
+            data_list = get_pager_info(
+                DataInfo, filter_query, '/api/data_list/', id)
 
-        manage_info = {
-            'account': account,
-            'dataList': data_list[1],
-            'page_list': data_list[0],
-            'info': filter_query,
-            'sum': data_list[2],
-            'project_all': ProjectInfo.objects.all().order_by('-update_time')
-        }
-        return render_to_response('data_list.html', manage_info)
+            manage_info = {
+                'account': account,
+                'dataList': data_list[1],
+                'page_list': data_list[0],
+                'info': filter_query,
+                'sum': data_list[2],
+                'project_all': ProjectInfo.objects.all().order_by('-update_time')
+            }
+            return render_to_response('data_list.html', manage_info)
 
 
 @login_check
@@ -927,12 +936,6 @@ def fileDownload(request, id=None):
         dataInfo = json.loads(request.POST.get('info'))
         mes = uploadFile(fileObj, dataInfo, account)
         return HttpResponse(mes)
-    # 修改数据文件
-    elif request.method == 'PUT':
-        return render_to_response('data_list.html', {'data': 'PUT'})
-    # 删除数据文件
-    elif request.method == 'DELETE':
-        return render_to_response('data_list.html', {'data': 'DELETE'})
     else:
         return HttpResponse('Method Error')
 
