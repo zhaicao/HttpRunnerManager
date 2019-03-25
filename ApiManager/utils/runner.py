@@ -32,6 +32,13 @@ def run_by_single(index, base_url, path):
 
     include = eval(obj.include)
     request = eval(obj.request)
+
+    parameters = request['test']['parameters']
+
+    for p in parameters:
+        print(p)
+
+
     name = obj.name
     project = obj.belong_project
     module = obj.belong_module.module_name
