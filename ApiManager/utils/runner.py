@@ -175,7 +175,7 @@ def parametersConversion(parametersList):
                     physicalFile = DataInfo.objects.get(datafile_name=datafile_name).physical_file
                 except:
                     raise Exception("物理数据文件不存在")
-                v = v.replace(datafile_name, 'data/' + physicalFile)
+                v = v.replace(datafile_name, '../../../../data/' + physicalFile)
             parameters.append({k: v})
 
     return parameters

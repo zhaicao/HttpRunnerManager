@@ -923,12 +923,15 @@ def fileDownload(request, id=None):
     account = request.session["now_account"]
     if request.method == 'GET':
         dataInfo = DataInfo.objects.filter(id=id)
-        filename = dataInfo[0].physical_file
-        file=open('data/' + filename, 'rb')
+        filePath = os.path.join('data', dataInfo[0].physical_file)
+        if not os.path.exists(filePath) and not os.path.isfile(filePath):
+            return HttpResponse('下载的文件不存在');
+            # raise Exception('下载的文件不存在');
+        file=open(os.path.join('data', filePath), 'rb')
         response =FileResponse(file)
         response['Content-Type']='application/octet-stream'
         response['Content-Disposition']='attachment;filename="{filename}.{postfix}"'\
-        .format(filename=dataInfo[0].datafile_name, postfix=filename.split('.')[-1])
+        .format(filename=dataInfo[0].datafile_name, postfix=filePath.split('.')[-1])
         return response
     # 上传数据文件
     elif request.method == 'POST':

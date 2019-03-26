@@ -680,6 +680,8 @@ def uploadFile(file, dataInfo, account):
             }
         )
         DataInfo.objects.create(**dataInfo)
+        if not os.path.exists('data'):
+            os.mkdir('data')
         with open(os.path.join('data', fileName), 'wb') as  f:
             for chunk in file.chunks():
                 f.write(chunk)
@@ -720,6 +722,8 @@ def updateFile(file, dataInfo, account):
                 }
             )
             DataInfo.objects.filter(id=dId).update(**dataInfo)
+            if not os.path.exists('data'):
+                os.mkdir('data')
             # 写入文件
             with open(os.path.join('data', fileName), 'wb') as  f:
                 for chunk in file.chunks():
