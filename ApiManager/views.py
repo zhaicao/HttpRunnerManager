@@ -927,7 +927,7 @@ def fileDownload(request, id=None):
         if not os.path.exists(filePath) and not os.path.isfile(filePath):
             return HttpResponse('下载的文件不存在');
             # raise Exception('下载的文件不存在');
-        file=open(os.path.join('data', filePath), 'rb')
+        file=open(filePath, 'rb')
         response =FileResponse(file)
         response['Content-Type']='application/octet-stream'
         response['Content-Disposition']='attachment;filename="{filename}.{postfix}"'\

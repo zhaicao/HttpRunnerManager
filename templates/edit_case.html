@@ -374,12 +374,10 @@
                 </div>
                 <div class="am-tab-panel" id="tab3">
                     <div class="form-inline">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon">URL</div>
-                                <input type="text" class="form-control am-input-sm " placeholder="api url"
-                                       name="url"
-                                       id="url" value="{{ request.request.url }}">
+                        <div class="form-group" style="width:60%">
+                            <div class="input-group col-md-12">
+                                <div class="input-group-addon" style="width:10px">URL</div>
+                                <input type="text" class="form-control" id="url" name="url" placeholder="api url" value="{{ request.request.url }}">
                             </div>
                         </div>
 
@@ -434,7 +432,8 @@
                                 </select>
                             </div>
                         </div>
-
+                    </div>
+                        <div style="margin-top:10px">
                         <button class="btn btn-info" value="添 加" onclick="add_row('data')" id="add_data">add data
                         </button>
                         <button class="btn btn-danger" value="删 除" onclick="del_row('data')" id="del_data">del data
