@@ -33,8 +33,9 @@ def run_by_single(index, base_url, path):
 
     include = eval(obj.include)
     request = eval(obj.request)
-    # 数据文件逻辑名转物理名
-    request['test']['parameters'] = parametersConversion(request['test']['parameters'])
+    if 'parameters' in request['test']:
+        # 数据文件逻辑名转物理名
+        request['test']['parameters'] = parametersConversion(request['test']['parameters'])
     name = obj.name
     project = obj.belong_project
     module = obj.belong_module.module_name
@@ -176,6 +177,9 @@ def parametersConversion(parametersList):
                 except:
                     raise Exception("物理数据文件不存在")
                 v = v.replace(datafile_name, '../../../../data/' + physicalFile)
+            else:
+                # 字符串的参数List转成list类型
+                v = eval(v)
             parameters.append({k: v})
 
     return parameters
