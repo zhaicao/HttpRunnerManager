@@ -5,23 +5,31 @@ FROM python:3.5-alpine
 LABEL maintainer="Ricky <Ricky2971@hotmail.com>"
 
 # add HttpRunnerManager
-ADD HttpRunnerManager /opt/HttpRunnerManage
+ADD HttpRunnerManager /opt/HttpRunnerManager
 
 # expose port
-EXPOSE 8000
+EXPOSE 8000/tcp
 
 # set WORKDIR
-WORKDIR /opt/HttpRunnerManage
+WORKDIR /opt/HttpRunnerManager
 
+# set TZ
 ENV TZ "Asia/Shanghai"
 
+# set apk source
+RUN echo "https://mirror.tuna.tsinghua.edu.cn/alpine/v3.4/main" > /etc/apk/repositories
+
 # install dependences
-RUN echo "https://mirror.tuna.tsinghua.edu.cn/alpine/v3.4/main" > /etc/apk/repositories \
-    && apk add --no-cache gcc g++ mysql-dev linux-headers libffi-dev openssl-dev libsodium build-base \
+RUN apk add --no-cache gcc g++ mysql-dev linux-headers libffi-dev openssl-dev libsodium build-base \
 	&& pip install --upgrade pip \
 	&& pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+# replace testcase.py
+ADD testcase.py /usr/local/lib/python3.5/site-packages/httprunner
+
 # mountpoint
 VOLUME /opt/HttpRunnerManager/reports/
+
+EXPOSE 8000
 
 ENTRYPOINT ["sh","start.sh"]
