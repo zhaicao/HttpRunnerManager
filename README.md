@@ -65,7 +65,7 @@ Key Features
         CELERYD_MAX_TASKS_PER_CHILD = 100  # 每个worker执行了多少任务就会死掉，我建议数量可以大一些，默认100
     ```
 
-5. 命令行窗口执行pip install -r requirements.txt 安装工程所依赖的库文件,若下载比较慢或失败可使用豆瓣镜像pip install -i http://pypi.douban.com/simple/ -r requirements.txt
+5. 命令行窗口执行pip install -r requirements.txt 安装工程所依赖的库文件,若下载比较慢或失败可使用豆瓣镜像pip install -r requirements.txt -i http://pypi.douban.com/simple/
 
 6. 命令行窗口切换到HttpRunnerManager目录 生成数据库迁移脚本,并生成表结构
     ```bash
