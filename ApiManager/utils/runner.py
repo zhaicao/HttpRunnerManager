@@ -33,9 +33,8 @@ def run_by_single(index, base_url, path):
 
     include = eval(obj.include)
     request = eval(obj.request)
-    if 'parameters' in request['test']:
-        # 数据文件逻辑名转物理名
-        request['test']['parameters'] = parametersConversion(request['test']['parameters'])
+    # 数据文件逻辑名转物理名
+    reqeust = parametersConversion(request)
     name = obj.name
     project = obj.belong_project
     module = obj.belong_module.module_name
@@ -70,7 +69,8 @@ def run_by_single(index, base_url, path):
             else:
                 id = test_info[0]
                 pre_request = eval(TestCaseInfo.objects.get(id=id).request)
-                testcase_list.append(pre_request)
+                # 数据文件逻辑名转物理名
+                testcase_list.append(parametersConversion(pre_request))
 
         except ObjectDoesNotExist:
             return testcase_list
@@ -160,29 +160,33 @@ def run_by_project(id, base_url, path):
         module_id = index[0]
         run_by_module(module_id, base_url, path)
 
-def parametersConversion(parametersList):
+def parametersConversion(requestObj):
     '''
-    parameters中数据文件逻辑名转物理文件名
-    :param parametersList:
+    将request内容中的parameters数据文件逻辑名转物理文件名
+    :param requestObj:用例request内容
     :return:
     '''
-    _regexp = r'[(](.*?)[)]'
-    parameters = list()
-    for p in parametersList:
-        for k, v in p.items():
-            if '${P' in v or '${parameter' in v:
-                datafile_name = re.findall(_regexp, v)[0]
-                try:
-                    physicalFile = DataInfo.objects.get(datafile_name=datafile_name).physical_file
-                except:
-                    raise Exception("物理数据文件不存在")
-                v = v.replace(datafile_name, '../../../../data/' + physicalFile)
-            else:
-                # 字符串的参数List转成list类型
-                v = eval(v)
-            parameters.append({k: v})
+    if 'test' in requestObj and 'parameters' in requestObj['test']:
+        parametersList = requestObj['test']['parameters']
+        # 定义匹配正则
+        _regexp = r'[(](.*?)[)]'
+        parameters = list()
+        for p in parametersList:
+            for k, v in p.items():
+                if '${P' in v or '${parameter' in v:
+                    datafile_name = re.findall(_regexp, v)[0]
+                    try:
+                        physicalFile = DataInfo.objects.get(datafile_name=datafile_name).physical_file
+                    except:
+                        raise Exception("物理数据文件不存在")
+                    v = v.replace(datafile_name, '../../../../data/' + physicalFile)
+                else:
+                    # 字符串的参数List转成list类型
+                    v = eval(v)
+                parameters.append({k: v})
+        requestObj['test']['parameters'] = parameters
 
-    return parameters
+    return requestObj
 
 
 def run_test_by_type(id, base_url, path, type):
