@@ -8,3 +8,4 @@ flower == 0.9.1
 dwebsocket == 0.4.2
 paramiko == 2.4.1
 HttpRunner == 1.5.8
+jsonpath == 0.81

@@ -24,8 +24,10 @@ RUN apk add --no-cache gcc g++ mysql-dev linux-headers libffi-dev openssl-dev li
 	&& pip install --upgrade pip \
 	&& pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-# replace testcase.py
+# replace testcase/response/context
 ADD testcase.py /usr/local/lib/python3.5/site-packages/httprunner
+ADD response.py /usr/local/lib/python3.5/site-packages/httprunner
+ADD context.py /usr/local/lib/python3.5/site-packages/httprunner
 
 # mountpoint
 VOLUME /opt/HttpRunnerManager/reports/
