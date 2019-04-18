@@ -149,10 +149,41 @@ Key Features
 
 
 
-###  其他
-
-因时间限制，平台可能还有很多潜在的bug，使用中如遇到问题，欢迎issue,
-如果任何疑问好好的建议欢迎github提issue。
+### How to use this image
+start a  httprunnermanager instance,default port 8000:
+```commandline
+$ docker run -d 
+   -p 8001:8000 -p 5555:5555 
+   --name httprunnermanager
+   -e DB_NAME=httprunner 
+   -e DB_USER_NAME=httprunner 
+   -e DB_USER_PWD=httprunner 
+   -e DB_HOST=10.202.228.30 
+   -e MQ_HOST=10.202.228.30 
+   -e MQ_USER_NAME=XXXXXX 
+   -e MQ_USER_PWD=XXXXXX 
+   -e EMAIL_USER_NAME=XXXXXXXX@163.com 
+   -e EMAIL_USER_PWD=XXXXXXXXX  
+   -d httprunnermanager
+```
+### Available Environment Variables
+  `DB_NAME`    
+These variables are used by Httprunnermanager to connect the hpptrunnermanager database. By default, values are httprunner.   
+`DB_USER_NAME`   
+`DB_USER_PWD`   
+`DB_HOST`   
+`DB_PORT`     
+By default 3306     
+`MQ_HOST`    
+`MQ_PORT`    
+By default 5672    
+`MQ_USER`   
+`MQ_USER_NAME`   
+`MQ_USER_PWD`   
+`EMAIL_USER_NAME`    
+By default null   
+`EMAIL_USER_PWD`  
+By default null
 
 
 

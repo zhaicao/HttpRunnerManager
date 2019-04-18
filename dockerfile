@@ -9,6 +9,7 @@ ADD HttpRunnerManager /opt/HttpRunnerManager
 
 # expose port
 EXPOSE 8000/tcp
+EXPOSE 5555/tcp
 
 # set WORKDIR
 WORKDIR /opt/HttpRunnerManager
@@ -31,7 +32,5 @@ ADD context.py /usr/local/lib/python3.5/site-packages/httprunner
 
 # mountpoint
 VOLUME /opt/HttpRunnerManager/reports/
-
-EXPOSE 8000
 
 ENTRYPOINT ["sh","start.sh"]
