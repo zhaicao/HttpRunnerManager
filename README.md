@@ -19,8 +19,8 @@ Key Features
 - 环境管理：可添加运行环境，运行用例时可以一键切换环境
 - 报告查看：所有异步执行的用例均可在线查看报告，可自主命名，为空默认时间戳保存，
 - 定时任务：可设置定时任务，遵循crontab表达式，可在线开启、关闭，完毕后支持邮件通知
-- 持续集成：jenkins对接，开发中。。。
-- Docker镜像：开发中...
+- Docker：支持Docker容器方式部署，需要mysql和rabbitMQ支持
+- 持续集成：jenkins对接，开发中...
 
 本地开发环境部署
 --------
@@ -168,13 +168,13 @@ $ docker run -d
 ```
 ### Available Environment Variables
 `DB_NAME`     
-These variables are used by Httprunnermanager to connect the httprunnermanager database. By default, values are httprunner.       
+These variables are used by Httprunnermanager to connect the httprunnermanager database(mysql). By default, values are httprunner.       
 `DB_USER_NAME`     
-This is the user of database.       
+Username of database for mysql.       
 `DB_USER_PWD`        
-This is the password of database.       
+Password of database for mysql.       
 `DB_HOST`     
-Host(IP) of databse.       
+Host(IP) of mysql.       
 `DB_PORT`      
 By default 3306      
 `MQ_HOST`       
