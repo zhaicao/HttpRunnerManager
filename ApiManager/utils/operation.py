@@ -443,7 +443,6 @@ def add_test_reports(runner, report_name=None):
 
     report_path = os.path.join(os.getcwd(), "reports{}{}.html".format(separator, int(runner.summary['time']['start_at'])))
     runner.gen_html_report(html_report_template=os.path.join(os.getcwd(), "templates{}extent_report_template.html".format(separator)))
-
     with open(report_path, encoding='utf-8') as stream:
         reports = stream.read()
 
