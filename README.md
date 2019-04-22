@@ -167,22 +167,27 @@ $ docker run -d
    -d httprunnermanager
 ```
 ### Available Environment Variables
-  `DB_NAME`    
-These variables are used by Httprunnermanager to connect the hpptrunnermanager database. By default, values are httprunner.   
-`DB_USER_NAME`   
-`DB_USER_PWD`   
-`DB_HOST`   
-`DB_PORT`     
-By default 3306     
-`MQ_HOST`    
-`MQ_PORT`    
-By default 5672    
-`MQ_USER`   
-`MQ_USER_NAME`   
-`MQ_USER_PWD`   
+`DB_NAME`     
+These variables are used by Httprunnermanager to connect the httprunnermanager database. By default, values are httprunner.       
+`DB_USER_NAME`     
+This is the user of database.       
+`DB_USER_PWD`        
+This is the password of database.       
+`DB_HOST`     
+Host(IP) of databse.       
+`DB_PORT`      
+By default 3306      
+`MQ_HOST`       
+Host(IP) of rabbitMQ.      
+`MQ_PORT`      
+Port of rabbitMQ,By default 5672      
+`MQ_USER_NAME`      
+Username for rabbitMQ.        
+`MQ_USER_PWD`       
+Password for rabbitMQ.MQ_USER_NAME and MQ_USER_PWD are both mandatory, all input will be ignored if either one is missing.      
 `EMAIL_USER_NAME`    
-By default null   
-`EMAIL_USER_PWD`  
+By default null      
+`EMAIL_USER_PWD`      
 By default null
 
 
