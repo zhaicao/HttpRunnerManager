@@ -6,9 +6,6 @@ LABEL maintainer="zhaicao <Ricky2971@hotmail.com>"
 # add HttpRunnerManager
 ADD HttpRunnerManager /opt/HttpRunnerManager
 
-EXPOSE 8000/tcp
-EXPOSE 5555/tcp
-
 WORKDIR /opt/HttpRunnerManager
 
 ENV TZ "Asia/Shanghai"
@@ -23,5 +20,9 @@ RUN echo "https://mirror.tuna.tsinghua.edu.cn/alpine/v3.4/main" > /etc/apk/repos
 ADD testcase.py /usr/local/lib/python3.5/site-packages/httprunner
 ADD response.py /usr/local/lib/python3.5/site-packages/httprunner
 ADD context.py /usr/local/lib/python3.5/site-packages/httprunner
+
+VOLUME /opt/HttpRunnerManager/data
+
+EXPOSE ${SERVER_PORT:-8000}/tcp 5555/tcp
 
 ENTRYPOINT ["sh","start.sh"]
