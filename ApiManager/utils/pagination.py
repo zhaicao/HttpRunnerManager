@@ -14,6 +14,18 @@ class PageInfo(object):
         self.__total_item = total_item
 
     @property
+    def current_page(self):
+        return self.__current
+
+    @property
+    def per_items_page(self):
+        return self.__per_items
+
+    @property
+    def total_times(self):
+        return self.__total_item
+
+    @property
     def start(self):
         return (self.__current - 1) * self.__per_items
 
@@ -104,6 +116,7 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
         name = filter_query.get('name')
         user = filter_query.get('user')
         fileName = filter_query.get('fileName')
+        state = filter_query.get('state')
 
     obj = Model.objects
 
@@ -125,8 +138,9 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
         obj = obj.filter(report_name__contains=filter_query.get('report_name'))
 
     elif url == '/api/periodictask/':
-        obj = obj.filter(name__contains=name).values('id', 'name', 'kwargs', 'enabled', 'date_changed') \
-            if name is not '' else obj.all().values('id', 'name', 'kwargs', 'enabled', 'date_changed', 'description')
+        # 过滤掉默认的celery.backend_cleanup
+        obj = obj.filter(name__contains=name).exclude(name__exact='celery.backend_cleanup').values('id', 'name', 'kwargs', 'enabled', 'date_changed') \
+            if name is not '' else obj.all().exclude(name__exact='celery.backend_cleanup').values('id', 'name', 'kwargs', 'enabled', 'date_changed', 'description')
 
     elif url == '/api/suite_list/':
         if belong_project != 'All':
@@ -140,6 +154,9 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
 
     elif url != '/api/env_list/' and url != '/api/debugtalk_list/':
         obj = obj.filter(type__exact=1) if url == '/api/test_list/' else obj.filter(type__exact=2)
+        # 状态查询
+        if state != 'all':
+            obj = obj.filter(state__exact=state)
 
         if belong_project != 'All' and belong_module != '请选择':
             obj = obj.filter(belong_project__contains=belong_project).filter(
@@ -202,4 +219,4 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
 
         page_list = customer_pager(url, id, page_info.total_page)
 
-    return page_list, info, sum
+    return page_list, info, sum, page_info

@@ -479,6 +479,9 @@ def set_filter_session(request):
     else:
         request.session['fileName'] = ''
 
+    if 'state' in request.POST.keys():
+        request.session['state'] = request.POST.get('state')
+
 
     filter_query = {
         'user': request.session['user'],
@@ -486,7 +489,8 @@ def set_filter_session(request):
         'belong_project': request.session['project'],
         'belong_module': request.session['module'],
         'report_name': request.session['report_name'],
-        'fileName': request.session['fileName']
+        'fileName': request.session['fileName'],
+        'state': request.session['state']
     }
 
     return filter_query

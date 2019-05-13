@@ -314,7 +314,8 @@ def project_list(request, id):
             'info': filter_query,
             'sum': pro_list[2],
             'env': EnvInfo.objects.all().order_by('-create_time'),
-            'project_all': ProjectInfo.objects.all().order_by('-update_time')
+            'project_all': ProjectInfo.objects.all().order_by('-update_time'),
+            'page_info': pro_list[3]
         }
         return render_to_response('project_list.html', manage_info)
 
@@ -346,7 +347,8 @@ def module_list(request, id):
             'info': filter_query,
             'sum': module_list[2],
             'env': EnvInfo.objects.all().order_by('-create_time'),
-            'project': ProjectInfo.objects.all().order_by('-update_time')
+            'project': ProjectInfo.objects.all().order_by('-update_time'),
+            'page_info': module_list[3]
         }
         return render_to_response('module_list.html', manage_info)
 
@@ -380,7 +382,9 @@ def test_list(request, id):
             'page_list': test_list[0],
             'info': filter_query,
             'env': EnvInfo.objects.all().order_by('-create_time'),
-            'project': ProjectInfo.objects.all().order_by('-update_time')
+            'project': ProjectInfo.objects.all().order_by('-update_time'),
+            'filter_query': json.dumps(filter_query),
+            'page_info': test_list[3]
         }
         return render_to_response('test_list.html', manage_info)
 
@@ -411,7 +415,8 @@ def config_list(request, id):
             'test': test_list[1],
             'page_list': test_list[0],
             'info': filter_query,
-            'project': ProjectInfo.objects.all().order_by('-update_time')
+            'project': ProjectInfo.objects.all().order_by('-update_time'),
+            'page_info': test_list[3]
         }
         return render_to_response('config_list.html', manage_info)
 
@@ -516,6 +521,7 @@ def env_list(request, id):
             'account': account,
             'env': env_lists[1],
             'page_list': env_lists[0],
+            'page_info': env_lists[3]
         }
         return render_to_response('env_list.html', manage_info)
 
@@ -543,7 +549,8 @@ def report_list(request, id):
             'account': request.session["now_account"],
             'report': report_list[1],
             'page_list': report_list[0],
-            'info': filter_query
+            'info': filter_query,
+            'page_info': report_list[3]
         }
         return render_to_response('report_list.html', manage_info)
 
@@ -584,7 +591,8 @@ def periodictask(request, id):
             'account': account,
             'task': task_list[1],
             'page_list': task_list[0],
-            'info': filter_query
+            'info': filter_query,
+            'page_info': task_list[3]
         }
     return render_to_response('periodictask_list.html', manage_info)
 
@@ -725,6 +733,7 @@ def debugtalk_list(request, id):
         'account': account,
         'debugtalk': debugtalk[1],
         'page_list': debugtalk[0],
+        'page_info': debugtalk[3]
     }
     return render_to_response('debugtalk_list.html', manage_info)
 
@@ -751,7 +760,8 @@ def suite_list(request, id):
             'info': filter_query,
             'sum': pro_list[2],
             'env': EnvInfo.objects.all().order_by('-create_time'),
-            'project': ProjectInfo.objects.all().order_by('-update_time')
+            'project': ProjectInfo.objects.all().order_by('-update_time'),
+            'page_info': pro_list[3]
         }
         return render_to_response('suite_list.html', manage_info)
 
@@ -886,7 +896,8 @@ def data_list(request, id=None):
                 'page_list': data_list[0],
                 'info': filter_query,
                 'sum': data_list[2],
-                'project_all': ProjectInfo.objects.all().order_by('-update_time')
+                'project_all': ProjectInfo.objects.all().order_by('-update_time'),
+                'page_info': data_list[3]
             }
             return render_to_response('data_list.html', manage_info)
     # 修改文件和查询
@@ -907,7 +918,8 @@ def data_list(request, id=None):
                 'page_list': data_list[0],
                 'info': filter_query,
                 'sum': data_list[2],
-                'project_all': ProjectInfo.objects.all().order_by('-update_time')
+                'project_all': ProjectInfo.objects.all().order_by('-update_time'),
+                'page_info': data_list[3]
             }
             return render_to_response('data_list.html', manage_info)
 

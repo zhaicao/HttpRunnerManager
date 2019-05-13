@@ -73,7 +73,9 @@
                 {% endfor %}
                 </tbody>
             </table>
-
+            <div class="am-btn-group am-btn-group-xs">
+                当前第{{ page_info.current_page }}/{{ page_info.total_page }}页 | 每页{{ page_info.per_items_page }}条 | 共{{ page_info.total_times }}条
+            </div>
             <ul class="am-pagination am-fr">
                 {{ page_list }}
             </ul>

@@ -135,6 +135,13 @@
                                                         class="am-input-sm am-input-xm"
                                                         placeholder="创建者"/>
                     </li>
+                    <li style="padding-top: 5px">
+                        <select name="state" id="state" class="am-input-zm am-input-xm">
+                            <option value="all">全部状态</option>
+                            <option value="1">正常</option>
+                            <option value="0">草稿</option>
+                        </select>
+                    </li>
                     <li>
                         <button style="padding-top: 5px; margin-top: 9px"
                                 class="am-btn am-radius am-btn-xs am-btn-success">搜索
@@ -155,6 +162,7 @@
                     <th class="table-type">所属项目</th>
                     <th class="table-type">所属模块</th>
                     <th class="table-type">创建者</th>
+                    <th class="table-type">状态</th>
                     <th width="163px" class="table-title">操作</th>
                 </tr>
                 </thead>
@@ -218,6 +226,13 @@
                         <td>{{ foo.belong_module.module_name }}</td>
                         <td>{{ foo.author }}</td>
                         <td>
+                            {% if foo.state == 1 %}
+                                正常
+                            {% else %}
+                                草稿
+                            {% endif %}
+                        </td>
+                        <td>
                             <div class="am-btn-toolbar">
                                 <div class="am-btn-group am-btn-group-xs">
                                     <button type="button"
@@ -245,12 +260,15 @@
             </table>
 
             <div class="am-btn-group am-btn-group-xs">
+                <!--
                 <button type="button" class="am-btn am-btn-default" onclick="location='/api/add_case/'"><span
                         class="am-icon-plus"></span> 新增用例
                 </button>
                 <button type="button" class="am-btn am-btn-default" onclick="location='/api/add_config/'"><span
                         class="am-icon-plus"></span> 新增配置
                 </button>
+                -->
+                当前第{{ page_info.current_page }}/{{ page_info.total_page }}页 | 每页{{ page_info.per_items_page }}条 | 共{{ page_info.total_times }}条
             </div>
 
             <ul class="am-pagination am-fr">
@@ -263,6 +281,18 @@
         </form>
     </div>
     <script type="text/javascript">
+    $(function(){
+        _setFilterVal('#state')
+    })
+
+        function _setFilterVal(oobj){
+            // 需要safe函数过滤，否则乱码报错
+            var filter_query = JSON.parse('{{ filter_query|safe }}')
+            // 分割oobj，取实际的key，提取对应的value
+            value = filter_query[oobj.split("#").pop()]
+            if ( value )
+                $(oobj).val(value)
+        }
 
         function coolspo(id) {
             $('#co' + id).css('display', 'none');

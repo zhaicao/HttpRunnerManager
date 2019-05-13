@@ -80,6 +80,7 @@ class TestCaseInfo(BaseTable):
     include = models.CharField('前置config/test', max_length=1024, null=True)
     author = models.CharField('编写人员', max_length=20, null=False)
     request = models.TextField('请求信息', null=False)
+    state = models.IntegerField('状态', null=False, default=1)
 
     objects = TestCaseInfoManager()
 

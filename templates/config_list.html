@@ -152,12 +152,15 @@
             </table>
 
             <div class="am-btn-group am-btn-group-xs">
+                <!--
                 <button type="button" class="am-btn am-btn-default" onclick="location='/api/add_case/'"><span
                         class="am-icon-plus"></span> 新增用例
                 </button>
                 <button type="button" class="am-btn am-btn-default" onclick="location='/api/add_config/'"><span
                         class="am-icon-plus"></span> 新增配置
                 </button>
+                -->
+                当前第{{ page_info.current_page }}/{{ page_info.total_page }}页 | 每页{{ page_info.per_items_page }}条 | 共{{ page_info.total_times }}条
             </div>
 
             <ul class="am-pagination am-fr">
