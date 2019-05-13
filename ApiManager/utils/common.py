@@ -481,6 +481,8 @@ def set_filter_session(request):
 
     if 'state' in request.POST.keys():
         request.session['state'] = request.POST.get('state')
+    else:
+        request.session['state'] = 'all'
 
 
     filter_query = {
