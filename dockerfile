@@ -17,9 +17,9 @@ RUN echo "https://mirror.tuna.tsinghua.edu.cn/alpine/v3.4/main" > /etc/apk/repos
 	&& pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # replace testcase/response/context
-ADD testcase.py /usr/local/lib/python3.5/site-packages/httprunner
-ADD response.py /usr/local/lib/python3.5/site-packages/httprunner
-ADD context.py /usr/local/lib/python3.5/site-packages/httprunner
+ADD httprunner/testcase.py /usr/local/lib/python3.5/site-packages/httprunner
+ADD httprunner/response.py /usr/local/lib/python3.5/site-packages/httprunner
+ADD httprunner/context.py /usr/local/lib/python3.5/site-packages/httprunner
 
 VOLUME /opt/HttpRunnerManager/data
 
