@@ -4,7 +4,7 @@ FROM python:3.5-alpine
 LABEL maintainer="zhaicao <Ricky2971@hotmail.com>"
 
 # add HttpRunnerManager
-ADD HttpRunnerManager /opt/HttpRunnerManager
+ADD . /opt/HttpRunnerManager
 
 WORKDIR /opt/HttpRunnerManager
 
