@@ -1,5 +1,5 @@
 # this is dockerfile for httprunnermanager with python
-FROM python:3.5-alpine
+FROM python:3.7-alpine
 
 LABEL maintainer="zhaicao <Ricky2971@hotmail.com>"
 
