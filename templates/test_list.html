@@ -357,7 +357,7 @@
             $('#select_env').modal({
                 relatedTarget: this,
                 onConfirm: function () {
-                    // open window
+                    // open window,增加用例执行过度页面
                     window.open('/api/run_case/?id='+index+'&&env_name='+$('#env_name').val());
                     //页面刷新，初始化index。初始化模态框数据
                     window.location.reload()

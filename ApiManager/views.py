@@ -230,9 +230,10 @@ def run_test(request):
         main_hrun.delay(testcase_dir_path, report_name)
         return HttpResponse('用例执行中，请稍后查看报告即可,默认时间戳命名报告')
     else:
-        id = request.GET.get('id')
-        base_url = request.GET.get('env_name')
-        type = request.GET.get('type', 'test')
+        # 模块和项目中执行用例使用POST，单个用例执行使用GET，根据request.method来提取不同的参数
+        id = eval("request.%s.get('id')" % request.method)
+        base_url = eval("request.%s.get('env_name')" % request.method)
+        type = eval("request.%s.get('type', 'test')" % request.method)
 
         run_test_by_type(id, base_url, testcase_dir_path, type)
         runner.run(testcase_dir_path)
