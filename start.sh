@@ -37,6 +37,7 @@ done
 source celeryAll.sh start
 
 # nginx
+rm -rf /etc/nginx/conf.d/*
 cp ${NGINX_CONF} /etc/nginx/conf.d/
 mkdir /run/nginx
 nginx
