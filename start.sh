@@ -1,6 +1,8 @@
 #!/bin/bash
 
 SETTINGS_FILE="HttpRunnerManager/settings.py"
+UWSGI_FILE="HttpRunnerManager/uwsgi.ini"
+NGINX_CONF="HttpRunnerManager/hrm.conf"
 
 # available param
 envparam="|SERVER_HOST|SERVER_PORT|DB_NAME|DB_USER_NAME|DB_USER_PWD|DB_HOST|DB_PORT|MQ_HOST|MQ_PORT|MQ_USER|EMAIL_USER_NAME|EMAIL_USER_PWD|"
@@ -33,4 +35,8 @@ done
 
 source celeryAll.sh start
 
-python3 manage.py runserver ${SERVER_HOST}:${SERVER_PORT}
+cp ${NGINX_CONF} /etc/nginx/conf.d/
+
+nginx
+
+uwsgi --ini ${UWSGI_FILE}

@@ -15,6 +15,7 @@ RUN echo "https://mirror.tuna.tsinghua.edu.cn/alpine/v3.9/main" > /etc/apk/repos
         && apk add --no-cache mysql-dev \
             libffi-dev \
             build-base \
+            nginx \
 	    && pip install --upgrade pip \
 	    && pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
@@ -25,6 +26,6 @@ ADD httprunner/context.py /usr/local/lib/python3.5/site-packages/httprunner
 
 VOLUME /opt/HttpRunnerManager/data
 
-EXPOSE ${SERVER_PORT:-8000}/tcp 5555/tcp
+EXPOSE ${SERVER_PORT:-80}/tcp 5555/tcp
 
 ENTRYPOINT ["sh","start.sh"]

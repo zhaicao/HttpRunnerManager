@@ -9,3 +9,4 @@ dwebsocket == 0.4.2
 paramiko == 2.4.1
 HttpRunner == 1.5.8
 jsonpath == 0.81
+uwsgi == 2.0.18
