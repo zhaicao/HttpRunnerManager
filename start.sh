@@ -1,8 +1,8 @@
 #!/bin/bash
 
 SETTINGS_FILE="HttpRunnerManager/settings.py"
-UWSGI_FILE="HttpRunnerManager/uwsgi.ini"
-NGINX_CONF="HttpRunnerManager/hrm.conf"
+UWSGI_FILE="uwsgi.ini"
+NGINX_CONF="hrm.conf"
 
 # available param
 envparam="|SERVER_HOST|SERVER_PORT|DB_NAME|DB_USER_NAME|DB_USER_PWD|DB_HOST|DB_PORT|MQ_HOST|MQ_PORT|MQ_USER|EMAIL_USER_NAME|EMAIL_USER_PWD|"
@@ -33,10 +33,13 @@ for key in `echo $envparam | sed "s/|/ /g"`; do
    fi
 done
 
+# start celery
 source celeryAll.sh start
 
+# nginx
 cp ${NGINX_CONF} /etc/nginx/conf.d/
-
+mkdir /run/nginx
 nginx
 
+# uwsgi
 uwsgi --ini ${UWSGI_FILE}
