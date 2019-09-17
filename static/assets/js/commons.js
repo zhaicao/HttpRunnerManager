@@ -2,28 +2,36 @@
 function show_module(module_info, id) {
     module_info = module_info.split('replaceFlag');
     var a = $(id);
-    a.empty();
+    //保留查询后返回的option
+    selected = a.val()
+    //清空options
+    a.empty()
+    //增加"请选择"
+    a.prepend("<option value='请选择' selected>请选择</option>");
+    //循环增加option
     for (var i = 0; i < module_info.length; i++) {
         if (module_info[i] !== "") {
             var value = module_info[i].split('^=');
-            a.prepend("<option value='" + value[0] + "' >" + value[1] + "</option>")
+                a.prepend("<option value='" + value[0] + "' >" + value[1] + "</option>")
         }
     }
-    a.prepend("<option value='请选择' selected>请选择</option>");
-
+    //选中上一次查询的option
+    a.find("option:contains('"+ selected +"')").attr("selected",true);
 }
 
 function show_case(case_info, id) {
     case_info = case_info.split('replaceFlag');
     var a = $(id);
+    selected = a.val()
     a.empty();
+    a.prepend("<option value='请选择' selected>请选择</option>");
     for (var i = 0; i < case_info.length; i++) {
         if (case_info[i] !== "") {
             var value = case_info[i].split('^=');
             a.prepend("<option value='" + value[0] + "' >" + value[1] + "</option>")
         }
     }
-    a.prepend("<option value='请选择' selected>请选择</option>");
+    a.find("option:contains('"+ selected +"')").attr("selected",true);
 
 }
 
@@ -100,8 +108,7 @@ function auto_load(id, url, target, type) {
         data: JSON.stringify(data),
         contentType: "application/json",
         success: function (data) {
-            console.info(data);
-            if (type === 'module') {
+            if (type == 'module') {
                 show_module(data, target)
             } else {
                 show_case(data, target)

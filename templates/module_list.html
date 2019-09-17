@@ -165,7 +165,9 @@
 
                     <li style="padding-top: 5px">
                         <select name="module" class=" am-input-zm am-input-xm" id="module">
-                            <option selected value="{{ info.belong_module }}">{{ info.belong_module }}</option>
+                            {% if info.belong_module != '' %}
+                                <option value="{{ info.belong_module }}" selected>{{ info.belong_module }}</option>
+                            {% endif %}
                         </select>
                     </li>
                     <li style="padding-top: 5px"><input value="{{ info.user }}" type="text" name="user"
@@ -261,6 +263,10 @@
         </form>
     </div>
     <script type="text/javascript">
+        $(function(){
+            auto_load('#pro_filter', '/api/add_case/', '#module', 'module');
+        });
+
         function edit(id, module_name, belong_project, test_user, simple_desc, other_desc) {
             $('#index').val(id);
             $('#module_name').val(module_name);

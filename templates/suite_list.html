@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}suite列表{% endblock %}
+{% block title %}测试集列表{% endblock %}
 {% load staticfiles %}
 {% load custom_tags %}
 {% block content %}
@@ -101,7 +101,7 @@
             <dl class="am-icon-home" style="float: right;"> 当前位置： 测试计划 > <a href="#">测试套件</a></dl>
             <dl>
                 <button type="button" class="am-btn am-btn-primary am-round am-btn-xs am-icon-plus"
-                        onclick="location='/api/add_suite/'">Add Suite
+                        onclick="location='/api/add_suite/'">新增测试集
                 </button>
                 <button type="button" class="am-btn am-btn-danger am-round am-btn-xs am-icon-bug"
                         onclick="run_test('batch', '/api/run_batch_test/', 'suite')">运行

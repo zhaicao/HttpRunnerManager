@@ -83,6 +83,9 @@
 
                     <li style="padding-top: 5px">
                         <select name="module" class=" am-input-zm am-input-xm" id="module">
+                            {% if info.belong_module != '' %}
+                                <option value="{{ info.belong_module }}" selected>{{ info.belong_module }}</option>
+                            {% endif %}
                         </select>
                     </li>
 
@@ -173,6 +176,9 @@
         </form>
     </div>
     <script type="text/javascript">
+        $(function(){
+            auto_load('#pro_filter', '/api/add_case/', '#module', 'module');
+        });
 
         function invalid(name) {
             $('#my-invalid').modal({
@@ -202,8 +208,6 @@
             $("input[name^='config']").prop("checked", isChecked);
         });
 
-        $().ready(function () {
-            auto_load('#pro_filter', '/api/add_case/', '#module', 'module');
-        });
+
     </script>
 {% endblock %}

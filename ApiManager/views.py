@@ -31,14 +31,16 @@ logger = logging.getLogger('HttpRunnerManager')
 
 # Create your views here.
 
-
-
 def login_check(func):
+    """
+    如果没有登录或失效，则返回登录页面
+    :param func:
+    :return:
+    """
     def wrapper(request, *args, **kwargs):
         if not request.session.get('login_status'):
             return HttpResponseRedirect('/api/login/')
         return func(request, *args, **kwargs)
-
     return wrapper
 
 
@@ -362,7 +364,6 @@ def test_list(request, id):
     :param id: str or int：当前页
     :return:
     """
-
     account = request.session["now_account"]
     if request.is_ajax():
         test_info = json.loads(request.body.decode('utf-8'))

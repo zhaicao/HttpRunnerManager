@@ -122,17 +122,18 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
 
     if url == '/api/project_list/':
 
-        obj = obj.filter(project_name__contains=belong_project) if belong_project != 'All' \
-            else obj.filter(responsible_name__contains=user)
+        obj = obj.filter(project_name__contains=belong_project)
+        if belong_project != '':
+            obj = obj.filter(responsible_name__contains=user)
 
     elif url == '/api/module_list/':
 
         if belong_project != 'All':
             obj = obj.filter(belong_project__project_name__contains=belong_project)
-
-        elif belong_module != '请选择':
-            obj = obj.filter(module_name__contains=belong_module) if belong_module != 'All' \
-                else obj.filter(test_user__contains=user)
+        if belong_module != '请选择':
+            obj = obj.filter(module_name__contains=belong_module)
+        if user != '':
+            obj = obj.filter(test_user__contains=user)
 
     elif url == '/api/report_list/':
         obj = obj.filter(report_name__contains=filter_query.get('report_name'))
@@ -163,16 +164,18 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
                 belong_module__module_name__contains=belong_module)
             if name is not '':
                 obj = obj.filter(name__contains=name)
+            if user is not '':
+                obj = obj.filter(author__contains=user)
 
         else:
             if belong_project != 'All':
                 obj = obj.filter(belong_project__contains=belong_project)
-            elif belong_module != '请选择':
+            if belong_module != '请选择':
                 obj = obj.filter(belong_module__module_name__contains=belong_module)
-            else:
-                obj = obj.filter(name__contains=name) if name is not '' else obj.filter(author__contains=user)
-
-
+            if name is not '':
+                obj = obj.filter(name__contains=name)
+            if user is not '':
+                obj = obj.filter(author__contains=user)
 
 
 
