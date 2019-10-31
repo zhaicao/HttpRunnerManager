@@ -121,9 +121,9 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
     obj = Model.objects
 
     if url == '/api/project_list/':
-
-        obj = obj.filter(project_name__contains=belong_project)
-        if belong_project != '':
+        if belong_project.lower() != 'all':
+            obj = obj.filter(project_name__contains=belong_project)
+        if user != '':
             obj = obj.filter(responsible_name__contains=user)
 
     elif url == '/api/module_list/':
