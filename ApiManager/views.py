@@ -270,10 +270,10 @@ def run_batch_test(request):
         main_hrun.delay(testcase_dir_path, report_name)
         return HttpResponse('用例执行中，请稍后查看报告即可,默认时间戳命名报告')
     else:
-
-        obj = json.loads(request.GET.get('obj', None))
-
-        type = obj.pop('type', None)
+        #
+        #obj = json.loads(request.GET.get('obj', None))
+        obj = request.POST.dict()
+        type = obj.pop('type')
         base_url = obj.pop('env_name')
         test_list = list(obj.values())
         if type:

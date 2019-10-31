@@ -440,7 +440,6 @@ def add_test_reports(runner, report_name=None):
     runner.summary['time']['start_datetime'] = datetime.datetime.fromtimestamp(time_stamp).strftime('%Y-%m-%d %H:%M:%S')
     report_name = report_name if report_name else runner.summary['time']['start_datetime']
     runner.summary['html_report_name'] = report_name
-
     report_path = os.path.join(os.getcwd(), "reports{}{}.html".format(separator, int(runner.summary['time']['start_at'])))
     runner.gen_html_report(html_report_template=os.path.join(os.getcwd(), "templates{}extent_report_template.html".format(separator)))
     with open(report_path, encoding='utf-8') as stream:

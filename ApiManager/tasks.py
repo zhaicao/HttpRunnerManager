@@ -98,6 +98,7 @@ def module_hrun(name, base_url, module, receiver):
     shutil.rmtree(testcase_dir_path)
     runner.summary = timestamp_to_datetime(runner.summary)
     report_path = add_test_reports(runner, report_name=name)
+    print(report_path)
 
     if receiver != '':
         send_email_reports(receiver, report_path)
@@ -107,7 +108,7 @@ def module_hrun(name, base_url, module, receiver):
 @shared_task
 def suite_hrun(name, base_url, suite, receiver):
     """
-    异步运行模块
+    异步运行测试集
     :param env_name: str: 环境地址
     :param project: str：项目所属模块
     :param module: str：模块名称
