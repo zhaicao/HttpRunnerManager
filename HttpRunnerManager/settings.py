@@ -165,7 +165,7 @@ CELERYD_MAX_TASKS_PER_CHILD = 100  # 每个worker执行了多少任务就会死�
 
 
 EMAIL_SEND_USERNAME = 'jira_maxnerva@163.com'  # 定时任务报告发送邮箱，支持163,qq,sina,企业qq邮箱等，注意需要开通smtp服务
-EMAIL_SEND_PASSWORD = 'Foxconn123!'     # 邮箱密码
+EMAIL_SEND_PASSWORD = ''     # 邮箱密码
 
 LOGGING = {
     'version': 1,
